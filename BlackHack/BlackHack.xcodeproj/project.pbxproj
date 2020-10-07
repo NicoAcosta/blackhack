@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03AF2AD6252D27CC005E0C77 /* cartas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AF2AD5252D27CC005E0C77 /* cartas.swift */; };
+		03AF2ADA252DA096005E0C77 /* croupier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AF2AD9252DA096005E0C77 /* croupier.swift */; };
+		03AF2ADD252DA505005E0C77 /* enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AF2ADC252DA505005E0C77 /* enums.swift */; };
 		03F8E0F1252D2054008F383D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8E0F0252D2054008F383D /* AppDelegate.swift */; };
 		03F8E0F3252D2054008F383D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8E0F2252D2054008F383D /* SceneDelegate.swift */; };
 		03F8E0F5252D2054008F383D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8E0F4252D2054008F383D /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03AF2AD5252D27CC005E0C77 /* cartas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cartas.swift; sourceTree = "<group>"; };
+		03AF2AD9252DA096005E0C77 /* croupier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = croupier.swift; sourceTree = "<group>"; };
+		03AF2ADC252DA505005E0C77 /* enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enums.swift; sourceTree = "<group>"; };
 		03F8E0ED252D2054008F383D /* BlackHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F8E0F0252D2054008F383D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03F8E0F2252D2054008F383D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03AF2AD4252D2799005E0C77 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				03AF2AD5252D27CC005E0C77 /* cartas.swift */,
+				03AF2AD9252DA096005E0C77 /* croupier.swift */,
+				03AF2ADC252DA505005E0C77 /* enums.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		03F8E0E4252D2054008F383D = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +72,7 @@
 		03F8E0EF252D2054008F383D /* BlackHack */ = {
 			isa = PBXGroup;
 			children = (
+				03AF2AD4252D2799005E0C77 /* New Group */,
 				03F8E0F0252D2054008F383D /* AppDelegate.swift */,
 				03F8E0F2252D2054008F383D /* SceneDelegate.swift */,
 				03F8E0F4252D2054008F383D /* ViewController.swift */,
@@ -138,7 +155,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				03F8E0F5252D2054008F383D /* ViewController.swift in Sources */,
+				03AF2ADA252DA096005E0C77 /* croupier.swift in Sources */,
+				03AF2AD6252D27CC005E0C77 /* cartas.swift in Sources */,
 				03F8E0F1252D2054008F383D /* AppDelegate.swift in Sources */,
+				03AF2ADD252DA505005E0C77 /* enums.swift in Sources */,
 				03F8E0F3252D2054008F383D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
