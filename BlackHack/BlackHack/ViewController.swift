@@ -19,10 +19,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var user9Button: UIButton!
     @IBOutlet weak var user10Button: UIButton!
     @IBOutlet weak var userJButton: UIButton!
+    
     @IBOutlet weak var userQButton: UIButton!
+    
     @IBOutlet weak var userKButton: UIButton!
     
     @IBOutlet weak var userCardsLabel: UILabel!
+    @IBOutlet weak var userSumLabel: UILabel!
+    @IBOutlet weak var userOddsBustingLabel: UILabel!
+    @IBOutlet weak var userOddsNotBustingLabel: UILabel!
+    @IBOutlet weak var userCleanButton: UIButton!
+    @IBOutlet weak var userBackButton: UIButton!
+    
     
     
     @IBOutlet weak var croupierAButton: UIButton!
@@ -48,63 +56,86 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        userSumLabel.text = String(user.sum)
         
         
     }
 
     
-    @IBAction func userAButtonAction(_ sender: Any) {
-        user.addCard(.ace)
+    func updateUserView() {
+        user.update()
+        //userSumLabel.text = sumString()
         userCardsLabel.text = user.cardsString()
+        //userOddsBustingLabel.text =
+        //userOddsNotBustingLabel.text =
     }
-    @IBAction func user2ButtonAction(_ sender: Any) {
+    
+    @IBAction func userCleanAction(_ sender: Any) {
+        user.clean()
+    }
+    
+    //back
+    
+    @IBAction func userAddA(_ sender: Any) {
+        user.addCard(.ace)
+        updateUserView()
+    }
+    @IBAction func userAdd2(_ sender: Any) {
         user.addCard(.two)
-        userCardsLabel.text = user.cardsString()
+        updateUserView()
     }
-    @IBAction func user3ButtonAction(_ sender: Any) {
+    @IBAction func userAdd3(_ sender: Any) {
         user.addCard(.three)
-        userCardsLabel.text = user.cardsString()
+        updateUserView()
     }
-    @IBAction func user4ButtonAction(_ sender: Any) {
+    @IBAction func userAdd4(_ sender: Any) {
         user.addCard(.four)
-        userCardsLabel.text = user.cardsString()
+        updateUserView()
     }
-    @IBAction func user5ButtonAction(_ sender: Any) {
+    @IBAction func userAdd5(_ sender: Any) {
         user.addCard(.five)
-        userCardsLabel.text = user.cardsString()
+        updateUserView()
     }
-    @IBAction func user6ButtonAction(_ sender: Any) {
+    @IBAction func userAdd6(_ sender: Any) {
         user.addCard(.six)
-        userCardsLabel.text = user.cardsString()
+        updateUserView()
     }
-    @IBAction func user7ButtonAction(_ sender: Any) {
+    @IBAction func userAdd7(_ sender: Any) {
         user.addCard(.seven)
-        userCardsLabel.text = user.cardsString()
+        updateUserView()
     }
-    @IBAction func user8ButtonAction(_ sender: Any) {
+    @IBAction func userAdd8(_ sender: Any) {
         user.addCard(.eight)
-        userCardsLabel.text = user.cardsString()
+        updateUserView()
     }
-    @IBAction func user9ButtonAction(_ sender: Any) {
+    @IBAction func userAdd9(_ sender: Any) {
         user.addCard(.nine)
-        userCardsLabel.text = user.cardsString()
+        updateUserView()
     }
-    @IBAction func user10ButtonAction(_ sender: Any) {
+    @IBAction func userAdd10(_ sender: Any) {
         user.addCard(.ten)
-        userCardsLabel.text = user.cardsString()
+        updateUserView()
     }
-    @IBAction func userJButtonAction(_ sender: Any) {
+    @IBAction func userAddJ(_ sender: Any) {
         user.addCard(.jack)
-        userCardsLabel.text = user.cardsString()
+        updateUserView()
     }
-    @IBAction func userQButtonAction(_ sender: Any) {
+    @IBAction func userAddQ(_ sender: Any) {
         user.addCard(.queen)
-        userCardsLabel.text = user.cardsString()
+        updateUserView()
     }
-    @IBAction func userKButtonAction(_ sender: Any) {
-        user.addCard(.ace)
-        userCardsLabel.text = user.cardsString()
+    @IBAction func userAddK(_ sender: Any) {
+        user.addCard(.king)
+        updateUserView()
     }
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -116,8 +147,4 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController {
-    
-    
-    
-}
+

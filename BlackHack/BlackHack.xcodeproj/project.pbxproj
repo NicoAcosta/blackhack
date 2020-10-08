@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		037F5AE1252E84A500142A74 /* source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037F5AE0252E84A500142A74 /* source.swift */; };
+		03D369A8252EC9AE00F4D1DD /* card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369A7252EC9AE00F4D1DD /* card.swift */; };
+		03D369AC252EC9B700F4D1DD /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369AB252EC9B700F4D1DD /* user.swift */; };
+		03D369AF252EC9C400F4D1DD /* croupier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369AE252EC9C400F4D1DD /* croupier.swift */; };
+		03D369B2252EC9F100F4D1DD /* deckDeclaration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369B1252EC9F100F4D1DD /* deckDeclaration.swift */; };
+		03D369B9252ECE1500F4D1DD /* stringFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369B8252ECE1500F4D1DD /* stringFormatting.swift */; };
+		03D369C2252ECFA500F4D1DD /* logicCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369C1252ECFA500F4D1DD /* logicCards.swift */; };
+		03D369C6252ECFF100F4D1DD /* logicSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369C5252ECFF100F4D1DD /* logicSum.swift */; };
+		03D369C9252ED02500F4D1DD /* possibleResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369C8252ED02500F4D1DD /* possibleResults.swift */; };
+		03D369CD252ED07300F4D1DD /* cardOpperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369CC252ED07300F4D1DD /* cardOpperations.swift */; };
 		03F8E0F1252D2054008F383D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8E0F0252D2054008F383D /* AppDelegate.swift */; };
 		03F8E0F3252D2054008F383D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8E0F2252D2054008F383D /* SceneDelegate.swift */; };
 		03F8E0F5252D2054008F383D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8E0F4252D2054008F383D /* ViewController.swift */; };
@@ -17,7 +25,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		037F5AE0252E84A500142A74 /* source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = source.swift; sourceTree = "<group>"; };
+		03D369A7252EC9AE00F4D1DD /* card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = card.swift; sourceTree = "<group>"; };
+		03D369AB252EC9B700F4D1DD /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
+		03D369AE252EC9C400F4D1DD /* croupier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = croupier.swift; sourceTree = "<group>"; };
+		03D369B1252EC9F100F4D1DD /* deckDeclaration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deckDeclaration.swift; sourceTree = "<group>"; };
+		03D369B8252ECE1500F4D1DD /* stringFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stringFormatting.swift; sourceTree = "<group>"; };
+		03D369C1252ECFA500F4D1DD /* logicCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logicCards.swift; sourceTree = "<group>"; };
+		03D369C5252ECFF100F4D1DD /* logicSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logicSum.swift; sourceTree = "<group>"; };
+		03D369C8252ED02500F4D1DD /* possibleResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = possibleResults.swift; sourceTree = "<group>"; };
+		03D369CC252ED07300F4D1DD /* cardOpperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardOpperations.swift; sourceTree = "<group>"; };
 		03F8E0ED252D2054008F383D /* BlackHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F8E0F0252D2054008F383D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03F8E0F2252D2054008F383D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +55,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03D369A6252EC98E00F4D1DD /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				03D369BE252ECF2500F4D1DD /* Deck */,
+				03D369BB252ECEBB00F4D1DD /* Card */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		03D369BB252ECEBB00F4D1DD /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				03D369A7252EC9AE00F4D1DD /* card.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		03D369BC252ECEE100F4D1DD /* Croupier */ = {
+			isa = PBXGroup;
+			children = (
+				03D369AE252EC9C400F4D1DD /* croupier.swift */,
+			);
+			path = Croupier;
+			sourceTree = "<group>";
+		};
+		03D369BD252ECEE800F4D1DD /* User */ = {
+			isa = PBXGroup;
+			children = (
+				03D369AB252EC9B700F4D1DD /* user.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		03D369BE252ECF2500F4D1DD /* Deck */ = {
+			isa = PBXGroup;
+			children = (
+				03D369B1252EC9F100F4D1DD /* deckDeclaration.swift */,
+				03D369C1252ECFA500F4D1DD /* logicCards.swift */,
+				03D369C5252ECFF100F4D1DD /* logicSum.swift */,
+				03D369C8252ED02500F4D1DD /* possibleResults.swift */,
+				03D369CC252ED07300F4D1DD /* cardOpperations.swift */,
+				03D369B8252ECE1500F4D1DD /* stringFormatting.swift */,
+				03D369BC252ECEE100F4D1DD /* Croupier */,
+				03D369BD252ECEE800F4D1DD /* User */,
+				03D369C0252ECF6800F4D1DD /* Others */,
+			);
+			path = Deck;
+			sourceTree = "<group>";
+		};
+		03D369C0252ECF6800F4D1DD /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
 		03F8E0E4252D2054008F383D = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +130,7 @@
 		03F8E0EF252D2054008F383D /* BlackHack */ = {
 			isa = PBXGroup;
 			children = (
+				03D369A6252EC98E00F4D1DD /* Source */,
 				03F8E0F0252D2054008F383D /* AppDelegate.swift */,
 				03F8E0F2252D2054008F383D /* SceneDelegate.swift */,
 				03F8E0F4252D2054008F383D /* ViewController.swift */,
@@ -65,7 +138,6 @@
 				03F8E0F9252D2057008F383D /* Assets.xcassets */,
 				03F8E0FB252D2057008F383D /* LaunchScreen.storyboard */,
 				03F8E0FE252D2057008F383D /* Info.plist */,
-				037F5AE0252E84A500142A74 /* source.swift */,
 			);
 			path = BlackHack;
 			sourceTree = "<group>";
@@ -140,9 +212,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				037F5AE1252E84A500142A74 /* source.swift in Sources */,
 				03F8E0F5252D2054008F383D /* ViewController.swift in Sources */,
+				03D369AC252EC9B700F4D1DD /* user.swift in Sources */,
+				03D369CD252ED07300F4D1DD /* cardOpperations.swift in Sources */,
 				03F8E0F1252D2054008F383D /* AppDelegate.swift in Sources */,
+				03D369B2252EC9F100F4D1DD /* deckDeclaration.swift in Sources */,
+				03D369B9252ECE1500F4D1DD /* stringFormatting.swift in Sources */,
+				03D369C2252ECFA500F4D1DD /* logicCards.swift in Sources */,
+				03D369C6252ECFF100F4D1DD /* logicSum.swift in Sources */,
+				03D369AF252EC9C400F4D1DD /* croupier.swift in Sources */,
+				03D369C9252ED02500F4D1DD /* possibleResults.swift in Sources */,
+				03D369A8252EC9AE00F4D1DD /* card.swift in Sources */,
 				03F8E0F3252D2054008F383D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
