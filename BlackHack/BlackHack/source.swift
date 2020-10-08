@@ -1,4 +1,13 @@
 //
+//  source.swift
+//  BlackHack
+//
+//  Created by Nicolás Acosta on 07/10/2020.
+//
+
+import Foundation
+
+//
 //  cartas.swift
 //  BlackHack
 //
@@ -23,6 +32,12 @@ public enum Card : Comparable {
     public func value() -> Int {
         switch self {
         case .two: return 2; case .three: return 3; case .four: return 4; case .five: return 5; case .six: return 6; case .seven: return 7; case .eight: return 8; case .nine: return 9; case .ten: return 10; case .jack: return 10; case .queen: return 10; case .king: return 10; case .ace: return 11
+        }
+    }
+    
+    public func name() -> String {
+        switch self {
+        case .two: return "2"; case .three: return "3"; case .four: return "4"; case .five: return "5"; case .six: return "6"; case .seven: return "7"; case .eight: return "8"; case .nine: return "9"; case .ten: return "10"; case .jack: return "J"; case .queen: return "Q"; case .king: return "K"; case .ace: return "A"
         }
     }
     
@@ -111,6 +126,22 @@ public class Deck {
     //  (Int)   Suma de valores de cartas. La cantidad amountOfAcesAs1 de Ases cuentan como 1
     public func sumAcesAs1(amountOfAcesAs1 amount: Int) -> Int {
         return self.sumNormal() - 10 * amount
+    }
+    
+    //  (String)    String con las cartas para Label
+    public func cardsString() -> String {
+        if self.isEmpty() {
+            return "Empty"
+        } else if self.amountOfCards() == 1 {
+            return self.cards.first!.name()
+        } else {
+            let names = self.cards.map({$0.name()})
+            var string = names.first!
+            for name in names.dropFirst() {
+                string += " - \(name)"
+            }
+            return string
+        }
     }
     
     
@@ -448,17 +479,13 @@ public class User: Deck {
                     default:
                         return 911
                 }
-            
                 
             }
-            return 911
-            
             
         }
-        
+     
+        return 911
+
     }
-    
-    
-    
     
 }
