@@ -13,34 +13,28 @@ extension User {
         
         if self.hasAce() {
             
-            if self.amountOfCards() == 2 {
+            if sum.type == .orPlus10 {
                 
-                switch self.cards {
-                    case [.ace, .ace]:
+                switch sum.value {
+                    case 2:
                         return 9/13
-                    case [.two, .ace]:
+                    case 3:
                         return 8/13
-                    case [.three, .ace]:
+                    case 4:
                         return 7/13
-                    case [.four, .ace]:
+                    case 5:
                         return 6/13
-                    case [.five, .ace]:
+                    case 6:
                         return 5/13
-                    case [.six, .ace]:
+                    case 7:
                         return 4/13
-                    case [.seven, .ace]:
+                    case 8:
                         return 3/13
-                    case [.eight, .ace]:
+                    case 9:
                         return 2/13
-                    case [.nine, .ace]:
+                    case 10:
                         return 1/13
-                    case [.ten, .ace]:
-                        return 0/13
-                    case [.jack, .ace]:
-                        return 0/13
-                    case [.queen, .ace]:
-                        return 0/13
-                    case [.king, .ace]:
+                    case 11:
                         return 0/13
                     default:
                         return 911

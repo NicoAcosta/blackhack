@@ -31,8 +31,8 @@ class Deck {
     var cards: [Card] = []
     
     //  Enum    Status: stood, bust, playingClear, playing Ambiguous
-    var status: Status = .playingClear
+    var status: Status = .playing
 
-    var sum: Result
+    var sum: Result = Result(value: 0, type: .precise, hasAces: false)
     
 }

@@ -8,6 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var userTestButton: UIButton!
+    
     @IBOutlet weak var userAButton: UIButton!
     @IBOutlet weak var user2Button: UIButton!
     @IBOutlet weak var user3Button: UIButton!
@@ -56,76 +59,80 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        userSumLabel.text = String(user.sum)
-        
+        updateUserView()
         
     }
 
     
     func updateUserView() {
         user.update()
-        //userSumLabel.text = sumString()
-        userCardsLabel.text = user.cardsString()
-        //userOddsBustingLabel.text =
-        //userOddsNotBustingLabel.text =
+        userSumLabel.text               = user.sumString()
+        userCardsLabel.text             = user.cardsString()
+        userOddsBustingLabel.text       = user.oddsOfBustingString()
+        userOddsNotBustingLabel.text    = user.oddsOfNotBustingString()
     }
     
     @IBAction func userCleanAction(_ sender: Any) {
         user.clean()
+        updateUserView()
     }
     
     //back
+    @IBAction func userTestButtonAction(_ sender: Any) {
+        user.add(.ace)
+        updateUserView()
+    }
     
     @IBAction func userAddA(_ sender: Any) {
-        user.addCard(.ace)
+        user.add(.ace)
         updateUserView()
     }
     @IBAction func userAdd2(_ sender: Any) {
-        user.addCard(.two)
+        user.add(.two)
         updateUserView()
     }
     @IBAction func userAdd3(_ sender: Any) {
-        user.addCard(.three)
+        user.add(.three)
         updateUserView()
     }
     @IBAction func userAdd4(_ sender: Any) {
-        user.addCard(.four)
+        user.add(.four)
         updateUserView()
     }
     @IBAction func userAdd5(_ sender: Any) {
-        user.addCard(.five)
+        user.add(.five)
         updateUserView()
     }
     @IBAction func userAdd6(_ sender: Any) {
-        user.addCard(.six)
+        user.add(.six)
         updateUserView()
     }
     @IBAction func userAdd7(_ sender: Any) {
-        user.addCard(.seven)
+        user.add(.seven)
         updateUserView()
     }
     @IBAction func userAdd8(_ sender: Any) {
-        user.addCard(.eight)
+        user.add(.eight)
         updateUserView()
     }
     @IBAction func userAdd9(_ sender: Any) {
-        user.addCard(.nine)
+        user.add(.nine)
         updateUserView()
     }
     @IBAction func userAdd10(_ sender: Any) {
-        user.addCard(.ten)
+        user.add(.ten)
         updateUserView()
     }
     @IBAction func userAddJ(_ sender: Any) {
-        user.addCard(.jack)
+        user.add(.jack)
         updateUserView()
     }
     @IBAction func userAddQ(_ sender: Any) {
-        user.addCard(.queen)
+        user.add(.queen)
         updateUserView()
     }
     @IBAction func userAddK(_ sender: Any) {
-        user.addCard(.king)
+        user.add(.king)
         updateUserView()
     }
     

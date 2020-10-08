@@ -9,28 +9,32 @@ import Foundation
 
 extension Double {
     func percentage () -> String {
-        return String(format: "%.2f", self) + " %"
+        return String(format: "%.2f", self * 100) + " %"
     }
 }
 
 extension Deck {
     //  (String)    String con las cartas para Label
     func cardsString() -> String {
+        
         if self.isEmpty() {
             return "Empty"
-        } else if self.amountOfCards() == 1 {
+        }
+        
+        if self.amountOfCards() == 1 {
             return self.cards.first!.name()
+            
         } else {
-            let names = self.cards.map({$0.name()})
-            var string = names.first!
-            for name in names.dropFirst() {
-                string += "  -  \(name)"
-            }
-            return string
+            return cards.map({$0.name()}).joined(separator: " - ")
         }
     }
     
     func sumString() -> String {
+        
+        if self.blackJack() {
+            return "BlackJack"
+        }
+        
         switch sum.type {
             case .precise:
                 return String(sum.value)

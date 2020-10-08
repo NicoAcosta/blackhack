@@ -17,11 +17,11 @@
 		03D369C6252ECFF100F4D1DD /* logicSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369C5252ECFF100F4D1DD /* logicSum.swift */; };
 		03D369C9252ED02500F4D1DD /* possibleResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369C8252ED02500F4D1DD /* possibleResults.swift */; };
 		03D369CD252ED07300F4D1DD /* cardOpperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369CC252ED07300F4D1DD /* cardOpperations.swift */; };
-		03D369D1252ED23100F4D1DD /* oddsOfBusting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369D0252ED23100F4D1DD /* oddsOfBusting.swift */; };
-		03D369D4252ED26B00F4D1DD /* oddsOfStanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369D3252ED26B00F4D1DD /* oddsOfStanding.swift */; };
-		03D369D8252EE89C00F4D1DD /* oddsOfBusting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369D7252EE89C00F4D1DD /* oddsOfBusting.swift */; };
-		03D369DB252EE8B100F4D1DD /* OddsOfNotBusting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369DA252EE8B100F4D1DD /* OddsOfNotBusting.swift */; };
+		03D369D8252EE89C00F4D1DD /* oddsOfBustingNextHit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369D7252EE89C00F4D1DD /* oddsOfBustingNextHit.swift */; };
+		03D369DB252EE8B100F4D1DD /* OddsOfNotBustingNextHit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369DA252EE8B100F4D1DD /* OddsOfNotBustingNextHit.swift */; };
 		03D369DE252EE90400F4D1DD /* oddsGettingMoreAses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369DD252EE90400F4D1DD /* oddsGettingMoreAses.swift */; };
+		03D68652252EF37F003CD2D5 /* oddsB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D68651252EF37F003CD2D5 /* oddsB.swift */; };
+		03D68655252EF38C003CD2D5 /* oddsS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D68654252EF38C003CD2D5 /* oddsS.swift */; };
 		03F8E0F1252D2054008F383D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8E0F0252D2054008F383D /* AppDelegate.swift */; };
 		03F8E0F3252D2054008F383D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8E0F2252D2054008F383D /* SceneDelegate.swift */; };
 		03F8E0F5252D2054008F383D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8E0F4252D2054008F383D /* ViewController.swift */; };
@@ -41,11 +41,11 @@
 		03D369C5252ECFF100F4D1DD /* logicSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logicSum.swift; sourceTree = "<group>"; };
 		03D369C8252ED02500F4D1DD /* possibleResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = possibleResults.swift; sourceTree = "<group>"; };
 		03D369CC252ED07300F4D1DD /* cardOpperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardOpperations.swift; sourceTree = "<group>"; };
-		03D369D0252ED23100F4D1DD /* oddsOfBusting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oddsOfBusting.swift; sourceTree = "<group>"; };
-		03D369D3252ED26B00F4D1DD /* oddsOfStanding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oddsOfStanding.swift; sourceTree = "<group>"; };
-		03D369D7252EE89C00F4D1DD /* oddsOfBusting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oddsOfBusting.swift; sourceTree = "<group>"; };
-		03D369DA252EE8B100F4D1DD /* OddsOfNotBusting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsOfNotBusting.swift; sourceTree = "<group>"; };
+		03D369D7252EE89C00F4D1DD /* oddsOfBustingNextHit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oddsOfBustingNextHit.swift; sourceTree = "<group>"; };
+		03D369DA252EE8B100F4D1DD /* OddsOfNotBustingNextHit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsOfNotBustingNextHit.swift; sourceTree = "<group>"; };
 		03D369DD252EE90400F4D1DD /* oddsGettingMoreAses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oddsGettingMoreAses.swift; sourceTree = "<group>"; };
+		03D68651252EF37F003CD2D5 /* oddsB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oddsB.swift; sourceTree = "<group>"; };
+		03D68654252EF38C003CD2D5 /* oddsS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oddsS.swift; sourceTree = "<group>"; };
 		03F8E0ED252D2054008F383D /* BlackHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F8E0F0252D2054008F383D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03F8E0F2252D2054008F383D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,8 +70,8 @@
 		03D369A6252EC98E00F4D1DD /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				03D369BE252ECF2500F4D1DD /* Deck */,
 				03D369BB252ECEBB00F4D1DD /* Card */,
+				03D369BE252ECF2500F4D1DD /* Deck */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -88,8 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				03D369AE252EC9C400F4D1DD /* croupierDeclaration.swift */,
-				03D369D0252ED23100F4D1DD /* oddsOfBusting.swift */,
-				03D369D3252ED26B00F4D1DD /* oddsOfStanding.swift */,
+				03D68651252EF37F003CD2D5 /* oddsB.swift */,
+				03D68654252EF38C003CD2D5 /* oddsS.swift */,
 			);
 			path = Croupier;
 			sourceTree = "<group>";
@@ -98,8 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				03D369AB252EC9B700F4D1DD /* user.swift */,
-				03D369D7252EE89C00F4D1DD /* oddsOfBusting.swift */,
-				03D369DA252EE8B100F4D1DD /* OddsOfNotBusting.swift */,
+				03D369D7252EE89C00F4D1DD /* oddsOfBustingNextHit.swift */,
+				03D369DA252EE8B100F4D1DD /* OddsOfNotBustingNextHit.swift */,
 				03D369DD252EE90400F4D1DD /* oddsGettingMoreAses.swift */,
 			);
 			path = User;
@@ -117,16 +117,8 @@
 				03D369B8252ECE1500F4D1DD /* stringFormatting.swift */,
 				03D369BC252ECEE100F4D1DD /* Croupier */,
 				03D369BD252ECEE800F4D1DD /* User */,
-				03D369C0252ECF6800F4D1DD /* Others */,
 			);
 			path = Deck;
-			sourceTree = "<group>";
-		};
-		03D369C0252ECF6800F4D1DD /* Others */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Others;
 			sourceTree = "<group>";
 		};
 		03F8E0E4252D2054008F383D = {
@@ -237,16 +229,16 @@
 				03D369B2252EC9F100F4D1DD /* deckDeclaration.swift in Sources */,
 				03D369B9252ECE1500F4D1DD /* stringFormatting.swift in Sources */,
 				03D369C2252ECFA500F4D1DD /* logicCards.swift in Sources */,
-				03D369D4252ED26B00F4D1DD /* oddsOfStanding.swift in Sources */,
-				03D369D8252EE89C00F4D1DD /* oddsOfBusting.swift in Sources */,
+				03D369D8252EE89C00F4D1DD /* oddsOfBustingNextHit.swift in Sources */,
 				037B1543252EEA2F00C3B020 /* commonUpdates.swift in Sources */,
 				03D369C6252ECFF100F4D1DD /* logicSum.swift in Sources */,
 				03D369AF252EC9C400F4D1DD /* croupierDeclaration.swift in Sources */,
-				03D369D1252ED23100F4D1DD /* oddsOfBusting.swift in Sources */,
 				03D369C9252ED02500F4D1DD /* possibleResults.swift in Sources */,
-				03D369DB252EE8B100F4D1DD /* OddsOfNotBusting.swift in Sources */,
+				03D369DB252EE8B100F4D1DD /* OddsOfNotBustingNextHit.swift in Sources */,
+				03D68655252EF38C003CD2D5 /* oddsS.swift in Sources */,
 				03D369DE252EE90400F4D1DD /* oddsGettingMoreAses.swift in Sources */,
 				03D369A8252EC9AE00F4D1DD /* card.swift in Sources */,
+				03D68652252EF37F003CD2D5 /* oddsB.swift in Sources */,
 				03F8E0F3252D2054008F383D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

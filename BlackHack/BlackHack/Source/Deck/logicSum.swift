@@ -31,13 +31,5 @@ extension Deck {
         
     }
     
-    func updateSum() {
-        sum = sumResult()
-    }
-    
-    
-    
-    
-    
 }
 

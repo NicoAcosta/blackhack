@@ -10,7 +10,7 @@ import Foundation
 enum Card : Comparable {
     
     //  Posibles códigos del enum
-    case two, three, four, five, six, seven, eight, nine, ten, jack, queen, king, ace
+    case ace, two, three, four, five, six, seven, eight, nine, ten, jack, queen, king
     
     //  (Int)   Devuelve el valor de cada carta
     func value() -> Int {
