@@ -43,6 +43,19 @@ extension Deck {
             }
     }
     
+    func statusString() -> String {
+        
+        switch status {
+        case .bust:
+            return "Bust"
+        case .playing:
+            return "Playing"
+        case .stood:
+            return "Stood"
+        }
+        
+    }
+    
     
     
     

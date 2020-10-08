@@ -9,48 +9,51 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var userTestButton: UIButton!
     
-    @IBOutlet weak var userAButton: UIButton!
-    @IBOutlet weak var user2Button: UIButton!
-    @IBOutlet weak var user3Button: UIButton!
-    @IBOutlet weak var user4Button: UIButton!
-    @IBOutlet weak var user5Button: UIButton!
-    @IBOutlet weak var user6Button: UIButton!
-    @IBOutlet weak var user7Button: UIButton!
-    @IBOutlet weak var user8Button: UIButton!
-    @IBOutlet weak var user9Button: UIButton!
-    @IBOutlet weak var user10Button: UIButton!
-    @IBOutlet weak var userJButton: UIButton!
+    @IBOutlet weak var croupierA: UIButton!
+    @IBOutlet weak var croupier2: UIButton!
+    @IBOutlet weak var croupier3: UIButton!
+    @IBOutlet weak var croupier4: UIButton!
+    @IBOutlet weak var croupier5: UIButton!
+    @IBOutlet weak var croupier6: UIButton!
+    @IBOutlet weak var croupier7: UIButton!
+    @IBOutlet weak var croupier8: UIButton!
+    @IBOutlet weak var croupier9: UIButton!
+    @IBOutlet weak var croupier10: UIButton!
+    @IBOutlet weak var croupierJ: UIButton!
+    @IBOutlet weak var croupierQ: UIButton!
+    @IBOutlet weak var croupierK: UIButton!
+    @IBOutlet weak var croupierClean: UIButton!
+    @IBOutlet weak var croupierBack: UIButton!
     
-    @IBOutlet weak var userQButton: UIButton!
     
-    @IBOutlet weak var userKButton: UIButton!
+    @IBOutlet weak var userA: UIButton!
+    @IBOutlet weak var user2: UIButton!
+    @IBOutlet weak var user3: UIButton!
+    @IBOutlet weak var user4: UIButton!
+    @IBOutlet weak var user5: UIButton!
+    @IBOutlet weak var user6: UIButton!
+    @IBOutlet weak var user7: UIButton!
+    @IBOutlet weak var user8: UIButton!
+    @IBOutlet weak var user9: UIButton!
+    @IBOutlet weak var user10: UIButton!
+    @IBOutlet weak var userJ: UIButton!
+    @IBOutlet weak var userQ: UIButton!
+    @IBOutlet weak var userK: UIButton!
+    @IBOutlet weak var userClean: UIButton!
+    @IBOutlet weak var userBack: UIButton!
     
     @IBOutlet weak var userCardsLabel: UILabel!
     @IBOutlet weak var userSumLabel: UILabel!
-    @IBOutlet weak var userOddsBustingLabel: UILabel!
-    @IBOutlet weak var userOddsNotBustingLabel: UILabel!
-    @IBOutlet weak var userCleanButton: UIButton!
-    @IBOutlet weak var userBackButton: UIButton!
+    @IBOutlet weak var userStatusLabel: UILabel!
+    @IBOutlet weak var userOddsBLabel: UILabel!
+    @IBOutlet weak var userOddsNBLabel: UILabel!
     
     
     
-    @IBOutlet weak var croupierAButton: UIButton!
-    @IBOutlet weak var croupier2Button: UIButton!
-    @IBOutlet weak var croupier3Button: UIButton!
-    @IBOutlet weak var croupier4Button: UIButton!
-    @IBOutlet weak var croupier5Button: UIButton!
-    @IBOutlet weak var croupier6Button: UIButton!
-    @IBOutlet weak var croupier7Button: UIButton!
-    @IBOutlet weak var croupier8Button: UIButton!
-    @IBOutlet weak var croupier9Button: UIButton!
-    @IBOutlet weak var croupier10Button: UIButton!
-    @IBOutlet weak var croupierJButton: UIButton!
-    @IBOutlet weak var croupierQButton: UIButton!
-    @IBOutlet weak var croupierKButton: UIButton!
     
-    @IBOutlet weak var croupierCardsLabel: UILabel!
+    
+
     
     var croupier    =   Croupier()
     var user        =   User()
@@ -67,85 +70,80 @@ class ViewController: UIViewController {
     func updateUserView() {
         user.update()
         userSumLabel.text               = user.sumString()
+        userSumLabel.text               = user.statusString()
         userCardsLabel.text             = user.cardsString()
-        userOddsBustingLabel.text       = user.oddsOfBustingString()
-        userOddsNotBustingLabel.text    = user.oddsOfNotBustingString()
+        userOddsBLabel.text       = user.oddsOfBustingString()
+        userOddsNBLabel.text    = user.oddsOfNotBustingString()
     }
     
-    @IBAction func userCleanAction(_ sender: Any) {
-        user.clean()
-        updateUserView()
-    }
     
-    //back
-    @IBAction func userTestButtonAction(_ sender: Any) {
-        user.add(.ace)
-        updateUserView()
-    }
+    
+    
+    
+    
+    
+    
     
     @IBAction func userAddA(_ sender: Any) {
         user.add(.ace)
         updateUserView()
     }
     @IBAction func userAdd2(_ sender: Any) {
-        user.add(.two)
+        user.add(.ace)
         updateUserView()
     }
     @IBAction func userAdd3(_ sender: Any) {
-        user.add(.three)
+        user.add(.ace)
         updateUserView()
     }
     @IBAction func userAdd4(_ sender: Any) {
-        user.add(.four)
+        user.add(.ace)
         updateUserView()
     }
     @IBAction func userAdd5(_ sender: Any) {
-        user.add(.five)
+        user.add(.ace)
         updateUserView()
     }
     @IBAction func userAdd6(_ sender: Any) {
-        user.add(.six)
+        user.add(.ace)
         updateUserView()
     }
     @IBAction func userAdd7(_ sender: Any) {
-        user.add(.seven)
+        user.add(.ace)
         updateUserView()
     }
     @IBAction func userAdd8(_ sender: Any) {
-        user.add(.eight)
+        user.add(.ace)
         updateUserView()
     }
     @IBAction func userAdd9(_ sender: Any) {
-        user.add(.nine)
+        user.add(.ace)
         updateUserView()
     }
     @IBAction func userAdd10(_ sender: Any) {
-        user.add(.ten)
+        user.add(.ace)
         updateUserView()
     }
     @IBAction func userAddJ(_ sender: Any) {
-        user.add(.jack)
+        user.add(.ace)
         updateUserView()
     }
     @IBAction func userAddQ(_ sender: Any) {
-        user.add(.queen)
+        user.add(.ace)
         updateUserView()
     }
     @IBAction func userAddK(_ sender: Any) {
-        user.add(.king)
+        user.add(.ace)
         updateUserView()
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    @IBAction func userClean(_ sender: Any) {
+        user.clean()
+        updateUserView()
+    }
+    @IBAction func userBack(_ sender: Any) {
+        user.clean()
+        updateUserView()
+    }
     
     
     
