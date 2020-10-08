@@ -8,8 +8,7 @@
 import Foundation
 
 enum Status {
-    case playingClear
-    case playingAmbiguous
+    case playing
     case bust
     case stood
 }

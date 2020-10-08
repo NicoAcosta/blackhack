@@ -17,7 +17,7 @@ extension Deck {
     
     //  (Bool)  Si se pasó
     func bust() -> Bool {
-        return self.sumAcesAs1() > 21
+        return sum.value > 21
     }
     
 }

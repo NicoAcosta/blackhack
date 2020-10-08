@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		037B1543252EEA2F00C3B020 /* commonUpdates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037B1542252EEA2F00C3B020 /* commonUpdates.swift */; };
 		03D369A8252EC9AE00F4D1DD /* card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369A7252EC9AE00F4D1DD /* card.swift */; };
 		03D369AC252EC9B700F4D1DD /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369AB252EC9B700F4D1DD /* user.swift */; };
 		03D369AF252EC9C400F4D1DD /* croupierDeclaration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369AE252EC9C400F4D1DD /* croupierDeclaration.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		037B1542252EEA2F00C3B020 /* commonUpdates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commonUpdates.swift; sourceTree = "<group>"; };
 		03D369A7252EC9AE00F4D1DD /* card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = card.swift; sourceTree = "<group>"; };
 		03D369AB252EC9B700F4D1DD /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
 		03D369AE252EC9C400F4D1DD /* croupierDeclaration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = croupierDeclaration.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				03D369B1252EC9F100F4D1DD /* deckDeclaration.swift */,
 				03D369C1252ECFA500F4D1DD /* logicCards.swift */,
 				03D369C5252ECFF100F4D1DD /* logicSum.swift */,
+				037B1542252EEA2F00C3B020 /* commonUpdates.swift */,
 				03D369C8252ED02500F4D1DD /* possibleResults.swift */,
 				03D369CC252ED07300F4D1DD /* cardOpperations.swift */,
 				03D369B8252ECE1500F4D1DD /* stringFormatting.swift */,
@@ -236,6 +239,7 @@
 				03D369C2252ECFA500F4D1DD /* logicCards.swift in Sources */,
 				03D369D4252ED26B00F4D1DD /* oddsOfStanding.swift in Sources */,
 				03D369D8252EE89C00F4D1DD /* oddsOfBusting.swift in Sources */,
+				037B1543252EEA2F00C3B020 /* commonUpdates.swift in Sources */,
 				03D369C6252ECFF100F4D1DD /* logicSum.swift in Sources */,
 				03D369AF252EC9C400F4D1DD /* croupierDeclaration.swift in Sources */,
 				03D369D1252ED23100F4D1DD /* oddsOfBusting.swift in Sources */,
