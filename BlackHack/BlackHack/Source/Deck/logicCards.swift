@@ -34,6 +34,10 @@ extension Deck {
         return self.has(.ace)
     }
     
+    func allAces() -> Bool {
+        return cards.allSatisfy({$0 == .ace})
+    }
+    
     //  (Bool)  Si tiene cartas con valor 10
     func hasTens() -> Bool {
         return self.hasByValue(10)

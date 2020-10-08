@@ -30,6 +30,15 @@ extension Deck {
         }
     }
     
+    func sumString() -> String {
+        switch sum.type {
+            case .precise:
+                return String(sum.value)
+            case .orPlus10:
+                return "\(sum.value) / \(sum.value + 10)"
+            }
+    }
+    
     
     
     

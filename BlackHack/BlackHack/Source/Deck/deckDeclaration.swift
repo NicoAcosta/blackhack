@@ -14,6 +14,17 @@ enum Status {
     case stood
 }
 
+enum TypeOfSum {
+    case precise
+    case orPlus10
+}
+
+struct Result {
+    var value: Int
+    var type: TypeOfSum
+    var hasAces: Bool
+}
+
 
 class Deck {
     
@@ -23,4 +34,6 @@ class Deck {
     //  Enum    Status: stood, bust, playingClear, playing Ambiguous
     var status: Status = .playingClear
 
+    var sum: Result
+    
 }
