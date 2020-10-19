@@ -11,6 +11,10 @@ extension User {
     
     func oddsOfBustingNextHit() -> Double {
         
+        if isEmpty() {
+            return 0
+        }
+        
         if sum.type == .orPlus10 {
             return 0
         }

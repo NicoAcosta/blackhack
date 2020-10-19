@@ -12,7 +12,7 @@ extension Deck {
     //  (Bool)  Si hizo blackjack
     func blackJack() -> Bool {
         return
-            self.amountOfCards() == 2   &&  self.hasAce()   &&  self.hasTens()
+            amountOfCards() == 2   &&  hasAce()   &&  hasTens()
     }
     
     //  (Bool)  Si se pasó

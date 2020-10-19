@@ -17,12 +17,12 @@ extension Deck {
     //  (String)    String con las cartas para Label
     func cardsString() -> String {
         
-        if self.isEmpty() {
+        if isEmpty() {
             return "Empty"
-        }
+        //}
         
-        if self.amountOfCards() == 1 {
-            return self.cards.first!.name()
+//        if amountOfCards() == 1 {
+//            return cards.first!.name()
             
         } else {
             return cards.map({$0.name()}).joined(separator: " - ")
@@ -31,7 +31,7 @@ extension Deck {
     
     func sumString() -> String {
         
-        if self.blackJack() {
+        if blackJack() {
             return "BlackJack"
         }
         
@@ -52,6 +52,8 @@ extension Deck {
             return "Playing"
         case .stood:
             return "Stood"
+        case .empty:
+            return "Not started"
         }
         
     }

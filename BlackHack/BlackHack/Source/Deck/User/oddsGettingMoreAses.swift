@@ -11,7 +11,7 @@ extension User {
     
     func oddsHittingMoreHavingAces() -> Double {
         
-        if self.hasAce() {
+        if hasAce() {
             
             if sum.type == .orPlus10 {
                 

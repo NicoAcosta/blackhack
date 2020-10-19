@@ -31,7 +31,7 @@ extension Deck {
     
     //  (Bool)  Si tiene un As
     func hasAce() -> Bool {
-        return self.has(.ace)
+        return has(.ace)
     }
     
     func allAces() -> Bool {
@@ -40,7 +40,7 @@ extension Deck {
     
     //  (Bool)  Si tiene cartas con valor 10
     func hasTens() -> Bool {
-        return self.hasByValue(10)
+        return hasByValue(10)
     }
     
     //  (Int)   Cuántas veces está presente una carta por su nombre
@@ -55,7 +55,7 @@ extension Deck {
     
     //  (Int)   Cantidad de ases
     func amountOfAces() -> Int {
-        return self.amountOf(.ace)
+        return amountOf(.ace)
     }
     
 }

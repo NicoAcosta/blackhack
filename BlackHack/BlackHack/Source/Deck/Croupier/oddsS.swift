@@ -11,6 +11,10 @@ extension Croupier {
     
     func oddsOfStanding() -> Double {
         
+        if isEmpty() {
+            return 16737510994651 / 23298085122481
+        }
+        
         if sum.type == .orPlus10 {
             
             switch sum.value {

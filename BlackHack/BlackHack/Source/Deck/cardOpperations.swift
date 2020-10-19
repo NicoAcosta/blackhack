@@ -33,5 +33,11 @@ extension Deck {
     func order() {
         cards.sort()
     }
+    
+    func back() {
+        if !isEmpty() {
+            cards.removeLast()
+        }
+    }
 
 }

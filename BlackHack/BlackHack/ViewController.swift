@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var croupierLabel: UILabel!
     
     @IBOutlet weak var croupierA: UIButton!
     @IBOutlet weak var croupier2: UIButton!
@@ -26,6 +27,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var croupierClean: UIButton!
     @IBOutlet weak var croupierBack: UIButton!
     
+    @IBOutlet weak var croupierCardsLabel: UILabel!
+    @IBOutlet weak var croupierSumLabel: UILabel!
+    @IBOutlet weak var croupierStatusLabel: UILabel!
+    @IBOutlet weak var croupierOddsBLabel: UILabel!
+    @IBOutlet weak var croupierOddsSLabel: UILabel!
+
+    
+    
+    @IBOutlet weak var userLabel: UILabel!
     
     @IBOutlet weak var userA: UIButton!
     @IBOutlet weak var user2: UIButton!
@@ -49,32 +59,96 @@ class ViewController: UIViewController {
     @IBOutlet weak var userOddsBLabel: UILabel!
     @IBOutlet weak var userOddsNBLabel: UILabel!
     
-    
-    
-    
-    
-
-    
     var croupier    =   Croupier()
     var user        =   User()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        //let buttons = [userA, user2, user3, user4, user5, user6, user7, user8, user9, user10, userJ, userQ, userK, croupierA, croupier2, croupier3, croupier4, croupier5, croupier6, croupier7, croupier8, croupier9, croupier10, croupierJ, croupierQ, croupierK]
+        
+        //let buttons2 = [userClean, userBack, croupierClean, croupierBack]
+        
+        //let labels = [croupierLabel, croupierCardsLabel, croupierSumLabel, croupierStatusLabel, croupierOddsBLabel, croupierOddsSLabel, userLabel, userCardsLabel, userSumLabel, userStatusLabel, userOddsBLabel, userOddsNBLabel]
+        
+        //myView.backgroundColor = UIColor(patternImage: UIImage(named: "table1.png")!)
+        //separator.backgroundColor = .white
+        
+        //let color = colorButton.currentTitleColor
+        
         
         updateUserView()
+        
+        
         
     }
 
     
-    func updateUserView() {
-        user.update()
-        userSumLabel.text               = user.sumString()
-        userSumLabel.text               = user.statusString()
-        userCardsLabel.text             = user.cardsString()
-        userOddsBLabel.text       = user.oddsOfBustingString()
-        userOddsNBLabel.text    = user.oddsOfNotBustingString()
+    
+    
+    @IBAction func croupierAddA(_ sender: Any) {
+        croupier.add(.ace)
+        updateCroupier()
     }
+    @IBAction func croupierAdd2(_ sender: Any) {
+        croupier.add(.two)
+        updateCroupier()
+    }
+    @IBAction func croupierAdd3(_ sender: Any) {
+        croupier.add(.three)
+        updateCroupier()
+    }
+    @IBAction func croupierAdd4(_ sender: Any) {
+        croupier.add(.four)
+        updateCroupier()
+    }
+    @IBAction func croupierAdd5(_ sender: Any) {
+        croupier.add(.five)
+        updateCroupier()
+    }
+    @IBAction func croupierAdd6(_ sender: Any) {
+        croupier.add(.six)
+        updateCroupier()
+    }
+    @IBAction func croupierAdd7(_ sender: Any) {
+        croupier.add(.seven)
+        updateCroupier()
+    }
+    @IBAction func croupierAdd8(_ sender: Any) {
+        croupier.add(.eight)
+        updateCroupier()
+    }
+    @IBAction func croupierAdd9(_ sender: Any) {
+        croupier.add(.nine)
+        updateCroupier()
+    }
+    @IBAction func croupierAdd10(_ sender: Any) {
+        croupier.add(.ten)
+        updateCroupier()
+    }
+    @IBAction func croupierAddJ(_ sender: Any) {
+        croupier.add(.jack)
+        updateCroupier()
+    }
+    @IBAction func croupierAddQ(_ sender: Any) {
+        croupier.add(.queen)
+        updateCroupier()
+    }
+    @IBAction func croupierAddK(_ sender: Any) {
+        croupier.add(.king)
+        updateCroupier()
+    }
+    @IBAction func croupierClean(_ sender: Any) {
+        croupier.clean()
+        updateCroupier()
+    }
+    @IBAction func croupierBack(_ sender: Any) {
+        croupier.back()
+        updateCroupier()
+    }
+    
+    
     
     
     
@@ -86,64 +160,99 @@ class ViewController: UIViewController {
     
     @IBAction func userAddA(_ sender: Any) {
         user.add(.ace)
-        updateUserView()
+        updateUser()
     }
     @IBAction func userAdd2(_ sender: Any) {
-        user.add(.ace)
-        updateUserView()
+        user.add(.two)
+        updateUser()
     }
     @IBAction func userAdd3(_ sender: Any) {
-        user.add(.ace)
-        updateUserView()
+        user.add(.three)
+        updateUser()
     }
     @IBAction func userAdd4(_ sender: Any) {
-        user.add(.ace)
-        updateUserView()
+        user.add(.four)
+        updateUser()
     }
     @IBAction func userAdd5(_ sender: Any) {
-        user.add(.ace)
-        updateUserView()
+        user.add(.five)
+        updateUser()
     }
     @IBAction func userAdd6(_ sender: Any) {
-        user.add(.ace)
-        updateUserView()
+        user.add(.six)
+        updateUser()
     }
     @IBAction func userAdd7(_ sender: Any) {
-        user.add(.ace)
-        updateUserView()
+        user.add(.seven)
+        updateUser()
     }
     @IBAction func userAdd8(_ sender: Any) {
-        user.add(.ace)
-        updateUserView()
+        user.add(.eight)
+        updateUser()
     }
     @IBAction func userAdd9(_ sender: Any) {
-        user.add(.ace)
-        updateUserView()
+        user.add(.nine)
+        updateUser()
     }
     @IBAction func userAdd10(_ sender: Any) {
-        user.add(.ace)
-        updateUserView()
+        user.add(.ten)
+        updateUser()
     }
     @IBAction func userAddJ(_ sender: Any) {
-        user.add(.ace)
-        updateUserView()
+        user.add(.jack)
+        updateUser()
     }
     @IBAction func userAddQ(_ sender: Any) {
-        user.add(.ace)
-        updateUserView()
+        user.add(.queen)
+        updateUser()
     }
     @IBAction func userAddK(_ sender: Any) {
-        user.add(.ace)
-        updateUserView()
+        user.add(.king)
+        updateUser()
     }
     @IBAction func userClean(_ sender: Any) {
         user.clean()
-        updateUserView()
+        updateUser()
     }
     @IBAction func userBack(_ sender: Any) {
-        user.clean()
+        user.back()
+        updateUser()
+    }
+    
+    
+}
+
+
+
+extension ViewController {
+    
+    func updateCroupier() {
+        croupier.update()
+        updateCroupierView()
+    }
+    
+    func updateCroupierView() {
+        croupierSumLabel.text       = croupier.sumCroupierString()
+        croupierStatusLabel.text    = croupier.statusString()
+        croupierCardsLabel.text     = croupier.cardsString()
+        croupierOddsBLabel.text     = croupier.oddsOfBustingString()
+        croupierOddsSLabel.text     = croupier.oddsOfStandingString()
+    }
+    
+    func updateUser() {
+        user.update()
         updateUserView()
     }
+    
+    func updateUserView() {
+        userSumLabel.text       = user.sumString()
+        userStatusLabel.text    = user.statusString()
+        userCardsLabel.text     = user.cardsString()
+        userOddsBLabel.text     = user.oddsOfBustingString()
+        userOddsNBLabel.text    = user.oddsOfNotBustingString()
+    }
+    
+    
     
     
     
@@ -151,5 +260,3 @@ class ViewController: UIViewController {
     
     
 }
-
-

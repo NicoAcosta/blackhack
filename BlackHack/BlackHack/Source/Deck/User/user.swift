@@ -11,12 +11,24 @@ import Foundation
 class User: Deck {
     
     func updateStatus() {
-        if self.bust() {
+        if isEmpty() {
+            status = .empty
+        } else if bust() {
             status = .bust
         } else {
             status = .playing
         }
     }
+    
+    
+    
+    
+    
+    func update() {
+        updateSum()
+        updateStatus()
+    }
+    
     
     func oddsOfBustingString() -> String {
         return oddsOfBustingNextHit().percentage()
@@ -25,11 +37,5 @@ class User: Deck {
     func oddsOfNotBustingString() -> String {
         return oddsOfNotBustingNextHit().percentage()
     }
-    
-    func update() {
-        updateSum()
-        updateStatus()
-    }
-    
     
 }

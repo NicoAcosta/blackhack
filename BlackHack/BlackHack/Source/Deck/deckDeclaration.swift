@@ -11,6 +11,7 @@ enum Status {
     case playing
     case bust
     case stood
+    case empty
 }
 
 enum TypeOfSum {
