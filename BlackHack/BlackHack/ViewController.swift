@@ -59,32 +59,24 @@ class ViewController: UIViewController {
     @IBOutlet weak var userOddsBLabel: UILabel!
     @IBOutlet weak var userOddsNBLabel: UILabel!
     
-    var croupier    =   Croupier()
-    var user        =   User()
-
+    let croupier    =   Croupier()
+    let user        =   User()
+    
+    var croupierCardsButtons: [UIButton] = []
+    var userCardsButtons: [UIButton] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        //let buttons = [userA, user2, user3, user4, user5, user6, user7, user8, user9, user10, userJ, userQ, userK, croupierA, croupier2, croupier3, croupier4, croupier5, croupier6, croupier7, croupier8, croupier9, croupier10, croupierJ, croupierQ, croupierK]
+
+        croupierCardsButtons = [croupierA, croupier2, croupier3, croupier4, croupier5, croupier6, croupier7, croupier8, croupier9, croupier10, croupierJ, croupierQ, croupierK]
         
-        //let buttons2 = [userClean, userBack, croupierClean, croupierBack]
-        
-        //let labels = [croupierLabel, croupierCardsLabel, croupierSumLabel, croupierStatusLabel, croupierOddsBLabel, croupierOddsSLabel, userLabel, userCardsLabel, userSumLabel, userStatusLabel, userOddsBLabel, userOddsNBLabel]
-        
-        //myView.backgroundColor = UIColor(patternImage: UIImage(named: "table1.png")!)
-        //separator.backgroundColor = .white
-        
-        //let color = colorButton.currentTitleColor
+        userCardsButtons = [userA, user2, user3, user4, user5, user6, user7, user8, user9, user10, userJ, userQ, userK]
         
         
         updateUserView()
         
-        
-        
     }
-
-    
     
     
     @IBAction func croupierAddA(_ sender: Any) {
@@ -224,6 +216,9 @@ class ViewController: UIViewController {
 
 
 
+
+// Update view elements
+
 extension ViewController {
     
     func updateCroupier() {
@@ -237,6 +232,7 @@ extension ViewController {
         croupierCardsLabel.text     = croupier.cardsString()
         croupierOddsBLabel.text     = croupier.oddsOfBustingString()
         croupierOddsSLabel.text     = croupier.oddsOfStandingString()
+        updateCroupierButtons()
     }
     
     func updateUser() {
@@ -250,11 +246,56 @@ extension ViewController {
         userCardsLabel.text     = user.cardsString()
         userOddsBLabel.text     = user.oddsOfBustingString()
         userOddsNBLabel.text    = user.oddsOfNotBustingString()
+        updateUserButtons()
+    }
+    
+}
+
+
+
+// Buttons behaviour
+
+extension ViewController {
+    
+    func shouldEnableCroupierButtons() -> Bool {
+        return          ( croupierA.isEnabled == false &&
+                    (croupier.status == .empty || croupier.status == .playing) )
+    }
+    
+    func shouldDisableCroupierButtons() -> Bool {
+        return          ( croupierA.isEnabled == true &&
+                        (croupier.status == .bust || croupier.status == .stood) )
     }
     
     
+    func shouldEnableUserButtons() -> Bool {
+        return          ( userA.isEnabled == false &&
+                        (user.status == .empty || user.status == .playing) )
+    }
+    
+    func shouldDisableUserButtons() -> Bool {
+        return          (userA.isEnabled == true &&
+                        user.status == .bust)
+    }
     
     
+    func updateCroupierButtons() {
+        if shouldEnableCroupierButtons() {
+            croupierCardsButtons.forEach({$0.isEnabled = true; $0.alpha = 1})
+        }
+        if shouldDisableCroupierButtons() {
+            croupierCardsButtons.forEach({$0.isEnabled = false; $0.alpha = 0.6})
+        }
+    }
+    
+    func updateUserButtons() {
+        if shouldEnableUserButtons() {
+            userCardsButtons.forEach({$0.isEnabled = true; $0.alpha = 1})
+        }
+        if shouldDisableUserButtons() {
+            userCardsButtons.forEach({$0.isEnabled = false; $0.alpha = 0.6})
+        }
+    }
     
     
     
