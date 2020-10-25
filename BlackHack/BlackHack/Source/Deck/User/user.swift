@@ -15,14 +15,12 @@ class User: Deck {
             status = .empty
         } else if bust() {
             status = .bust
+        } else if stands() {
+            status = .stood
         } else {
             status = .playing
         }
     }
-    
-    
-    
-    
     
     func update() {
         updateSum()
@@ -36,6 +34,15 @@ class User: Deck {
     
     func oddsOfNotBustingString() -> String {
         return oddsOfNotBustingNextHit().percentage()
+    }
+    
+}
+
+
+extension User {
+    
+    func stands() -> Bool {
+        return blackJack() || sum.value == 21
     }
     
 }

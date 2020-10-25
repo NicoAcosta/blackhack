@@ -275,7 +275,7 @@ extension ViewController {
     
     func shouldDisableUserButtons() -> Bool {
         return          (userA.isEnabled == true &&
-                        user.status == .bust)
+                        (user.status == .bust || user.status == .stood))
     }
     
     
