@@ -13,4 +13,22 @@ extension Deck {
         sum = sumResult()
     }
     
+    func updateStatus() {
+        
+        if isEmpty() {
+            status = .empty
+        } else if stands() {
+            status = .stood
+        } else if bust() {
+            status = .bust
+        } else {
+            status = .playing
+        }
+    }
+
+    func update() {
+        updateSum()
+        updateStatus()
+    }
+    
 }

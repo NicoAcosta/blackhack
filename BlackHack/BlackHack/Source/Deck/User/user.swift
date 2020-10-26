@@ -10,22 +10,10 @@ import Foundation
 
 class User: Deck {
     
-    func updateStatus() {
-        if isEmpty() {
-            status = .empty
-        } else if bust() {
-            status = .bust
-        } else if stands() {
-            status = .stood
-        } else {
-            status = .playing
-        }
+    override func stands() -> Bool {
+        return blackJack() || sum.value == 21
     }
     
-    func update() {
-        updateSum()
-        updateStatus()
-    }
     
     
     func oddsOfBustingString() -> String {
@@ -34,15 +22,6 @@ class User: Deck {
     
     func oddsOfNotBustingString() -> String {
         return oddsOfNotBustingNextHit().percentage()
-    }
-    
-}
-
-
-extension User {
-    
-    func stands() -> Bool {
-        return blackJack() || sum.value == 21
     }
     
 }

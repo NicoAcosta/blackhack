@@ -10,23 +10,11 @@ import Foundation
 
 class Croupier: Deck {
 
-    func updateStatus() {
-        
-        if isEmpty() {
-            status = .empty
-        } else if stands() {
-            status = .stood
-        } else if bust() {
-            status = .bust
-        } else {
-            status = .playing
-        }
-        
-    }
-
-    func update() {
-        updateSum()
-        updateStatus()
+    //  (Bool)  Si se queda
+    override func stands() -> Bool {
+        return
+            (   sum.type == .orPlus10   &&  (7...11).contains(sum.value)    ) ||
+            (   sum.type == .precise    &&  (17...21).contains(sum.value)   )
     }
     
     
@@ -44,18 +32,10 @@ class Croupier: Deck {
 
 extension Croupier {
     
-    //  (Bool)  Si se queda
-    func stands() -> Bool {
-        return
-            (   sum.type == .orPlus10   &&  (7...11).contains(sum.value)    ) ||
-            (   sum.type == .precise    &&  (17...21).contains(sum.value)   )
-    }
-    
-    
     func sumCroupierString() -> String {
     
         if blackJack() {
-            return "BlackJack"
+            return "BlackJack!"
         }
         
         switch sum.type {

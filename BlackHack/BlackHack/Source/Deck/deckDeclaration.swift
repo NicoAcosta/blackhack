@@ -36,4 +36,9 @@ class Deck {
 
     var sum: Result = Result(value: 0, type: .precise, hasAces: false)
     
+    // esta aca para poder overridearlo
+    func stands() -> Bool {
+        return true
+    }
+    
 }
