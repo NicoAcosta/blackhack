@@ -15,7 +15,7 @@ extension User {
             return 0
         }
         
-        if sum.type == .orPlus10 {
+        if sum.type == .soft {
             return 0
         }
         

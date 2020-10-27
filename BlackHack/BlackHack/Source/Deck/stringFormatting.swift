@@ -36,27 +36,13 @@ extension Deck {
         }
         
         switch sum.type {
-            case .precise:
+            case .hard:
                 return String(sum.value)
-            case .orPlus10:
+            case .soft:
                 return "\(sum.value) / \(sum.value + 10)"
             }
     }
     
-    func statusString() -> String {
-        
-        switch status {
-        case .bust:
-            return "Bust"
-        case .playing:
-            return "Playing"
-        case .stood:
-            return "Stood"
-        case .empty:
-            return "Not started"
-        }
-        
-    }
     
     
     

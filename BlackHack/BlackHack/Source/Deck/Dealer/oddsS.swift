@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Croupier {
+extension Dealer {
     
     func oddsOfStanding() -> Double {
         
@@ -15,7 +15,7 @@ extension Croupier {
             return 16737510994651 / 23298085122481
         }
         
-        if sum.type == .orPlus10 {
+        if sum.type == .soft {
             
             switch sum.value {
             case 1:

@@ -13,7 +13,7 @@ extension User {
         
         if hasAce() {
             
-            if sum.type == .orPlus10 {
+            if sum.type == .soft {
                 
                 switch sum.value {
                     case 2:

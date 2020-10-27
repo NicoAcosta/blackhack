@@ -9,6 +9,13 @@ import Foundation
 
 extension Deck {
     
+    //  (Bool)  Tiene par
+    func pair() -> Bool {
+        return
+            amountOfCards() == 2 &&
+            cards.first == cards.last
+    }
+    
     //  (Bool)  Mazo vació
     func isEmpty() -> Bool {
         return cards.isEmpty

@@ -1,5 +1,5 @@
 //
-//  croupier.swift
+//  dealer.swift
 //  BlackHack
 //
 //  Created by Nicolás Acosta on 08/10/2020.
@@ -8,13 +8,13 @@
 import Foundation
 
 
-class Croupier: Deck {
+class Dealer: Deck {
 
     //  (Bool)  Si se queda
     override func stands() -> Bool {
         return
-            (   sum.type == .orPlus10   &&  (7...11).contains(sum.value)    ) ||
-            (   sum.type == .precise    &&  (17...21).contains(sum.value)   )
+            (   sum.type == .soft   &&  (7...11).contains(sum.value)    ) ||
+            (   sum.type == .hard    &&  (17...21).contains(sum.value)   )
     }
     
     
@@ -30,18 +30,18 @@ class Croupier: Deck {
 
 
 
-extension Croupier {
+extension Dealer {
     
-    func sumCroupierString() -> String {
+    func sumDealerString() -> String {
     
         if blackJack() {
             return "BlackJack!"
         }
         
         switch sum.type {
-            case .precise:
+            case .hard:
                 return String(sum.value)
-            case .orPlus10:
+            case .soft:
                 if (sum.value >= 7) {
                     return "\(sum.value + 10)"
                 }

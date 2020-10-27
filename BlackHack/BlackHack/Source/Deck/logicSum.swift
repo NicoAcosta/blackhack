@@ -20,16 +20,28 @@ extension Deck {
         let superNumber = sumNoAces + amountOfAces
         
         if amountOfAces == 0 {
-            return Result(value: superNumber, type: .precise, hasAces: false)
+            return Result(value: superNumber, type: .hard, hasAces: false)
         } else {
             if superNumber < 12 {
-                return Result(value: superNumber, type: .orPlus10, hasAces: true)
+                return Result(value: superNumber, type: .soft, hasAces: true)
             } else {
-                return Result(value: superNumber, type: .precise, hasAces: true)
+                return Result(value: superNumber, type: .hard, hasAces: true)
             }
         }
         
     }
+    
+    func isSoft() -> Bool {
+        return sum.type == .soft
+    }
+    
+    func isHard() -> Bool {
+        return sum.type == .hard
+    }
+    
+    
+    
+    
     
 }
 

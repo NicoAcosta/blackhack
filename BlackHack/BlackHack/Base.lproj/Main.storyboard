@@ -284,7 +284,7 @@
                                             <constraint firstItem="sfF-Ku-Lab" firstAttribute="top" secondItem="fZh-q8-4G9" secondAttribute="bottom" constant="5" id="zoJ-em-f0p"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Croupier" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vp5-dN-gTG">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dealer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vp5-dN-gTG">
                                         <rect key="frame" x="20" y="13" width="374" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="ZkG-do-NHw"/>
@@ -919,6 +919,20 @@
                                     <constraint firstAttribute="trailing" secondItem="3RW-Zr-jr6" secondAttribute="trailing" constant="10" id="yKX-Ka-c7p"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7iL-9F-B1z" userLabel="strategyView">
+                                <rect key="frame" x="259" y="423" width="142" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Strategy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjN-c3-ptr">
+                                        <rect key="frame" x="23" y="20" width="96" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -957,6 +971,8 @@
                         <outlet property="croupierQ" destination="sfF-Ku-Lab" id="Byd-7L-QaI"/>
                         <outlet property="croupierStatusLabel" destination="lLb-aZ-0VJ" id="RI8-Dv-M9l"/>
                         <outlet property="croupierSumLabel" destination="LX2-tm-4DK" id="nPN-DH-Y8U"/>
+                        <outlet property="strategyLabel" destination="EjN-c3-ptr" id="ohO-gN-QOy"/>
+                        <outlet property="strategyView" destination="7iL-9F-B1z" id="zGj-cx-AEK"/>
                         <outlet property="user10" destination="iWX-vJ-XW9" id="3wF-RV-sHL"/>
                         <outlet property="user2" destination="LVb-Ve-9uc" id="RJW-XN-Lt0"/>
                         <outlet property="user3" destination="drR-mk-QXC" id="o9t-R8-kwz"/>

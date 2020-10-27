@@ -12,16 +12,31 @@ enum Status {
     case bust
     case stood
     case empty
+    
+    func string() -> String {
+        
+        switch self {
+        case .bust:
+            return "Bust"
+        case .playing:
+            return "Playing"
+        case .stood:
+            return "Stood"
+        case .empty:
+            return "Not started"
+        }
+        
+    }
 }
 
-enum TypeOfSum {
-    case precise
-    case orPlus10
+enum TypeOfHand {
+    case hard
+    case soft
 }
 
 struct Result {
     var value: Int
-    var type: TypeOfSum
+    var type: TypeOfHand
     var hasAces: Bool
 }
 
@@ -33,8 +48,8 @@ class Deck {
     
     //  Enum    Status: stood, bust, playingClear, playing Ambiguous
     var status: Status = .playing
-
-    var sum: Result = Result(value: 0, type: .precise, hasAces: false)
+    
+    var sum: Result = Result(value: 0, type: .hard, hasAces: false)
     
     // esta aca para poder overridearlo
     func stands() -> Bool {
