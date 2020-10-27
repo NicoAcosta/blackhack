@@ -147,9 +147,9 @@
 				03D369C8252ED02500F4D1DD /* possibleResults.swift */,
 				03D369CC252ED07300F4D1DD /* cardOpperations.swift */,
 				03D369B8252ECE1500F4D1DD /* stringFormatting.swift */,
+				03E6985725487A4A00096D22 /* statusBools.swift */,
 				03D369BC252ECEE100F4D1DD /* Dealer */,
 				03D369BD252ECEE800F4D1DD /* User */,
-				03E6985725487A4A00096D22 /* statusBools.swift */,
 			);
 			path = Deck;
 			sourceTree = "<group>";
