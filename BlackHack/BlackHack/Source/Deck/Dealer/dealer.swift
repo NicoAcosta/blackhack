@@ -11,7 +11,7 @@ import Foundation
 class Dealer: Deck {
 
     //  (Bool)  Si se queda
-    override func stands() -> Bool {
+    internal override func stands() -> Bool {
         return
             (   sum.type == .soft   &&  (7...11).contains(sum.value)    ) ||
             (   sum.type == .hard    &&  (17...21).contains(sum.value)   )

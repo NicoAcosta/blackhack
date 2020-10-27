@@ -9,7 +9,7 @@ import Foundation
 
 extension Dealer {
     
-    func oddsOfBusting() -> Double {
+    internal func oddsOfBusting() -> Double {
         
         
         if isEmpty() {

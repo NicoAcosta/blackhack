@@ -10,14 +10,16 @@ import Foundation
 extension Deck {
     
     //  (Bool)  Si hizo blackjack
-    func blackJack() -> Bool {
+    internal func blackJack() -> Bool {
         return
             amountOfCards() == 2   &&  hasAce()   &&  hasTens()
     }
     
     //  (Bool)  Si se pasó
-    func bust() -> Bool {
+    internal func bust() -> Bool {
         return sum.value > 21
     }
+    
+    //  func stands -> en declaration para overridearlo
     
 }

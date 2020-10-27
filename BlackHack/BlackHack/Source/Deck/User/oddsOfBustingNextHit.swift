@@ -9,7 +9,7 @@ import Foundation
 
 extension User {
     
-    func oddsOfBustingNextHit() -> Double {
+    internal func oddsOfBustingNextHit() -> Double {
         
         if isEmpty() {
             return 0

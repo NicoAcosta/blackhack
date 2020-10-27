@@ -23,6 +23,14 @@
 		03D369DE252EE90400F4D1DD /* oddsGettingMoreAses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369DD252EE90400F4D1DD /* oddsGettingMoreAses.swift */; };
 		03D68652252EF37F003CD2D5 /* oddsB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D68651252EF37F003CD2D5 /* oddsB.swift */; };
 		03D68655252EF38C003CD2D5 /* oddsS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D68654252EF38C003CD2D5 /* oddsS.swift */; };
+		03E6983A254864A200096D22 /* strategies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E69839254864A200096D22 /* strategies.swift */; };
+		03E6983F2548678600096D22 /* status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6983E2548678600096D22 /* status.swift */; };
+		03E69843254867AA00096D22 /* typeOfHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E69842254867AA00096D22 /* typeOfHand.swift */; };
+		03E698462548681200096D22 /* result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E698452548681200096D22 /* result.swift */; };
+		03E6984925486EEF00096D22 /* strategyEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6984825486EEF00096D22 /* strategyEnum.swift */; };
+		03E6984C2548716200096D22 /* accessors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6984B2548716200096D22 /* accessors.swift */; };
+		03E69855254872EA00096D22 /* dataStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E69854254872EA00096D22 /* dataStructs.swift */; };
+		03E6985825487A4A00096D22 /* statusBools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6985725487A4A00096D22 /* statusBools.swift */; };
 		03F8E0F1252D2054008F383D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8E0F0252D2054008F383D /* AppDelegate.swift */; };
 		03F8E0F3252D2054008F383D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8E0F2252D2054008F383D /* SceneDelegate.swift */; };
 		03F8E0F5252D2054008F383D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8E0F4252D2054008F383D /* ViewController.swift */; };
@@ -48,6 +56,14 @@
 		03D369DD252EE90400F4D1DD /* oddsGettingMoreAses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oddsGettingMoreAses.swift; sourceTree = "<group>"; };
 		03D68651252EF37F003CD2D5 /* oddsB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oddsB.swift; sourceTree = "<group>"; };
 		03D68654252EF38C003CD2D5 /* oddsS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oddsS.swift; sourceTree = "<group>"; };
+		03E69839254864A200096D22 /* strategies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = strategies.swift; sourceTree = "<group>"; };
+		03E6983E2548678600096D22 /* status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = status.swift; sourceTree = "<group>"; };
+		03E69842254867AA00096D22 /* typeOfHand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = typeOfHand.swift; sourceTree = "<group>"; };
+		03E698452548681200096D22 /* result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = result.swift; sourceTree = "<group>"; };
+		03E6984825486EEF00096D22 /* strategyEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = strategyEnum.swift; sourceTree = "<group>"; };
+		03E6984B2548716200096D22 /* accessors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accessors.swift; sourceTree = "<group>"; };
+		03E69854254872EA00096D22 /* dataStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataStructs.swift; sourceTree = "<group>"; };
+		03E6985725487A4A00096D22 /* statusBools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statusBools.swift; sourceTree = "<group>"; };
 		03F8E0ED252D2054008F383D /* BlackHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F8E0F0252D2054008F383D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03F8E0F2252D2054008F383D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,7 +88,11 @@
 		039126EB2547A39C00F60F0B /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				03E6984825486EEF00096D22 /* strategyEnum.swift */,
 				039126EC2547A3AF00F60F0B /* game.swift */,
+				03E69839254864A200096D22 /* strategies.swift */,
+				03E6984B2548716200096D22 /* accessors.swift */,
+				03E69854254872EA00096D22 /* dataStructs.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -119,6 +139,7 @@
 		03D369BE252ECF2500F4D1DD /* Deck */ = {
 			isa = PBXGroup;
 			children = (
+				03E6983D2548676A00096D22 /* enums */,
 				03D369B1252EC9F100F4D1DD /* deckDeclaration.swift */,
 				03D369C1252ECFA500F4D1DD /* logicCards.swift */,
 				03D369C5252ECFF100F4D1DD /* logicSum.swift */,
@@ -128,8 +149,19 @@
 				03D369B8252ECE1500F4D1DD /* stringFormatting.swift */,
 				03D369BC252ECEE100F4D1DD /* Dealer */,
 				03D369BD252ECEE800F4D1DD /* User */,
+				03E6985725487A4A00096D22 /* statusBools.swift */,
 			);
 			path = Deck;
+			sourceTree = "<group>";
+		};
+		03E6983D2548676A00096D22 /* enums */ = {
+			isa = PBXGroup;
+			children = (
+				03E6983E2548678600096D22 /* status.swift */,
+				03E69842254867AA00096D22 /* typeOfHand.swift */,
+				03E698452548681200096D22 /* result.swift */,
+			);
+			path = enums;
 			sourceTree = "<group>";
 		};
 		03F8E0E4252D2054008F383D = {
@@ -238,19 +270,27 @@
 				03D369CD252ED07300F4D1DD /* cardOpperations.swift in Sources */,
 				03F8E0F1252D2054008F383D /* AppDelegate.swift in Sources */,
 				03D369B2252EC9F100F4D1DD /* deckDeclaration.swift in Sources */,
+				03E6985825487A4A00096D22 /* statusBools.swift in Sources */,
 				03D369B9252ECE1500F4D1DD /* stringFormatting.swift in Sources */,
+				03E69855254872EA00096D22 /* dataStructs.swift in Sources */,
+				03E6983A254864A200096D22 /* strategies.swift in Sources */,
 				039126ED2547A3AF00F60F0B /* game.swift in Sources */,
+				03E6983F2548678600096D22 /* status.swift in Sources */,
+				03E698462548681200096D22 /* result.swift in Sources */,
 				03D369C2252ECFA500F4D1DD /* logicCards.swift in Sources */,
 				03D369D8252EE89C00F4D1DD /* oddsOfBustingNextHit.swift in Sources */,
 				037B1543252EEA2F00C3B020 /* commonUpdates.swift in Sources */,
 				03D369C6252ECFF100F4D1DD /* logicSum.swift in Sources */,
 				03D369AF252EC9C400F4D1DD /* dealer.swift in Sources */,
 				03D369C9252ED02500F4D1DD /* possibleResults.swift in Sources */,
+				03E69843254867AA00096D22 /* typeOfHand.swift in Sources */,
 				03D369DB252EE8B100F4D1DD /* OddsOfNotBustingNextHit.swift in Sources */,
 				03D68655252EF38C003CD2D5 /* oddsS.swift in Sources */,
 				03D369DE252EE90400F4D1DD /* oddsGettingMoreAses.swift in Sources */,
 				03D369A8252EC9AE00F4D1DD /* card.swift in Sources */,
+				03E6984925486EEF00096D22 /* strategyEnum.swift in Sources */,
 				03D68652252EF37F003CD2D5 /* oddsB.swift in Sources */,
+				03E6984C2548716200096D22 /* accessors.swift in Sources */,
 				03F8E0F3252D2054008F383D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

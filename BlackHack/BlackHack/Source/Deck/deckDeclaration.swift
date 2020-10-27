@@ -7,52 +7,19 @@
 
 import Foundation
 
-enum Status {
-    case playing
-    case bust
-    case stood
-    case empty
-    
-    func string() -> String {
-        
-        switch self {
-        case .bust:
-            return "Bust"
-        case .playing:
-            return "Playing"
-        case .stood:
-            return "Stood"
-        case .empty:
-            return "Not started"
-        }
-        
-    }
-}
-
-enum TypeOfHand {
-    case hard
-    case soft
-}
-
-struct Result {
-    var value: Int
-    var type: TypeOfHand
-    var hasAces: Bool
-}
-
-
 class Deck {
     
     //  [Cards] Array de cartas
-    var cards: [Card] = []
+    internal var cards: [Card] = []
     
-    //  Enum    Status: stood, bust, playingClear, playing Ambiguous
-    var status: Status = .playing
+    //  Enum    Status: stood, bust, empty, playing
+    internal var status: Status = .empty
     
-    var sum: Result = Result(value: 0, type: .hard, hasAces: false)
+    //  Result                     sum      hard/soft
+    internal  var sum: Result = Result(value: 0, type: .hard, hasAces: false)
     
     // esta aca para poder overridearlo
-    func stands() -> Bool {
+    internal func stands() -> Bool {
         return true
     }
     

@@ -10,11 +10,9 @@ import Foundation
 
 class User: Deck {
     
-    override func stands() -> Bool {
+    internal override func stands() -> Bool {
         return blackJack() || sum.value == 21
     }
-    
-    
     
     func oddsOfBustingString() -> String {
         return oddsOfBustingNextHit().percentage()

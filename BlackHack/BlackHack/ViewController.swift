@@ -89,63 +89,63 @@ class ViewController: UIViewController {
 
     
     @IBAction func croupierAddA(_ sender: Any) {
-        game.dealer.add(.ace)
+        game.dealerAdd(.ace)
         updateDealer()
     }
     @IBAction func croupierAdd2(_ sender: Any) {
-        game.dealer.add(.two)
+        game.dealerAdd(.two)
         updateDealer()
     }
     @IBAction func croupierAdd3(_ sender: Any) {
-        game.dealer.add(.three)
+        game.dealerAdd(.three)
         updateDealer()
     }
     @IBAction func croupierAdd4(_ sender: Any) {
-        game.dealer.add(.four)
+        game.dealerAdd(.four)
         updateDealer()
     }
     @IBAction func croupierAdd5(_ sender: Any) {
-        game.dealer.add(.five)
+        game.dealerAdd(.five)
         updateDealer()
     }
     @IBAction func croupierAdd6(_ sender: Any) {
-        game.dealer.add(.six)
+        game.dealerAdd(.six)
         updateDealer()
     }
     @IBAction func croupierAdd7(_ sender: Any) {
-        game.dealer.add(.seven)
+        game.dealerAdd(.seven)
         updateDealer()
     }
     @IBAction func croupierAdd8(_ sender: Any) {
-        game.dealer.add(.eight)
+        game.dealerAdd(.eight)
         updateDealer()
     }
     @IBAction func croupierAdd9(_ sender: Any) {
-        game.dealer.add(.nine)
+        game.dealerAdd(.nine)
         updateDealer()
     }
     @IBAction func croupierAdd10(_ sender: Any) {
-        game.dealer.add(.ten)
+        game.dealerAdd(.ten)
         updateDealer()
     }
     @IBAction func croupierAddJ(_ sender: Any) {
-        game.dealer.add(.jack)
+        game.dealerAdd(.jack)
         updateDealer()
     }
     @IBAction func croupierAddQ(_ sender: Any) {
-        game.dealer.add(.queen)
+        game.dealerAdd(.queen)
         updateDealer()
     }
     @IBAction func croupierAddK(_ sender: Any) {
-        game.dealer.add(.king)
+        game.dealerAdd(.king)
         updateDealer()
     }
     @IBAction func croupierClean(_ sender: Any) {
-        game.dealer.clean()
+        game.dealerClean()
         updateDealer()
     }
     @IBAction func croupierBack(_ sender: Any) {
-        game.dealer.back()
+        game.dealerBack()
         updateDealer()
     }
     
@@ -160,63 +160,63 @@ class ViewController: UIViewController {
     
     
     @IBAction func userAddA(_ sender: Any) {
-        game.user.add(.ace)
+        game.userAdd(.ace)
         updateUser()
     }
     @IBAction func userAdd2(_ sender: Any) {
-        game.user.add(.two)
+        game.userAdd(.two)
         updateUser()
     }
     @IBAction func userAdd3(_ sender: Any) {
-        game.user.add(.three)
+        game.userAdd(.three)
         updateUser()
     }
     @IBAction func userAdd4(_ sender: Any) {
-        game.user.add(.four)
+        game.userAdd(.four)
         updateUser()
     }
     @IBAction func userAdd5(_ sender: Any) {
-        game.user.add(.five)
+        game.userAdd(.five)
         updateUser()
     }
     @IBAction func userAdd6(_ sender: Any) {
-        game.user.add(.six)
+        game.userAdd(.six)
         updateUser()
     }
     @IBAction func userAdd7(_ sender: Any) {
-        game.user.add(.seven)
+        game.userAdd(.seven)
         updateUser()
     }
     @IBAction func userAdd8(_ sender: Any) {
-        game.user.add(.eight)
+        game.userAdd(.eight)
         updateUser()
     }
     @IBAction func userAdd9(_ sender: Any) {
-        game.user.add(.nine)
+        game.userAdd(.nine)
         updateUser()
     }
     @IBAction func userAdd10(_ sender: Any) {
-        game.user.add(.ten)
+        game.userAdd(.ten)
         updateUser()
     }
     @IBAction func userAddJ(_ sender: Any) {
-        game.user.add(.jack)
+        game.userAdd(.jack)
         updateUser()
     }
     @IBAction func userAddQ(_ sender: Any) {
-        game.user.add(.queen)
+        game.userAdd(.queen)
         updateUser()
     }
     @IBAction func userAddK(_ sender: Any) {
-        game.user.add(.king)
+        game.userAdd(.king)
         updateUser()
     }
     @IBAction func userClean(_ sender: Any) {
-        game.user.clean()
+        game.userClean()
         updateUser()
     }
     @IBAction func userBack(_ sender: Any) {
-        game.user.back()
+        game.userBack()
         updateUser()
     }
     
@@ -231,39 +231,41 @@ class ViewController: UIViewController {
 extension ViewController {
     
     func updateDealer() {
-        game.dealer.update()
+        game.dealerUpdate()
         updateDealerView()
         updateStrategy()
     }
     
     func updateDealerView() {
-        croupierSumLabel.text       = game.dealer.sumDealerString()
-        croupierStatusLabel.text    = game.dealer.status.string()
-        croupierCardsLabel.text     = game.dealer.cardsString()
-        croupierOddsBLabel.text     = game.dealer.oddsOfBustingString()
-        croupierOddsSLabel.text     = game.dealer.oddsOfStandingString()
+        let info = game.dealerData()
+        croupierSumLabel.text       = info.sum
+        croupierStatusLabel.text    = info.status
+        croupierCardsLabel.text     = info.cards
+        croupierOddsBLabel.text     = info.oddsNegative
+        croupierOddsSLabel.text     = info.oddsPositive
         updateDealerButtons()
     }
     
     func updateUser() {
-        game.user.update()
+        game.userUpdate()
         updateUserView()
         updateStrategy()
     }
     
     func updateUserView() {
-        userSumLabel.text       = game.user.sumString()
-        userStatusLabel.text    = game.user.status.string()
-        userCardsLabel.text     = game.user.cardsString()
-        userOddsBLabel.text     = game.user.oddsOfBustingString()
-        userOddsNBLabel.text    = game.user.oddsOfNotBustingString()
+        let info = game.userData()
+        userSumLabel.text       = info.sum
+        userStatusLabel.text    = info.status
+        userCardsLabel.text     = info.cards
+        userOddsBLabel.text     = info.cards
+        userOddsNBLabel.text    = info.oddsPositive
         updateUserButtons()
     }
     
     
     func updateStrategy() {
-        if game.hasStrategy() {
-            strategyLabel.text = game.strategy().string()
+        if let strategy = game.strategyString() {
+            strategyLabel.text = strategy
             strategyView.isHidden = false
         } else {
             strategyView.isHidden = true
@@ -279,24 +281,24 @@ extension ViewController {
 extension ViewController {
     
     func shouldEnableDealerButtons() -> Bool {
-        return          ( croupierA.isEnabled == false &&
-                            (game.dealer.status == .empty || game.dealer.status == .playing) )
+        return          ( !croupierA.isEnabled &&
+                            (game.dealerStatusEmpty() || game.dealerStatusPlaying() ))
     }
     
     func shouldDisableDealerButtons() -> Bool {
-        return          ( croupierA.isEnabled == true &&
-                            (game.dealer.status == .bust || game.dealer.status == .stood) )
+        return          ( croupierA.isEnabled &&
+                            (game.dealerStatusBust() || game.dealerStatusStood()) )
     }
     
     
     func shouldEnableUserButtons() -> Bool {
-        return          ( userA.isEnabled == false &&
-                            (game.user.status == .empty || game.user.status == .playing) )
+        return          ( !userA.isEnabled &&
+                            (game.userStatusEmpty() || game.userStatusPlaying()) )
     }
     
     func shouldDisableUserButtons() -> Bool {
-        return          (userA.isEnabled == true &&
-                            (game.user.status == .bust || game.user.status == .stood))
+        return          (userA.isEnabled &&
+                            (game.userStatusBust() || game.userStatusStood()))
     }
     
     
@@ -317,8 +319,5 @@ extension ViewController {
             userCardsButtons.forEach({$0.isEnabled = false; $0.alpha = 0.6})
         }
     }
-    
-    
-    
     
 }

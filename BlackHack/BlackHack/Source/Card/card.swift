@@ -51,15 +51,15 @@ enum Card : Comparable {
     }
     
     
-    //  >: de acuerdo al valor de la carta
-    static func > (aCard: Card, anotherCard: Card) -> Bool {
-        return  aCard.value() > anotherCard.value()
-    }
-    
-    //  <: de acuerda al valor de la carta
-    static func < (aCard:Card, anotherCard: Card) -> Bool {
-        return aCard.value() < anotherCard.value()
-    }
+//    //  >: de acuerdo al valor de la carta
+//    static func > (aCard: Card, anotherCard: Card) -> Bool {
+//        return  aCard.value() > anotherCard.value()
+//    }
+//
+//    //  <: de acuerda al valor de la carta
+//    static func < (aCard:Card, anotherCard: Card) -> Bool {
+//        return aCard.value() < anotherCard.value()
+//    }
  
 
     

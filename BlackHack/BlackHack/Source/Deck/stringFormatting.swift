@@ -14,18 +14,18 @@ extension Double {
 }
 
 extension Deck {
+    
     //  (String)    String con las cartas para Label
     func cardsString() -> String {
         
         if isEmpty() {
-            return "Empty"
-        //}
-        
-//        if amountOfCards() == 1 {
-//            return cards.first!.name()
             
+            return "Empty"
+     
         } else {
+            
             return cards.map({$0.name()}).joined(separator: " - ")
+        
         }
     }
     
@@ -41,6 +41,12 @@ extension Deck {
             case .soft:
                 return "\(sum.value) / \(sum.value + 10)"
             }
+    }
+    
+    func statusString() -> String {
+        
+        return status.string()
+        
     }
     
     

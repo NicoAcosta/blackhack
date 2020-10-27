@@ -9,7 +9,7 @@ import Foundation
 
 extension User {
     
-    func oddsHittingMoreHavingAces() -> Double {
+    internal func oddsHittingMoreHavingAces() -> Double {
         
         if hasAce() {
             

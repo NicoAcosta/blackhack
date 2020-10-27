@@ -9,11 +9,11 @@ import Foundation
 
 extension Deck {
     
-    func updateSum() {
+    internal func updateResult() {
         sum = sumResult()
     }
     
-    func updateStatus() {
+    internal func updateStatus() {
         
         if isEmpty() {
             status = .empty
@@ -27,7 +27,7 @@ extension Deck {
     }
 
     func update() {
-        updateSum()
+        updateResult()
         updateStatus()
     }
     

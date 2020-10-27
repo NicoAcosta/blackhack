@@ -7,11 +7,9 @@
 
 import Foundation
 
-
-
 extension Deck {
     
-    func sumResult() -> Result {
+    internal func sumResult() -> Result {
         
         let sumNoAces = cards.filter({$0 != .ace}).map({$0.value()}).reduce(0, +)
         
@@ -31,17 +29,13 @@ extension Deck {
         
     }
     
-    func isSoft() -> Bool {
+    internal func isSoft() -> Bool {
         return sum.type == .soft
     }
     
-    func isHard() -> Bool {
+    internal func isHard() -> Bool {
         return sum.type == .hard
     }
-    
-    
-    
-    
     
 }
 
