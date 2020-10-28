@@ -14,28 +14,28 @@ class ViewController: UIViewController {
     
     //  Dealer
     
-    @IBOutlet weak var dealerA: UIButton!
-    @IBOutlet weak var dealer2: UIButton!
-    @IBOutlet weak var dealer3: UIButton!
-    @IBOutlet weak var dealer4: UIButton!
-    @IBOutlet weak var dealer5: UIButton!
-    @IBOutlet weak var dealer6: UIButton!
-    @IBOutlet weak var dealer7: UIButton!
-    @IBOutlet weak var dealer8: UIButton!
-    @IBOutlet weak var dealer9: UIButton!
-    @IBOutlet weak var dealer10: UIButton!
-    @IBOutlet weak var dealerJ: UIButton!
-    @IBOutlet weak var dealerQ: UIButton!
-    @IBOutlet weak var dealerK: UIButton!
-    @IBOutlet weak var dealerClean: UIButton!
-    @IBOutlet weak var dealerUndo: UIButton!
+    @IBOutlet weak var dealerA:             UIButton!
+    @IBOutlet weak var dealer2:             UIButton!
+    @IBOutlet weak var dealer3:             UIButton!
+    @IBOutlet weak var dealer4:             UIButton!
+    @IBOutlet weak var dealer5:             UIButton!
+    @IBOutlet weak var dealer6:             UIButton!
+    @IBOutlet weak var dealer7:             UIButton!
+    @IBOutlet weak var dealer8:             UIButton!
+    @IBOutlet weak var dealer9:             UIButton!
+    @IBOutlet weak var dealer10:            UIButton!
+    @IBOutlet weak var dealerJ:             UIButton!
+    @IBOutlet weak var dealerQ:             UIButton!
+    @IBOutlet weak var dealerK:             UIButton!
+    @IBOutlet weak var dealerClean:         UIButton!
+    @IBOutlet weak var dealerUndo:          UIButton!
     
-    @IBOutlet weak var dealerCardsLabel: UILabel!
+    @IBOutlet weak var dealerCardsLabel:    UILabel!
     
-    @IBOutlet weak var dealerSumLabel: UILabel!
-    @IBOutlet weak var dealerStatusLabel: UILabel!
-    @IBOutlet weak var dealerOddsBLabel: UILabel!
-    @IBOutlet weak var dealerOddsSLabel: UILabel!
+    @IBOutlet weak var dealerSumLabel:      UILabel!
+    @IBOutlet weak var dealerStatusLabel:   UILabel!
+    @IBOutlet weak var dealerOddsBLabel:    UILabel!
+    @IBOutlet weak var dealerOddsSLabel:    UILabel!
     
     
     
@@ -43,28 +43,28 @@ class ViewController: UIViewController {
     
     //  User
 
-    @IBOutlet weak var userA: UIButton!
-    @IBOutlet weak var user2: UIButton!
-    @IBOutlet weak var user3: UIButton!
-    @IBOutlet weak var user4: UIButton!
-    @IBOutlet weak var user5: UIButton!
-    @IBOutlet weak var user6: UIButton!
-    @IBOutlet weak var user7: UIButton!
-    @IBOutlet weak var user8: UIButton!
-    @IBOutlet weak var user9: UIButton!
-    @IBOutlet weak var user10: UIButton!
-    @IBOutlet weak var userJ: UIButton!
-    @IBOutlet weak var userQ: UIButton!
-    @IBOutlet weak var userK: UIButton!
-    @IBOutlet weak var userClean: UIButton!
-    @IBOutlet weak var userUndo: UIButton!
+    @IBOutlet weak var userA:               UIButton!
+    @IBOutlet weak var user2:               UIButton!
+    @IBOutlet weak var user3:               UIButton!
+    @IBOutlet weak var user4:               UIButton!
+    @IBOutlet weak var user5:               UIButton!
+    @IBOutlet weak var user6:               UIButton!
+    @IBOutlet weak var user7:               UIButton!
+    @IBOutlet weak var user8:               UIButton!
+    @IBOutlet weak var user9:               UIButton!
+    @IBOutlet weak var user10:              UIButton!
+    @IBOutlet weak var userJ:               UIButton!
+    @IBOutlet weak var userQ:               UIButton!
+    @IBOutlet weak var userK:               UIButton!
+    @IBOutlet weak var userClean:           UIButton!
+    @IBOutlet weak var userUndo:            UIButton!
     
-    @IBOutlet weak var userCardsLabel: UILabel!
+    @IBOutlet weak var userCardsLabel:      UILabel!
     
-    @IBOutlet weak var userSumLabel: UILabel!
-    @IBOutlet weak var userStatusLabel: UILabel!
-    @IBOutlet weak var userOddsBLabel: UILabel!
-    @IBOutlet weak var userOddsNBLabel: UILabel!
+    @IBOutlet weak var userSumLabel:        UILabel!
+    @IBOutlet weak var userStatusLabel:     UILabel!
+    @IBOutlet weak var userOddsBLabel:      UILabel!
+    @IBOutlet weak var userOddsNBLabel:     UILabel!
     
     
     
@@ -72,8 +72,8 @@ class ViewController: UIViewController {
     
     //  Strategy
     
-    @IBOutlet weak var strategyView: UIView!
-    @IBOutlet weak var strategyLabel: UILabel!
+    @IBOutlet weak var strategyView:        UIView!
+    @IBOutlet weak var strategyLabel:       UILabel!
     
     
     
@@ -81,10 +81,10 @@ class ViewController: UIViewController {
     
     //  Logic
     
-    var dealerCardsButtons: [UIButton] = []
-    var userCardsButtons: [UIButton] = []
+    var dealerCardsButtons:                 [UIButton]  =  []
+    var userCardsButtons:                   [UIButton]  =  []
     
-    let game    =   Game()
+    let game = Game()
     
     
     
@@ -96,9 +96,9 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         
-        dealerCardsButtons = [dealerA, dealer2, dealer3, dealer4, dealer5, dealer6, dealer7, dealer8, dealer9, dealer10, dealerJ, dealerQ, dealerK]
+        dealerCardsButtons  =   [dealerA, dealer2, dealer3, dealer4, dealer5, dealer6, dealer7, dealer8, dealer9, dealer10, dealerJ, dealerQ, dealerK]
         
-        userCardsButtons = [userA, user2, user3, user4, user5, user6, user7, user8, user9, user10, userJ, userQ, userK]
+        userCardsButtons    =   [userA, user2, user3, user4, user5, user6, user7, user8, user9, user10, userJ, userQ, userK]
         
         updateAll()
         
@@ -144,20 +144,20 @@ extension ViewController {
     
     func updateDealerInfo() {
         let info = game.dealerData()
-        dealerSumLabel.text       = info.sum
-        dealerStatusLabel.text    = info.status
-        dealerCardsLabel.text     = info.cards
-        dealerOddsBLabel.text     = info.oddsNegative
-        dealerOddsSLabel.text     = info.oddsPositive
+        dealerSumLabel.text     =   info.sum
+        dealerStatusLabel.text  =   info.status
+        dealerCardsLabel.text   =   info.cards
+        dealerOddsBLabel.text   =   info.oddsNegative
+        dealerOddsSLabel.text   =   info.oddsPositive
     }
     
     func updateUserInfo() {
         let info = game.userData()
-        userSumLabel.text       = info.sum
-        userStatusLabel.text    = info.status
-        userCardsLabel.text     = info.cards
-        userOddsBLabel.text     = info.oddsNegative
-        userOddsNBLabel.text    = info.oddsPositive
+        userSumLabel.text       =   info.sum
+        userStatusLabel.text    =   info.status
+        userCardsLabel.text     =   info.cards
+        userOddsBLabel.text     =   info.oddsNegative
+        userOddsNBLabel.text    =   info.oddsPositive
     }
     
 }
@@ -168,31 +168,40 @@ extension ViewController {
 
 //  Buttons behaviour
 
+extension UIButton {
+    
+    func enable() {
+        self.isEnabled  =   true
+        self.alpha      =   1
+    }
+    
+    func disable() {
+        self.isEnabled  =   false
+        self.alpha      =   0.6
+    }
+    
+}
+
 extension ViewController {
     
     func updateDealerButtons() {
         
         if game.dealerStatusStood() || game.dealerStatusBust() {
             if dealerA.isEnabled {
-                dealerCardsButtons.forEach({$0.isEnabled = false; $0.alpha = 0.6})
+                dealerCardsButtons.forEach({$0.disable()})
             }
         }
         else if !dealerA.isEnabled {
-                dealerCardsButtons.forEach({$0.isEnabled = true; $0.alpha = 1})
+                dealerCardsButtons.forEach({$0.enable()})
         }
-        
         if game.dealerStatusEmpty() {
             if dealerClean.isEnabled {
-                dealerClean.isEnabled = false
-                dealerUndo.isEnabled = false
-                dealerClean.alpha = 0.6
-                dealerUndo.alpha = 0.6
+                dealerClean.disable()
+                dealerUndo.disable()
             }
         } else if !dealerClean.isEnabled {
-            dealerClean.isEnabled = true
-            dealerUndo.isEnabled = true
-            dealerClean.alpha = 1
-            dealerUndo.alpha = 1
+                dealerClean.enable()
+                dealerUndo.enable()
         }
 
     }
@@ -201,26 +210,22 @@ extension ViewController {
         
         if game.userStatusStood() || game.userStatusBust() {
             if userA.isEnabled {
-                userCardsButtons.forEach({$0.isEnabled = false; $0.alpha = 0.6})
+                userCardsButtons.forEach({$0.disable()})
             }
         }
         else if !userA.isEnabled {
-            userCardsButtons.forEach({$0.isEnabled = true; $0.alpha = 1})
+                userCardsButtons.forEach({$0.enable()})
         }
         
         if game.userStatusEmpty() {
             if userClean.isEnabled {
-                userClean.isEnabled = false
-                userUndo.isEnabled = false
-                userClean.alpha = 0.6
-                userUndo.alpha = 0.6
+                userClean.disable()
+                userUndo.disable()
                 
             }
         } else if !userClean.isEnabled {
-            userClean.isEnabled = true
-            userUndo.isEnabled = true
-            userClean.alpha = 1
-            userUndo.alpha = 1
+                userClean.enable()
+                userUndo.enable()
         }
 
     }
@@ -233,18 +238,31 @@ extension ViewController {
 
 //  Strategy behaviour
 
+extension UIView {
+    
+    func hide() {
+        self.isHidden = true
+    }
+    
+    func show() {
+        self.isHidden = false
+    }
+    
+}
+
 extension ViewController {
     
     func updateStrategy() {
         if let strategy = game.strategyString() {
-            strategyLabel.text = strategy
-            strategyView.isHidden = false
+            strategyLabel.text  =   strategy
+            strategyView.show()
         } else {
-            strategyView.isHidden = true
+            strategyView.hide()
         }
     }
     
 }
+
 
 
 

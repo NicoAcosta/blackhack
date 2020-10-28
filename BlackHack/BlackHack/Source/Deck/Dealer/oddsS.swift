@@ -15,7 +15,7 @@ extension Dealer {
             return 16737510994651 / 23298085122481
         }
         
-        if sum.type == .soft {
+        if isSoft() {
             
             switch sum.value {
             case 1:

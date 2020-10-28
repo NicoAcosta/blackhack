@@ -8,6 +8,8 @@
 import Foundation
 
 enum TypeOfHand {
+    
     case hard
     case soft
+
 }

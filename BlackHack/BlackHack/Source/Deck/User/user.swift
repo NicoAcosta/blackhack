@@ -14,11 +14,25 @@ class User: Deck {
         return blackJack() || sum.value == 21
     }
     
-    func oddsOfBustingString() -> String {
+    func data() -> Data {
+        
+        return Data(
+            cards:          cardsString(),
+            sum:            sumString(),
+            status:         statusString(),
+            oddsPositive:   oddsOfNotBustingString(),
+            oddsNegative:   oddsOfBustingString()
+        )
+        
+    }
+    
+    
+    
+    internal func oddsOfBustingString() -> String {
         return oddsOfBustingNextHit().percentage()
     }
     
-    func oddsOfNotBustingString() -> String {
+    internal func oddsOfNotBustingString() -> String {
         return oddsOfNotBustingNextHit().percentage()
     }
     

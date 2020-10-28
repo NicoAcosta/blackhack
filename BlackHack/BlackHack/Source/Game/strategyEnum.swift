@@ -8,6 +8,7 @@
 import Foundation
 
 enum Strategy {
+    
     case hit
     case double
     case split

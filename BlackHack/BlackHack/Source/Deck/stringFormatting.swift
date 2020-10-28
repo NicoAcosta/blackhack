@@ -13,37 +13,55 @@ extension Double {
     }
 }
 
+extension Array where Iterator.Element == Card {
+    
+    func string() -> String {
+        return self.map({$0.name()}).joined(separator: " - ")
+    }
+    
+}
+
+
+
+
+
 extension Deck {
     
     //  (String)    String con las cartas para Label
-    func cardsString() -> String {
-        
+    internal func cardsString() -> String {
         if isEmpty() {
-            
             return "Empty"
-     
-        } else {
-            
-            return cards.map({$0.name()}).joined(separator: " - ")
-        
         }
+            return cards.string()
     }
     
-    func sumString() -> String {
+    internal func softString() -> String {
+        return "\(sum.value) / \(sum.value + 10)"
+    }
+    
+    internal func softPlus10String() -> String {
+        return "\(sum.value + 10)"
+    }
+    
+    internal func hardString() -> String {
+        return String(sum.value)
+    }
+    
+    internal func sumString() -> String {
         
         if blackJack() {
-            return "BlackJack"
+                return "BlackJack!"
         }
         
         switch sum.type {
             case .hard:
-                return String(sum.value)
+                return hardString()
             case .soft:
-                return "\(sum.value) / \(sum.value + 10)"
+                return softString()
             }
     }
     
-    func statusString() -> String {
+    internal func statusString() -> String {
         
         return status.string()
         

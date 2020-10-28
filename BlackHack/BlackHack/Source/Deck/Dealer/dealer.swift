@@ -17,12 +17,25 @@ class Dealer: Deck {
             (   sum.type == .hard    &&  (17...21).contains(sum.value)   )
     }
     
+    func data() -> Data {
+        
+        return Data(
+            cards:          cardsString(),
+            sum:            sumDealerString(),
+            status:         statusString(),
+            oddsPositive:   oddsOfStandingString(),
+            oddsNegative:   oddsOfBustingString()
+        )
+        
+    }
     
-    func oddsOfBustingString() -> String {
+    
+    
+    internal func oddsOfBustingString() -> String {
         return oddsOfBusting().percentage()
     }
     
-    func oddsOfStandingString() -> String {
+    internal func oddsOfStandingString() -> String {
         return oddsOfStanding().percentage()
     }
     
@@ -32,20 +45,20 @@ class Dealer: Deck {
 
 extension Dealer {
     
-    func sumDealerString() -> String {
+    internal func sumDealerString() -> String {
     
         if blackJack() {
-            return "BlackJack!"
+                    return "BlackJack!"
         }
         
         switch sum.type {
             case .hard:
-                return String(sum.value)
+                    return hardString()
             case .soft:
                 if (sum.value >= 7) {
-                    return "\(sum.value + 10)"
+                    return softPlus10String()
                 }
-                return "\(sum.value) / \(sum.value + 10)"
+                    return softString()
             }
         
     }

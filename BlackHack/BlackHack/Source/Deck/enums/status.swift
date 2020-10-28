@@ -8,6 +8,7 @@
 import Foundation
 
 enum Status {
+    
     case playing
     case bust
     case stood

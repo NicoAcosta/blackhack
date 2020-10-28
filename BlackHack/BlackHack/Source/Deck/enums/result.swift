@@ -8,7 +8,9 @@
 import Foundation
 
 struct Result {
+    
     var value: Int
     var type: TypeOfHand
     var hasAces: Bool
+
 }

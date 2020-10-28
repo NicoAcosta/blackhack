@@ -23,11 +23,11 @@ extension Game {
     }
     
     func dealerData() -> Data {
-        return Data(cards: dealer.cardsString(), sum: dealer.sumString(), status: dealer.statusString(), oddsPositive: dealer.oddsOfStandingString(), oddsNegative: dealer.oddsOfBustingString())
+        return dealer.data()
     }
     
     func userData() -> Data {
-        return Data(cards: user.cardsString(), sum: user.sumString(), status: user.statusString(), oddsPositive: user.oddsOfNotBustingString(), oddsNegative: user.oddsOfBustingString())
+        return user.data()
     }
     
     func dealerAdd(_ card: Card) {

@@ -9,7 +9,7 @@ import Foundation
 
 class Game {
     
-    internal let dealer = Dealer()
-    internal let user = User()
+    internal let dealer    =    Dealer()
+    internal let user      =    User()
     
 }
