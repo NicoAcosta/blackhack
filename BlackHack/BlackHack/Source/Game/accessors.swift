@@ -46,12 +46,12 @@ extension Game {
         user.clean()
     }
     
-    func dealerBack() {
-        dealer.back()
+    func dealerUndo() {
+        dealer.undo()
     }
     
-    func userBack() {
-        user.back()
+    func userUndo() {
+        user.undo()
     }
     
     func dealerStatusEmpty() -> Bool {

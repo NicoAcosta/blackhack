@@ -82,7 +82,10 @@ extension Game {
             return .stand
         }
         if let values = doublePairs, values.contains(sum) {
-            return .double
+            if user.amountOfCards() == 2 {
+                return .double
+            }
+            return .hit
         }
         if let values = splitPairs, values.contains(sum) {
             return .split

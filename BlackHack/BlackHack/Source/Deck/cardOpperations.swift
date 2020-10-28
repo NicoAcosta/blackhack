@@ -27,7 +27,7 @@ extension Deck {
     }
     
     //  Void    Si tiene al menos una carta, borrar la última agregada
-    func back() {
+    func undo() {
         if !isEmpty() {
             cards.removeLast()
         }
