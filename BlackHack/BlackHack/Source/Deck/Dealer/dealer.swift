@@ -17,9 +17,11 @@ class Dealer: Deck {
             (   sum.type == .hard    &&  (17...21).contains(sum.value)   )
     }
     
+    
+    //  (Data)  La info en strings para el view controller
     func data() -> Data {
         
-        return Data(
+        return Data (
             cards:          cardsString(),
             sum:            sumDealerString(),
             status:         statusString(),
@@ -28,8 +30,6 @@ class Dealer: Deck {
         )
         
     }
-    
-    
     
     internal func oddsOfBustingString() -> String {
         return oddsOfBusting().percentage()
