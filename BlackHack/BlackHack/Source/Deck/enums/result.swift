@@ -9,8 +9,8 @@ import Foundation
 
 struct Result {
     
-    var value: Int
-    var type: TypeOfHand
-    var hasAces: Bool
+    let value: Int
+    let type: TypeOfHand
+    let hasAces: Bool
 
 }

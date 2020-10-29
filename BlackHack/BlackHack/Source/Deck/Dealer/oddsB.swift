@@ -11,7 +11,6 @@ extension Dealer {
     
     internal func oddsOfBusting() -> Double {
         
-        
         if isEmpty() {
             return 6560574127830 / 23298085122481
         }

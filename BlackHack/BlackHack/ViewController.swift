@@ -10,8 +10,6 @@ import UIKit
 class ViewController: UIViewController {
     
     
-    
-    
     //  Dealer
     
     @IBOutlet weak var dealerA:             UIButton!

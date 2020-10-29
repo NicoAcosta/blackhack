@@ -15,7 +15,7 @@ extension User {
             return 0
         }
         
-        if sum.type == .soft {
+        if isSoft() {
             return 0
         }
         

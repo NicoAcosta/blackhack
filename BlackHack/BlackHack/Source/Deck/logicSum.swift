@@ -18,7 +18,7 @@ extension Deck {
         let superNumber = sumNoAces + amountOfAces
         
         if amountOfAces == 0 {
-            return Result(value: superNumber, type: .hard, hasAces: false)
+                return Result(value: superNumber, type: .hard, hasAces: false)
         } else {
             if superNumber < 12 {
                 return Result(value: superNumber, type: .soft, hasAces: true)
