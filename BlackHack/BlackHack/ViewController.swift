@@ -7,20 +7,16 @@
 
 import UIKit
 
+enum Style {
+    case light, dark
+}
+
+
 class ViewController: UIViewController {
     
-    /*
-    var childForStatusBarStyle: UIViewController {
-        return .lightContent
-    }
-    */
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-            return .lightContent
-      }
-    
-    
-    
     //  Dealer
+    
+    @IBOutlet weak var dealerLabel:         UILabel!
     
     @IBOutlet weak var dealerA:             UIButton!
     @IBOutlet weak var dealer2:             UIButton!
@@ -45,12 +41,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var dealerOddsBLabel:    UILabel!
     @IBOutlet weak var dealerOddsSLabel:    UILabel!
     
+    @IBOutlet weak var dealerSumStaticLabel: UILabel!
+    @IBOutlet weak var dealerStatusStaticLabel: UILabel!
+    @IBOutlet weak var dealerOddsSStaticLabel: UILabel!
+    @IBOutlet weak var dealerOddsBStaticLabel: UILabel!
+    
     
     
     
     
     //  User
 
+    @IBOutlet weak var userLabel: UILabel!
+    
     @IBOutlet weak var userA:               UIButton!
     @IBOutlet weak var user2:               UIButton!
     @IBOutlet weak var user3:               UIButton!
@@ -74,6 +77,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var userOddsNBLabel:     UILabel!
     @IBOutlet weak var userOddsBLabel:      UILabel!
     
+    @IBOutlet weak var userOddsNBStaticLabel: UILabel!
+    @IBOutlet weak var userOddsBStaticLabel: UILabel!
+    @IBOutlet weak var userSumStaticLabel: UILabel!
+    @IBOutlet weak var userStatusStaticLabel: UILabel!
+    
     
     
     
@@ -82,6 +90,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var strategyView:        UIView!
     @IBOutlet weak var strategyLabel:       UILabel!
+    @IBOutlet weak var separator:           UIView!
     
     
     
@@ -91,8 +100,25 @@ class ViewController: UIViewController {
     
     var dealerCardsButtons:                 [UIButton]  =  []
     var userCardsButtons:                   [UIButton]  =  []
+    var backgroundButtons:                  [UIButton]  =  []
+    var textButtons:                        [UIButton]  =  []
+    
+    var thinLabels:                         [UILabel]   =  []
+    var thickLabels:                        [UILabel]   =  []
     
     let game = Game()
+    
+    var globalStyle : Style = .light
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        switch globalStyle {
+        case .dark:
+            return .darkContent
+        case .light:
+            return .lightContent
+        }
+    }
+    
     
     
     
@@ -104,13 +130,21 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         
-        setNeedsStatusBarAppearanceUpdate()
-        
         dealerCardsButtons  =   [dealerA, dealer2, dealer3, dealer4, dealer5, dealer6, dealer7, dealer8, dealer9, dealer10, dealerJ, dealerQ, dealerK]
         
         userCardsButtons    =   [userA, user2, user3, user4, user5, user6, user7, user8, user9, user10, userJ, userQ, userK]
         
+        backgroundButtons   =   dealerCardsButtons + userCardsButtons
+        
+        textButtons         =   [userClean, userUndo, dealerClean, dealerUndo]
+        
+        thinLabels          =   [dealerLabel, dealerCardsLabel, dealerSumStaticLabel, dealerStatusLabel, dealerOddsSStaticLabel, dealerOddsBStaticLabel, userLabel, userOddsBStaticLabel, userOddsNBStaticLabel, userSumStaticLabel, userStatusLabel]
+        
+        thickLabels         =   [dealerSumLabel, dealerStatusLabel, dealerOddsBLabel, dealerOddsSLabel, userOddsBLabel, userOddsNBLabel, userSumLabel, userStatusLabel]
+        
         updateAll()
+        
+        initStyle()
         
     }
     
@@ -241,6 +275,72 @@ extension ViewController {
     }
     
 }
+
+
+
+//  Light Dark
+
+extension ViewController {
+    /*
+    func buttonsAndLabelsColor(_ color: UIColor) {
+        backgroundButtons.forEach({$0.backgroundColor = color})
+        textButtons.forEach({$0.setTitleColor(color, for: .normal)})
+        thinLabels.forEach({$0.textColor = color})
+        thickLabels.forEach({$0.textColor = color})
+        strategyView.backgroundColor = color
+        separator.backgroundColor = color
+    }
+    */
+    
+    func updateStyle(style: Style) {
+        
+        switch style {
+        case .light:
+            //buttonsAndLabelsColor(.white)
+            globalStyle = .light
+        default:
+            //buttonsAndLabelsColor(.black)
+            globalStyle = .dark
+        }
+        
+        setNeedsStatusBarAppearanceUpdate()
+    }
+    
+    
+    
+    
+    func initStyle() {
+        
+        switch traitCollection.userInterfaceStyle {
+        case .unspecified:
+            updateStyle(style: .light)
+        case .light:
+            updateStyle(style: .light)
+        case .dark:
+            updateStyle(style: .dark)
+        @unknown default:
+            updateStyle(style: .light)
+        }
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        switch traitCollection.userInterfaceStyle {
+        case .unspecified:
+            updateStyle(style: .light)
+        case .light:
+            updateStyle(style: .light)
+        case .dark:
+            updateStyle(style: .dark)
+        @unknown default:
+            updateStyle(style: .light)
+        }
+    }
+    
+}
+
+
+
+
 
 
 

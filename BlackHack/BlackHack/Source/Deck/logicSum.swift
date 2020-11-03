@@ -17,6 +17,10 @@ extension Deck {
         
         let superNumber = sumNoAces + amountOfAces
         
+        if blackJack() {
+            return Result(value: 21, type: .blackJack, hasAces: true)
+        }
+        
         if amountOfAces == 0 {
                 return Result(value: superNumber, type: .hard, hasAces: false)
         } else {
@@ -35,6 +39,10 @@ extension Deck {
     
     internal func isHard() -> Bool {
         return sum.type == .hard
+    }
+    
+    internal func isBlackHack() -> Bool {
+        return sum.type == .blackJack
     }
     
 }

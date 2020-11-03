@@ -15,9 +15,11 @@ extension Deck {
     
     internal func updateStatus() {
         
-        if isEmpty() {
+                if isEmpty() {
             status = .empty
-        } else if stands() {
+        } else  if isBlackHack() {
+            status = .blackJack
+        } else  if stands() {
             status = .stood
         } else if bust() {
             status = .bust

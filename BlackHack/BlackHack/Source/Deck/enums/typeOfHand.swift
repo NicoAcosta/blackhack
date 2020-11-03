@@ -11,5 +11,6 @@ enum TypeOfHand {
     
     case hard
     case soft
+    case blackJack
 
 }

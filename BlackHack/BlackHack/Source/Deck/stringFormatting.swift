@@ -50,15 +50,13 @@ extension Deck {
     
     internal func sumString() -> String {
         
-        if blackJack() {
-                return "BlackJack!"
-        }
-        
         switch sum.type {
             case .hard:
                 return hardString()
             case .soft:
                 return softString()
+            case .blackJack:
+                return "21"
             }
     }
     

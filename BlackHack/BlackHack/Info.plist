@@ -65,7 +65,7 @@
 	<key>LSApplicationCategoryType</key>
 	<string></string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
-	<false/>
+	<true/>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Gotham-Black.otf</string>
@@ -79,6 +79,6 @@
 		<string>Gotham-XLightItalic.otf</string>
 	</array>
 	<key>UIStatusBarStyle</key>
-	<string>UIStatusBarStyleLightContent</string>
+	<string>UIStatusBarStyleDarkContent</string>
 </dict>
 </plist>

@@ -11,7 +11,7 @@ import Foundation
 class User: Deck {
     
     internal override func stands() -> Bool {
-        return blackJack() || sum.value == 21
+        return sum.value == 21
     }
     
     func data() -> Data {

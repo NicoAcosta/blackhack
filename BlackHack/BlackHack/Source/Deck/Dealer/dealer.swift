@@ -47,15 +47,13 @@ extension Dealer {
     
     internal func sumDealerString() -> String {
     
-        if blackJack() {
-                    return "BlackJack!"
-        }
-        
         switch sum.type {
+            case .blackJack:
+                    return "21"
             case .hard:
                     return hardString()
             case .soft:
-                if (sum.value >= 7) {
+                if stands() {
                     return softPlus10String()
                 }
                     return softString()

@@ -13,6 +13,7 @@ enum Status {
     case bust
     case stood
     case empty
+    case blackJack
     
     func string() -> String {
         
@@ -25,6 +26,8 @@ enum Status {
             return "Stood"
         case .empty:
             return "Not started"
+        case .blackJack:
+            return "BlackJack!"
         }
         
     }
