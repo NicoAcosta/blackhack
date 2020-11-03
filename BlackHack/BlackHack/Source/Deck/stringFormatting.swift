@@ -8,8 +8,12 @@
 import Foundation
 
 extension Double {
-    func percentage () -> String {
+    func decimalsPercentage () -> String {
         return String(format: "%.2f", self * 100) + " %"
+    }
+    func intPercentage () -> String {
+        let int : Int = Int((self * 100).rounded())
+        return String(int) + " %"
     }
 }
 
@@ -20,9 +24,6 @@ extension Array where Iterator.Element == Card {
     }
     
 }
-
-
-
 
 
 extension Deck {

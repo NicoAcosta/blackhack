@@ -32,11 +32,11 @@ class Dealer: Deck {
     }
     
     internal func oddsOfBustingString() -> String {
-        return oddsOfBusting().percentage()
+        return oddsOfBusting().intPercentage()
     }
     
     internal func oddsOfStandingString() -> String {
-        return oddsOfStanding().percentage()
+        return oddsOfStanding().intPercentage()
     }
     
 }

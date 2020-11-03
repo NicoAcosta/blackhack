@@ -71,7 +71,7 @@ extension Dealer {
                 return 8 / 13
             case 17...21:
                 return 0
-            case 22...:
+            case 22...26:
                 return 1
             default:
                 return 911

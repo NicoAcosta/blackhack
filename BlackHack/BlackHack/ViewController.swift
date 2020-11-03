@@ -9,6 +9,16 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    /*
+    var childForStatusBarStyle: UIViewController {
+        return .lightContent
+    }
+    */
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+            return .lightContent
+      }
+    
+    
     
     //  Dealer
     
@@ -61,8 +71,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var userSumLabel:        UILabel!
     @IBOutlet weak var userStatusLabel:     UILabel!
-    @IBOutlet weak var userOddsBLabel:      UILabel!
     @IBOutlet weak var userOddsNBLabel:     UILabel!
+    @IBOutlet weak var userOddsBLabel:      UILabel!
     
     
     
@@ -93,6 +103,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        setNeedsStatusBarAppearanceUpdate()
         
         dealerCardsButtons  =   [dealerA, dealer2, dealer3, dealer4, dealer5, dealer6, dealer7, dealer8, dealer9, dealer10, dealerJ, dealerQ, dealerK]
         

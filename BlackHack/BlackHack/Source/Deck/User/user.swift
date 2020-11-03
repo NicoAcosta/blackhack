@@ -29,11 +29,11 @@ class User: Deck {
     
     
     internal func oddsOfBustingString() -> String {
-        return oddsOfBustingNextHit().percentage()
+        return oddsOfBustingNextHit().intPercentage()
     }
     
     internal func oddsOfNotBustingString() -> String {
-        return oddsOfNotBustingNextHit().percentage()
+        return oddsOfNotBustingNextHit().intPercentage()
     }
     
 }
