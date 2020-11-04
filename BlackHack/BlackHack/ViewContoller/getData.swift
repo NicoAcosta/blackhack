@@ -12,7 +12,7 @@ import Foundation
 extension ViewController {
     
     func updateDealerData() {
-        let info = game.dealerData()
+        let info = game.dealerData
         dealerSumLabel.text     =   info.sum
         dealerStatusLabel.text  =   info.status
         dealerCardsLabel.text   =   info.cards
@@ -21,7 +21,7 @@ extension ViewController {
     }
     
     func updateUserData() {
-        let info = game.userData()
+        let info = game.userData
         userSumLabel.text       =   info.sum
         userStatusLabel.text    =   info.status
         userCardsLabel.text     =   info.cards

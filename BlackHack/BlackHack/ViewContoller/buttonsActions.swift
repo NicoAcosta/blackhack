@@ -14,77 +14,77 @@ extension ViewController {
     @IBAction func dealerAddA(_ sender: Any) {
         game.dealerAdd(.ace)
         updateDealer()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func dealerAdd2(_ sender: Any) {
         game.dealerAdd(.two)
         updateDealer()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func dealerAdd3(_ sender: Any) {
         game.dealerAdd(.three)
         updateDealer()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func dealerAdd4(_ sender: Any) {
         game.dealerAdd(.four)
         updateDealer()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func dealerAdd5(_ sender: Any) {
         game.dealerAdd(.five)
         updateDealer()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func dealerAdd6(_ sender: Any) {
         game.dealerAdd(.six)
         updateDealer()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func dealerAdd7(_ sender: Any) {
         game.dealerAdd(.seven)
         updateDealer()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func dealerAdd8(_ sender: Any) {
         game.dealerAdd(.eight)
         updateDealer()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func dealerAdd9(_ sender: Any) {
         game.dealerAdd(.nine)
         updateDealer()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func dealerAdd10(_ sender: Any) {
         game.dealerAdd(.ten)
         updateDealer()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func dealerAddJ(_ sender: Any) {
         game.dealerAdd(.jack)
         updateDealer()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func dealerAddQ(_ sender: Any) {
         game.dealerAdd(.queen)
         updateDealer()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func dealerAddK(_ sender: Any) {
         game.dealerAdd(.king)
         updateDealer()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func dealerClean(_ sender: Any) {
         game.dealerClean()
         updateDealer()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func dealerUndo(_ sender: Any) {
         game.dealerUndo()
         updateDealer()
-        updateStrategy()
+        checkStrategy()
     }
     
     
@@ -93,77 +93,77 @@ extension ViewController {
     @IBAction func userAddA(_ sender: Any) {
         game.userAdd(.ace)
         updateUser()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func userAdd2(_ sender: Any) {
         game.userAdd(.two)
         updateUser()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func userAdd3(_ sender: Any) {
         game.userAdd(.three)
         updateUser()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func userAdd4(_ sender: Any) {
         game.userAdd(.four)
         updateUser()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func userAdd5(_ sender: Any) {
         game.userAdd(.five)
         updateUser()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func userAdd6(_ sender: Any) {
         game.userAdd(.six)
         updateUser()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func userAdd7(_ sender: Any) {
         game.userAdd(.seven)
         updateUser()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func userAdd8(_ sender: Any) {
         game.userAdd(.eight)
         updateUser()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func userAdd9(_ sender: Any) {
         game.userAdd(.nine)
         updateUser()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func userAdd10(_ sender: Any) {
         game.userAdd(.ten)
         updateUser()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func userAddJ(_ sender: Any) {
         game.userAdd(.jack)
         updateUser()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func userAddQ(_ sender: Any) {
         game.userAdd(.queen)
         updateUser()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func userAddK(_ sender: Any) {
         game.userAdd(.king)
         updateUser()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func userClean(_ sender: Any) {
         game.userClean()
         updateUser()
-        updateStrategy()
+        checkStrategy()
     }
     @IBAction func userUndo(_ sender: Any) {
         game.userUndo()
         updateUser()
-        updateStrategy()
+        checkStrategy()
     }
     
     

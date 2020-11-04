@@ -15,7 +15,7 @@ extension ViewController {
     
     func checkDealerButtonsBehaviour() {
         
-        switch game.dealerStatus() {
+        switch game.dealerStatus {
         
         case .empty:
             if !dealerA.isEnabled {
@@ -41,7 +41,7 @@ extension ViewController {
     
     func checkUserButtonsBehaviour() {
         
-        switch game.userStatus() {
+        switch game.userStatus {
         
         case .empty:
             if !userA.isEnabled {
