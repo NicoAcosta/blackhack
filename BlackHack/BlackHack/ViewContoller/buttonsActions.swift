@@ -11,10 +11,11 @@ import Foundation
 
 extension ViewController {
     
-    
-    
-    
-    
+    @IBAction func resetButtonAction(_ sender: Any) {
+        game.reset()
+        updateBoth()
+    }
+
     
     @IBAction func dealerAddA(_ sender: Any) {
         game.dealerAdd(.ace)
