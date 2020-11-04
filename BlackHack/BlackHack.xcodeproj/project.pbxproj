@@ -7,43 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		037B1543252EEA2F00C3B020 /* commonUpdates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037B1542252EEA2F00C3B020 /* commonUpdates.swift */; };
+		03636A2725522B0800BE07F6 /* GothamLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03636A1925522B0600BE07F6 /* GothamLight.ttf */; };
+		03636A2825522B0800BE07F6 /* GothamLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03636A1A25522B0600BE07F6 /* GothamLightItalic.ttf */; };
+		03636A2925522B0800BE07F6 /* GothamBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03636A1B25522B0600BE07F6 /* GothamBoldItalic.ttf */; };
+		03636A2A25522B0800BE07F6 /* GothamBlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03636A1C25522B0700BE07F6 /* GothamBlackItalic.ttf */; };
+		03636A2B25522B0800BE07F6 /* GothamBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03636A1D25522B0700BE07F6 /* GothamBlack.ttf */; };
+		03636A2C25522B0800BE07F6 /* GothamUltraItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03636A1E25522B0700BE07F6 /* GothamUltraItalic.ttf */; };
+		03636A2D25522B0800BE07F6 /* GothamXLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03636A1F25522B0700BE07F6 /* GothamXLight.ttf */; };
+		03636A2E25522B0800BE07F6 /* GothamMediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03636A2025522B0700BE07F6 /* GothamMediumItalic.ttf */; };
+		03636A2F25522B0800BE07F6 /* GothamXLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03636A2125522B0700BE07F6 /* GothamXLightItalic.ttf */; };
+		03636A3025522B0800BE07F6 /* GothamThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03636A2225522B0700BE07F6 /* GothamThinItalic.ttf */; };
+		03636A3125522B0800BE07F6 /* GothamUltra.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03636A2325522B0700BE07F6 /* GothamUltra.ttf */; };
+		03636A3225522B0800BE07F6 /* GothamThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03636A2425522B0800BE07F6 /* GothamThin.ttf */; };
+		03636A3325522B0800BE07F6 /* GothamBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03636A2525522B0800BE07F6 /* GothamBold.ttf */; };
+		03636A3425522B0800BE07F6 /* GothamMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03636A2625522B0800BE07F6 /* GothamMedium.ttf */; };
+		03636A3725522CEF00BE07F6 /* didLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A3625522CEF00BE07F6 /* didLoad.swift */; };
+		03636A3A25522D6200BE07F6 /* light-dark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A3925522D6200BE07F6 /* light-dark.swift */; };
+		03636A3D25522DE500BE07F6 /* buttonsActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A3C25522DE500BE07F6 /* buttonsActions.swift */; };
+		03636A4025522E5300BE07F6 /* generalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A3F25522E5300BE07F6 /* generalExtensions.swift */; };
+		03636A4825522F2700BE07F6 /* getData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A4725522F2700BE07F6 /* getData.swift */; };
+		03636A4B255230B200BE07F6 /* updateViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A4A255230B200BE07F6 /* updateViewData.swift */; };
+		03636A50255270C300BE07F6 /* buttonsBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A4F255270C300BE07F6 /* buttonsBehaviour.swift */; };
+		03636A53255271A600BE07F6 /* status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A52255271A600BE07F6 /* status.swift */; };
+		03636A5A255277EA00BE07F6 /* publicGameReturns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A59255277EA00BE07F6 /* publicGameReturns.swift */; };
+		03636A702552888700BE07F6 /* updateVoids.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A6F2552888700BE07F6 /* updateVoids.swift */; };
+		03636A7825528A3F00BE07F6 /* dealerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A7725528A3F00BE07F6 /* dealerData.swift */; };
+		03636A7C25528A7100BE07F6 /* dealerStringFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A7B25528A7100BE07F6 /* dealerStringFormatting.swift */; };
+		03636A8225528B2200BE07F6 /* userStringFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A8125528B2200BE07F6 /* userStringFormatting.swift */; };
+		03636A8525528B4600BE07F6 /* userData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A8425528B4600BE07F6 /* userData.swift */; };
 		037EAC332550A776001093A4 /* PTSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 037EAC2F2550A775001093A4 /* PTSans-Bold.ttf */; };
 		037EAC342550A776001093A4 /* PTSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 037EAC302550A776001093A4 /* PTSans-BoldItalic.ttf */; };
 		037EAC352550A776001093A4 /* PTSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 037EAC312550A776001093A4 /* PTSans-Regular.ttf */; };
 		037EAC362550A776001093A4 /* PTSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 037EAC322550A776001093A4 /* PTSans-Italic.ttf */; };
 		039126ED2547A3AF00F60F0B /* game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039126EC2547A3AF00F60F0B /* game.swift */; };
-		03A681ED2551D60B008E7A7F /* Gotham-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03A681E42551D60B008E7A7F /* Gotham-ThinItalic.otf */; };
-		03A681EE2551D60B008E7A7F /* Gotham-UltraItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03A681E52551D60B008E7A7F /* Gotham-UltraItalic.otf */; };
-		03A681EF2551D60B008E7A7F /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03A681E62551D60B008E7A7F /* Gotham-Bold.otf */; };
-		03A681F02551D60B008E7A7F /* Gotham-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03A681E72551D60B008E7A7F /* Gotham-BookItalic.otf */; };
-		03A681F12551D60B008E7A7F /* Gotham-XLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03A681E82551D60B008E7A7F /* Gotham-XLightItalic.otf */; };
-		03A681F22551D60B008E7A7F /* Gotham-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03A681E92551D60B008E7A7F /* Gotham-Black.otf */; };
-		03A681F32551D60B008E7A7F /* Gotham-XLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03A681EA2551D60B008E7A7F /* Gotham-XLight.otf */; };
-		03A681F42551D60B008E7A7F /* Gotham-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03A681EB2551D60B008E7A7F /* Gotham-Thin.otf */; };
-		03A681F52551D60B008E7A7F /* Gotham-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03A681EC2551D60B008E7A7F /* Gotham-Light.otf */; };
 		03D369A8252EC9AE00F4D1DD /* card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369A7252EC9AE00F4D1DD /* card.swift */; };
 		03D369AC252EC9B700F4D1DD /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369AB252EC9B700F4D1DD /* user.swift */; };
 		03D369AF252EC9C400F4D1DD /* dealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369AE252EC9C400F4D1DD /* dealer.swift */; };
-		03D369B2252EC9F100F4D1DD /* deckDeclaration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369B1252EC9F100F4D1DD /* deckDeclaration.swift */; };
+		03D369B2252EC9F100F4D1DD /* deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369B1252EC9F100F4D1DD /* deck.swift */; };
 		03D369B9252ECE1500F4D1DD /* stringFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369B8252ECE1500F4D1DD /* stringFormatting.swift */; };
-		03D369C2252ECFA500F4D1DD /* logicCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369C1252ECFA500F4D1DD /* logicCards.swift */; };
-		03D369C6252ECFF100F4D1DD /* logicSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369C5252ECFF100F4D1DD /* logicSum.swift */; };
-		03D369C9252ED02500F4D1DD /* possibleResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369C8252ED02500F4D1DD /* possibleResults.swift */; };
-		03D369CD252ED07300F4D1DD /* cardOpperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369CC252ED07300F4D1DD /* cardOpperations.swift */; };
-		03D369D8252EE89C00F4D1DD /* oddsOfBustingNextHit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369D7252EE89C00F4D1DD /* oddsOfBustingNextHit.swift */; };
-		03D369DB252EE8B100F4D1DD /* OddsOfNotBustingNextHit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369DA252EE8B100F4D1DD /* OddsOfNotBustingNextHit.swift */; };
-		03D369DE252EE90400F4D1DD /* oddsGettingMoreAses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369DD252EE90400F4D1DD /* oddsGettingMoreAses.swift */; };
-		03D68652252EF37F003CD2D5 /* oddsB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D68651252EF37F003CD2D5 /* oddsB.swift */; };
-		03D68655252EF38C003CD2D5 /* oddsS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D68654252EF38C003CD2D5 /* oddsS.swift */; };
+		03D369C2252ECFA500F4D1DD /* cardsReturns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369C1252ECFA500F4D1DD /* cardsReturns.swift */; };
+		03D369C6252ECFF100F4D1DD /* sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369C5252ECFF100F4D1DD /* sum.swift */; };
+		03D369CD252ED07300F4D1DD /* cardsVoids.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369CC252ED07300F4D1DD /* cardsVoids.swift */; };
+		03D369D8252EE89C00F4D1DD /* userOddsOfBusting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369D7252EE89C00F4D1DD /* userOddsOfBusting.swift */; };
+		03D369DB252EE8B100F4D1DD /* userOddsOfNotBusting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369DA252EE8B100F4D1DD /* userOddsOfNotBusting.swift */; };
+		03D369DE252EE90400F4D1DD /* userOddsAses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369DD252EE90400F4D1DD /* userOddsAses.swift */; };
+		03D68652252EF37F003CD2D5 /* dealerOddsOfBusting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D68651252EF37F003CD2D5 /* dealerOddsOfBusting.swift */; };
+		03D68655252EF38C003CD2D5 /* dealerOddsOfStanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D68654252EF38C003CD2D5 /* dealerOddsOfStanding.swift */; };
 		03E6983A254864A200096D22 /* strategies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E69839254864A200096D22 /* strategies.swift */; };
-		03E6983F2548678600096D22 /* status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6983E2548678600096D22 /* status.swift */; };
-		03E69843254867AA00096D22 /* typeOfHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E69842254867AA00096D22 /* typeOfHand.swift */; };
-		03E698462548681200096D22 /* result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E698452548681200096D22 /* result.swift */; };
-		03E6984925486EEF00096D22 /* strategyEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6984825486EEF00096D22 /* strategyEnum.swift */; };
-		03E6984C2548716200096D22 /* accessors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6984B2548716200096D22 /* accessors.swift */; };
-		03E69855254872EA00096D22 /* dataStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E69854254872EA00096D22 /* dataStructs.swift */; };
-		03E6985825487A4A00096D22 /* statusBools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6985725487A4A00096D22 /* statusBools.swift */; };
+		03E6983F2548678600096D22 /* enum-status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6983E2548678600096D22 /* enum-status.swift */; };
+		03E69843254867AA00096D22 /* enum-handType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E69842254867AA00096D22 /* enum-handType.swift */; };
+		03E698462548681200096D22 /* enum-sumResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E698452548681200096D22 /* enum-sumResult.swift */; };
+		03E6984925486EEF00096D22 /* enum-strategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6984825486EEF00096D22 /* enum-strategy.swift */; };
+		03E6984C2548716200096D22 /* publicGameVoids.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6984B2548716200096D22 /* publicGameVoids.swift */; };
+		03E69855254872EA00096D22 /* struct-data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E69854254872EA00096D22 /* struct-data.swift */; };
 		03F8E0F1252D2054008F383D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8E0F0252D2054008F383D /* AppDelegate.swift */; };
 		03F8E0F3252D2054008F383D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8E0F2252D2054008F383D /* SceneDelegate.swift */; };
 		03F8E0F5252D2054008F383D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8E0F4252D2054008F383D /* ViewController.swift */; };
@@ -53,43 +69,59 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		037B1542252EEA2F00C3B020 /* commonUpdates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commonUpdates.swift; sourceTree = "<group>"; };
+		03636A1925522B0600BE07F6 /* GothamLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GothamLight.ttf; path = "../../../../../gotham-fonts/ttf/GothamLight.ttf"; sourceTree = "<group>"; };
+		03636A1A25522B0600BE07F6 /* GothamLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GothamLightItalic.ttf; path = "../../../../../gotham-fonts/ttf/GothamLightItalic.ttf"; sourceTree = "<group>"; };
+		03636A1B25522B0600BE07F6 /* GothamBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GothamBoldItalic.ttf; path = "../../../../../gotham-fonts/ttf/GothamBoldItalic.ttf"; sourceTree = "<group>"; };
+		03636A1C25522B0700BE07F6 /* GothamBlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamBlackItalic.ttf; sourceTree = "<group>"; };
+		03636A1D25522B0700BE07F6 /* GothamBlack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamBlack.ttf; sourceTree = "<group>"; };
+		03636A1E25522B0700BE07F6 /* GothamUltraItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamUltraItalic.ttf; sourceTree = "<group>"; };
+		03636A1F25522B0700BE07F6 /* GothamXLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamXLight.ttf; sourceTree = "<group>"; };
+		03636A2025522B0700BE07F6 /* GothamMediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GothamMediumItalic.ttf; path = "../../../../../gotham-fonts/ttf/GothamMediumItalic.ttf"; sourceTree = "<group>"; };
+		03636A2125522B0700BE07F6 /* GothamXLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamXLightItalic.ttf; sourceTree = "<group>"; };
+		03636A2225522B0700BE07F6 /* GothamThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamThinItalic.ttf; sourceTree = "<group>"; };
+		03636A2325522B0700BE07F6 /* GothamUltra.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamUltra.ttf; sourceTree = "<group>"; };
+		03636A2425522B0800BE07F6 /* GothamThin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamThin.ttf; sourceTree = "<group>"; };
+		03636A2525522B0800BE07F6 /* GothamBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GothamBold.ttf; path = "../../../../../gotham-fonts/ttf/GothamBold.ttf"; sourceTree = "<group>"; };
+		03636A2625522B0800BE07F6 /* GothamMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GothamMedium.ttf; path = "../../../../../gotham-fonts/ttf/GothamMedium.ttf"; sourceTree = "<group>"; };
+		03636A3625522CEF00BE07F6 /* didLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = didLoad.swift; sourceTree = "<group>"; };
+		03636A3925522D6200BE07F6 /* light-dark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "light-dark.swift"; sourceTree = "<group>"; };
+		03636A3C25522DE500BE07F6 /* buttonsActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonsActions.swift; sourceTree = "<group>"; };
+		03636A3F25522E5300BE07F6 /* generalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generalExtensions.swift; sourceTree = "<group>"; };
+		03636A4725522F2700BE07F6 /* getData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getData.swift; sourceTree = "<group>"; };
+		03636A4A255230B200BE07F6 /* updateViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateViewData.swift; sourceTree = "<group>"; };
+		03636A4F255270C300BE07F6 /* buttonsBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonsBehaviour.swift; sourceTree = "<group>"; };
+		03636A52255271A600BE07F6 /* status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = status.swift; sourceTree = "<group>"; };
+		03636A59255277EA00BE07F6 /* publicGameReturns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = publicGameReturns.swift; sourceTree = "<group>"; };
+		03636A6F2552888700BE07F6 /* updateVoids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateVoids.swift; sourceTree = "<group>"; };
+		03636A7725528A3F00BE07F6 /* dealerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dealerData.swift; sourceTree = "<group>"; };
+		03636A7B25528A7100BE07F6 /* dealerStringFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dealerStringFormatting.swift; sourceTree = "<group>"; };
+		03636A8125528B2200BE07F6 /* userStringFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userStringFormatting.swift; sourceTree = "<group>"; };
+		03636A8425528B4600BE07F6 /* userData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userData.swift; sourceTree = "<group>"; };
 		037EAC2F2550A775001093A4 /* PTSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PTSans-Bold.ttf"; sourceTree = "<group>"; };
 		037EAC302550A776001093A4 /* PTSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PTSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		037EAC312550A776001093A4 /* PTSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PTSans-Regular.ttf"; sourceTree = "<group>"; };
 		037EAC322550A776001093A4 /* PTSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PTSans-Italic.ttf"; sourceTree = "<group>"; };
 		039126EC2547A3AF00F60F0B /* game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = game.swift; sourceTree = "<group>"; };
-		03A681E42551D60B008E7A7F /* Gotham-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-ThinItalic.otf"; path = "../../../../../../Downloads/Gotham-Font/Gotham-ThinItalic.otf"; sourceTree = "<group>"; };
-		03A681E52551D60B008E7A7F /* Gotham-UltraItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-UltraItalic.otf"; path = "../../../../../../Downloads/Gotham-Font/Gotham-UltraItalic.otf"; sourceTree = "<group>"; };
-		03A681E62551D60B008E7A7F /* Gotham-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Bold.otf"; path = "../../../../../../Downloads/Gotham-Font/Gotham-Bold.otf"; sourceTree = "<group>"; };
-		03A681E72551D60B008E7A7F /* Gotham-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-BookItalic.otf"; path = "../../../../../../Downloads/Gotham-Font/Gotham-BookItalic.otf"; sourceTree = "<group>"; };
-		03A681E82551D60B008E7A7F /* Gotham-XLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-XLightItalic.otf"; path = "../../../../../../Downloads/Gotham-Font/Gotham-XLightItalic.otf"; sourceTree = "<group>"; };
-		03A681E92551D60B008E7A7F /* Gotham-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Black.otf"; path = "../../../../../../Downloads/Gotham-Font/Gotham-Black.otf"; sourceTree = "<group>"; };
-		03A681EA2551D60B008E7A7F /* Gotham-XLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-XLight.otf"; path = "../../../../../../Downloads/Gotham-Font/Gotham-XLight.otf"; sourceTree = "<group>"; };
-		03A681EB2551D60B008E7A7F /* Gotham-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Thin.otf"; path = "../../../../../../Downloads/Gotham-Font/Gotham-Thin.otf"; sourceTree = "<group>"; };
-		03A681EC2551D60B008E7A7F /* Gotham-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Light.otf"; path = "../../../../../../Downloads/Gotham-Font/Gotham-Light.otf"; sourceTree = "<group>"; };
 		03D369A7252EC9AE00F4D1DD /* card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = card.swift; sourceTree = "<group>"; };
 		03D369AB252EC9B700F4D1DD /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
 		03D369AE252EC9C400F4D1DD /* dealer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dealer.swift; sourceTree = "<group>"; };
-		03D369B1252EC9F100F4D1DD /* deckDeclaration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deckDeclaration.swift; sourceTree = "<group>"; };
+		03D369B1252EC9F100F4D1DD /* deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deck.swift; sourceTree = "<group>"; };
 		03D369B8252ECE1500F4D1DD /* stringFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stringFormatting.swift; sourceTree = "<group>"; };
-		03D369C1252ECFA500F4D1DD /* logicCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logicCards.swift; sourceTree = "<group>"; };
-		03D369C5252ECFF100F4D1DD /* logicSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logicSum.swift; sourceTree = "<group>"; };
-		03D369C8252ED02500F4D1DD /* possibleResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = possibleResults.swift; sourceTree = "<group>"; };
-		03D369CC252ED07300F4D1DD /* cardOpperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardOpperations.swift; sourceTree = "<group>"; };
-		03D369D7252EE89C00F4D1DD /* oddsOfBustingNextHit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oddsOfBustingNextHit.swift; sourceTree = "<group>"; };
-		03D369DA252EE8B100F4D1DD /* OddsOfNotBustingNextHit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsOfNotBustingNextHit.swift; sourceTree = "<group>"; };
-		03D369DD252EE90400F4D1DD /* oddsGettingMoreAses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oddsGettingMoreAses.swift; sourceTree = "<group>"; };
-		03D68651252EF37F003CD2D5 /* oddsB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oddsB.swift; sourceTree = "<group>"; };
-		03D68654252EF38C003CD2D5 /* oddsS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oddsS.swift; sourceTree = "<group>"; };
+		03D369C1252ECFA500F4D1DD /* cardsReturns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardsReturns.swift; sourceTree = "<group>"; };
+		03D369C5252ECFF100F4D1DD /* sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sum.swift; sourceTree = "<group>"; };
+		03D369CC252ED07300F4D1DD /* cardsVoids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardsVoids.swift; sourceTree = "<group>"; };
+		03D369D7252EE89C00F4D1DD /* userOddsOfBusting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userOddsOfBusting.swift; sourceTree = "<group>"; };
+		03D369DA252EE8B100F4D1DD /* userOddsOfNotBusting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userOddsOfNotBusting.swift; sourceTree = "<group>"; };
+		03D369DD252EE90400F4D1DD /* userOddsAses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userOddsAses.swift; sourceTree = "<group>"; };
+		03D68651252EF37F003CD2D5 /* dealerOddsOfBusting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dealerOddsOfBusting.swift; sourceTree = "<group>"; };
+		03D68654252EF38C003CD2D5 /* dealerOddsOfStanding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dealerOddsOfStanding.swift; sourceTree = "<group>"; };
 		03E69839254864A200096D22 /* strategies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = strategies.swift; sourceTree = "<group>"; };
-		03E6983E2548678600096D22 /* status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = status.swift; sourceTree = "<group>"; };
-		03E69842254867AA00096D22 /* typeOfHand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = typeOfHand.swift; sourceTree = "<group>"; };
-		03E698452548681200096D22 /* result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = result.swift; sourceTree = "<group>"; };
-		03E6984825486EEF00096D22 /* strategyEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = strategyEnum.swift; sourceTree = "<group>"; };
-		03E6984B2548716200096D22 /* accessors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accessors.swift; sourceTree = "<group>"; };
-		03E69854254872EA00096D22 /* dataStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataStructs.swift; sourceTree = "<group>"; };
-		03E6985725487A4A00096D22 /* statusBools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statusBools.swift; sourceTree = "<group>"; };
+		03E6983E2548678600096D22 /* enum-status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "enum-status.swift"; sourceTree = "<group>"; };
+		03E69842254867AA00096D22 /* enum-handType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "enum-handType.swift"; sourceTree = "<group>"; };
+		03E698452548681200096D22 /* enum-sumResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "enum-sumResult.swift"; sourceTree = "<group>"; };
+		03E6984825486EEF00096D22 /* enum-strategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "enum-strategy.swift"; sourceTree = "<group>"; };
+		03E6984B2548716200096D22 /* publicGameVoids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = publicGameVoids.swift; sourceTree = "<group>"; };
+		03E69854254872EA00096D22 /* struct-data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "struct-data.swift"; sourceTree = "<group>"; };
 		03F8E0ED252D2054008F383D /* BlackHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F8E0F0252D2054008F383D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03F8E0F2252D2054008F383D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +143,93 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03636A5F25527C8F00BE07F6 /* types */ = {
+			isa = PBXGroup;
+			children = (
+				03E6984825486EEF00096D22 /* enum-strategy.swift */,
+				03E69854254872EA00096D22 /* struct-data.swift */,
+			);
+			path = types;
+			sourceTree = "<group>";
+		};
+		03636A6025527C9B00BE07F6 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				039126EC2547A3AF00F60F0B /* game.swift */,
+				03E69839254864A200096D22 /* strategies.swift */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		03636A6125527CA000BE07F6 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				03E6984B2548716200096D22 /* publicGameVoids.swift */,
+				03636A59255277EA00BE07F6 /* publicGameReturns.swift */,
+			);
+			path = public;
+			sourceTree = "<group>";
+		};
+		03636A65255286BB00BE07F6 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				03D369B1252EC9F100F4D1DD /* deck.swift */,
+				03D369C1252ECFA500F4D1DD /* cardsReturns.swift */,
+				03D369C5252ECFF100F4D1DD /* sum.swift */,
+				03636A52255271A600BE07F6 /* status.swift */,
+				03D369B8252ECE1500F4D1DD /* stringFormatting.swift */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		03636A66255286C000BE07F6 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				03D369CC252ED07300F4D1DD /* cardsVoids.swift */,
+				03636A6F2552888700BE07F6 /* updateVoids.swift */,
+			);
+			path = public;
+			sourceTree = "<group>";
+		};
+		03636A7525528A0800BE07F6 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				03D369AE252EC9C400F4D1DD /* dealer.swift */,
+				03636A7B25528A7100BE07F6 /* dealerStringFormatting.swift */,
+				03D68651252EF37F003CD2D5 /* dealerOddsOfBusting.swift */,
+				03D68654252EF38C003CD2D5 /* dealerOddsOfStanding.swift */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		03636A7625528A2500BE07F6 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				03636A7725528A3F00BE07F6 /* dealerData.swift */,
+			);
+			path = public;
+			sourceTree = "<group>";
+		};
+		03636A7F25528AFB00BE07F6 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				03D369AB252EC9B700F4D1DD /* user.swift */,
+				03636A8125528B2200BE07F6 /* userStringFormatting.swift */,
+				03D369D7252EE89C00F4D1DD /* userOddsOfBusting.swift */,
+				03D369DA252EE8B100F4D1DD /* userOddsOfNotBusting.swift */,
+				03D369DD252EE90400F4D1DD /* userOddsAses.swift */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		03636A8025528B0000BE07F6 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				03636A8425528B4600BE07F6 /* userData.swift */,
+			);
+			path = public;
+			sourceTree = "<group>";
+		};
 		037EAC2E2550A5CA001093A4 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,15 +253,20 @@
 		037EAC392550B2E5001093A4 /* Gotham */ = {
 			isa = PBXGroup;
 			children = (
-				03A681E92551D60B008E7A7F /* Gotham-Black.otf */,
-				03A681E62551D60B008E7A7F /* Gotham-Bold.otf */,
-				03A681E72551D60B008E7A7F /* Gotham-BookItalic.otf */,
-				03A681EC2551D60B008E7A7F /* Gotham-Light.otf */,
-				03A681EB2551D60B008E7A7F /* Gotham-Thin.otf */,
-				03A681E42551D60B008E7A7F /* Gotham-ThinItalic.otf */,
-				03A681E52551D60B008E7A7F /* Gotham-UltraItalic.otf */,
-				03A681EA2551D60B008E7A7F /* Gotham-XLight.otf */,
-				03A681E82551D60B008E7A7F /* Gotham-XLightItalic.otf */,
+				03636A1D25522B0700BE07F6 /* GothamBlack.ttf */,
+				03636A1C25522B0700BE07F6 /* GothamBlackItalic.ttf */,
+				03636A2525522B0800BE07F6 /* GothamBold.ttf */,
+				03636A1B25522B0600BE07F6 /* GothamBoldItalic.ttf */,
+				03636A1925522B0600BE07F6 /* GothamLight.ttf */,
+				03636A1A25522B0600BE07F6 /* GothamLightItalic.ttf */,
+				03636A2625522B0800BE07F6 /* GothamMedium.ttf */,
+				03636A2025522B0700BE07F6 /* GothamMediumItalic.ttf */,
+				03636A2425522B0800BE07F6 /* GothamThin.ttf */,
+				03636A2225522B0700BE07F6 /* GothamThinItalic.ttf */,
+				03636A2325522B0700BE07F6 /* GothamUltra.ttf */,
+				03636A1E25522B0700BE07F6 /* GothamUltraItalic.ttf */,
+				03636A1F25522B0700BE07F6 /* GothamXLight.ttf */,
+				03636A2125522B0700BE07F6 /* GothamXLightItalic.ttf */,
 			);
 			path = Gotham;
 			sourceTree = "<group>";
@@ -150,11 +274,9 @@
 		039126EB2547A39C00F60F0B /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				03E6984825486EEF00096D22 /* strategyEnum.swift */,
-				039126EC2547A3AF00F60F0B /* game.swift */,
-				03E69839254864A200096D22 /* strategies.swift */,
-				03E6984B2548716200096D22 /* accessors.swift */,
-				03E69854254872EA00096D22 /* dataStructs.swift */,
+				03636A5F25527C8F00BE07F6 /* types */,
+				03636A6025527C9B00BE07F6 /* internal */,
+				03636A6125527CA000BE07F6 /* public */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -162,6 +284,14 @@
 		03A681F72551F32B008E7A7F /* ViewContoller */ = {
 			isa = PBXGroup;
 			children = (
+				03636A3F25522E5300BE07F6 /* generalExtensions.swift */,
+				03F8E0F4252D2054008F383D /* ViewController.swift */,
+				03636A3625522CEF00BE07F6 /* didLoad.swift */,
+				03636A3925522D6200BE07F6 /* light-dark.swift */,
+				03636A3C25522DE500BE07F6 /* buttonsActions.swift */,
+				03636A4725522F2700BE07F6 /* getData.swift */,
+				03636A4A255230B200BE07F6 /* updateViewData.swift */,
+				03636A4F255270C300BE07F6 /* buttonsBehaviour.swift */,
 			);
 			path = ViewContoller;
 			sourceTree = "<group>";
@@ -169,9 +299,11 @@
 		03D369A6252EC98E00F4D1DD /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				039126EB2547A39C00F60F0B /* Game */,
 				03D369BB252ECEBB00F4D1DD /* Card */,
+				039126EB2547A39C00F60F0B /* Game */,
 				03D369BE252ECF2500F4D1DD /* Deck */,
+				03D369BC252ECEE100F4D1DD /* Dealer */,
+				03D369BD252ECEE800F4D1DD /* User */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -187,9 +319,8 @@
 		03D369BC252ECEE100F4D1DD /* Dealer */ = {
 			isa = PBXGroup;
 			children = (
-				03D369AE252EC9C400F4D1DD /* dealer.swift */,
-				03D68651252EF37F003CD2D5 /* oddsB.swift */,
-				03D68654252EF38C003CD2D5 /* oddsS.swift */,
+				03636A7525528A0800BE07F6 /* internal */,
+				03636A7625528A2500BE07F6 /* public */,
 			);
 			path = Dealer;
 			sourceTree = "<group>";
@@ -197,10 +328,8 @@
 		03D369BD252ECEE800F4D1DD /* User */ = {
 			isa = PBXGroup;
 			children = (
-				03D369AB252EC9B700F4D1DD /* user.swift */,
-				03D369D7252EE89C00F4D1DD /* oddsOfBustingNextHit.swift */,
-				03D369DA252EE8B100F4D1DD /* OddsOfNotBustingNextHit.swift */,
-				03D369DD252EE90400F4D1DD /* oddsGettingMoreAses.swift */,
+				03636A7F25528AFB00BE07F6 /* internal */,
+				03636A8025528B0000BE07F6 /* public */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -208,29 +337,21 @@
 		03D369BE252ECF2500F4D1DD /* Deck */ = {
 			isa = PBXGroup;
 			children = (
-				03E6983D2548676A00096D22 /* enums */,
-				03D369B1252EC9F100F4D1DD /* deckDeclaration.swift */,
-				03D369C1252ECFA500F4D1DD /* logicCards.swift */,
-				03D369C5252ECFF100F4D1DD /* logicSum.swift */,
-				037B1542252EEA2F00C3B020 /* commonUpdates.swift */,
-				03D369C8252ED02500F4D1DD /* possibleResults.swift */,
-				03D369CC252ED07300F4D1DD /* cardOpperations.swift */,
-				03D369B8252ECE1500F4D1DD /* stringFormatting.swift */,
-				03E6985725487A4A00096D22 /* statusBools.swift */,
-				03D369BC252ECEE100F4D1DD /* Dealer */,
-				03D369BD252ECEE800F4D1DD /* User */,
+				03E6983D2548676A00096D22 /* types */,
+				03636A65255286BB00BE07F6 /* internal */,
+				03636A66255286C000BE07F6 /* public */,
 			);
 			path = Deck;
 			sourceTree = "<group>";
 		};
-		03E6983D2548676A00096D22 /* enums */ = {
+		03E6983D2548676A00096D22 /* types */ = {
 			isa = PBXGroup;
 			children = (
-				03E6983E2548678600096D22 /* status.swift */,
-				03E69842254867AA00096D22 /* typeOfHand.swift */,
-				03E698452548681200096D22 /* result.swift */,
+				03E6983E2548678600096D22 /* enum-status.swift */,
+				03E69842254867AA00096D22 /* enum-handType.swift */,
+				03E698452548681200096D22 /* enum-sumResult.swift */,
 			);
-			path = enums;
+			path = types;
 			sourceTree = "<group>";
 		};
 		03F8E0E4252D2054008F383D = {
@@ -256,7 +377,6 @@
 				03D369A6252EC98E00F4D1DD /* Source */,
 				03F8E0F0252D2054008F383D /* AppDelegate.swift */,
 				03F8E0F2252D2054008F383D /* SceneDelegate.swift */,
-				03F8E0F4252D2054008F383D /* ViewController.swift */,
 				03A681F72551F32B008E7A7F /* ViewContoller */,
 				03F8E0F6252D2054008F383D /* Main.storyboard */,
 				03F8E0F9252D2057008F383D /* Assets.xcassets */,
@@ -323,21 +443,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03A681EF2551D60B008E7A7F /* Gotham-Bold.otf in Resources */,
-				03A681F22551D60B008E7A7F /* Gotham-Black.otf in Resources */,
-				03A681EE2551D60B008E7A7F /* Gotham-UltraItalic.otf in Resources */,
 				037EAC352550A776001093A4 /* PTSans-Regular.ttf in Resources */,
+				03636A2A25522B0800BE07F6 /* GothamBlackItalic.ttf in Resources */,
+				03636A2925522B0800BE07F6 /* GothamBoldItalic.ttf in Resources */,
+				03636A3425522B0800BE07F6 /* GothamMedium.ttf in Resources */,
 				037EAC362550A776001093A4 /* PTSans-Italic.ttf in Resources */,
-				03A681ED2551D60B008E7A7F /* Gotham-ThinItalic.otf in Resources */,
-				03A681F42551D60B008E7A7F /* Gotham-Thin.otf in Resources */,
-				03A681F12551D60B008E7A7F /* Gotham-XLightItalic.otf in Resources */,
-				03A681F32551D60B008E7A7F /* Gotham-XLight.otf in Resources */,
+				03636A2B25522B0800BE07F6 /* GothamBlack.ttf in Resources */,
 				03F8E0FD252D2057008F383D /* LaunchScreen.storyboard in Resources */,
+				03636A2725522B0800BE07F6 /* GothamLight.ttf in Resources */,
+				03636A2825522B0800BE07F6 /* GothamLightItalic.ttf in Resources */,
+				03636A2F25522B0800BE07F6 /* GothamXLightItalic.ttf in Resources */,
+				03636A3125522B0800BE07F6 /* GothamUltra.ttf in Resources */,
+				03636A3225522B0800BE07F6 /* GothamThin.ttf in Resources */,
+				03636A3325522B0800BE07F6 /* GothamBold.ttf in Resources */,
 				037EAC342550A776001093A4 /* PTSans-BoldItalic.ttf in Resources */,
 				03F8E0FA252D2057008F383D /* Assets.xcassets in Resources */,
-				03A681F52551D60B008E7A7F /* Gotham-Light.otf in Resources */,
-				03A681F02551D60B008E7A7F /* Gotham-BookItalic.otf in Resources */,
+				03636A2E25522B0800BE07F6 /* GothamMediumItalic.ttf in Resources */,
+				03636A3025522B0800BE07F6 /* GothamThinItalic.ttf in Resources */,
+				03636A2D25522B0800BE07F6 /* GothamXLight.ttf in Resources */,
 				037EAC332550A776001093A4 /* PTSans-Bold.ttf in Resources */,
+				03636A2C25522B0800BE07F6 /* GothamUltraItalic.ttf in Resources */,
 				03F8E0F8252D2054008F383D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,33 +474,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03636A3A25522D6200BE07F6 /* light-dark.swift in Sources */,
+				03636A7825528A3F00BE07F6 /* dealerData.swift in Sources */,
+				03636A53255271A600BE07F6 /* status.swift in Sources */,
 				03F8E0F5252D2054008F383D /* ViewController.swift in Sources */,
 				03D369AC252EC9B700F4D1DD /* user.swift in Sources */,
-				03D369CD252ED07300F4D1DD /* cardOpperations.swift in Sources */,
+				03636A702552888700BE07F6 /* updateVoids.swift in Sources */,
+				03D369CD252ED07300F4D1DD /* cardsVoids.swift in Sources */,
 				03F8E0F1252D2054008F383D /* AppDelegate.swift in Sources */,
-				03D369B2252EC9F100F4D1DD /* deckDeclaration.swift in Sources */,
-				03E6985825487A4A00096D22 /* statusBools.swift in Sources */,
+				03636A4025522E5300BE07F6 /* generalExtensions.swift in Sources */,
+				03D369B2252EC9F100F4D1DD /* deck.swift in Sources */,
+				03636A5A255277EA00BE07F6 /* publicGameReturns.swift in Sources */,
+				03636A3725522CEF00BE07F6 /* didLoad.swift in Sources */,
 				03D369B9252ECE1500F4D1DD /* stringFormatting.swift in Sources */,
-				03E69855254872EA00096D22 /* dataStructs.swift in Sources */,
+				03E69855254872EA00096D22 /* struct-data.swift in Sources */,
 				03E6983A254864A200096D22 /* strategies.swift in Sources */,
 				039126ED2547A3AF00F60F0B /* game.swift in Sources */,
-				03E6983F2548678600096D22 /* status.swift in Sources */,
-				03E698462548681200096D22 /* result.swift in Sources */,
-				03D369C2252ECFA500F4D1DD /* logicCards.swift in Sources */,
-				03D369D8252EE89C00F4D1DD /* oddsOfBustingNextHit.swift in Sources */,
-				037B1543252EEA2F00C3B020 /* commonUpdates.swift in Sources */,
-				03D369C6252ECFF100F4D1DD /* logicSum.swift in Sources */,
+				03E6983F2548678600096D22 /* enum-status.swift in Sources */,
+				03636A8525528B4600BE07F6 /* userData.swift in Sources */,
+				03E698462548681200096D22 /* enum-sumResult.swift in Sources */,
+				03D369C2252ECFA500F4D1DD /* cardsReturns.swift in Sources */,
+				03D369D8252EE89C00F4D1DD /* userOddsOfBusting.swift in Sources */,
+				03D369C6252ECFF100F4D1DD /* sum.swift in Sources */,
 				03D369AF252EC9C400F4D1DD /* dealer.swift in Sources */,
-				03D369C9252ED02500F4D1DD /* possibleResults.swift in Sources */,
-				03E69843254867AA00096D22 /* typeOfHand.swift in Sources */,
-				03D369DB252EE8B100F4D1DD /* OddsOfNotBustingNextHit.swift in Sources */,
-				03D68655252EF38C003CD2D5 /* oddsS.swift in Sources */,
-				03D369DE252EE90400F4D1DD /* oddsGettingMoreAses.swift in Sources */,
+				03636A50255270C300BE07F6 /* buttonsBehaviour.swift in Sources */,
+				03636A7C25528A7100BE07F6 /* dealerStringFormatting.swift in Sources */,
+				03E69843254867AA00096D22 /* enum-handType.swift in Sources */,
+				03636A3D25522DE500BE07F6 /* buttonsActions.swift in Sources */,
+				03636A4B255230B200BE07F6 /* updateViewData.swift in Sources */,
+				03D369DB252EE8B100F4D1DD /* userOddsOfNotBusting.swift in Sources */,
+				03D68655252EF38C003CD2D5 /* dealerOddsOfStanding.swift in Sources */,
+				03D369DE252EE90400F4D1DD /* userOddsAses.swift in Sources */,
 				03D369A8252EC9AE00F4D1DD /* card.swift in Sources */,
-				03E6984925486EEF00096D22 /* strategyEnum.swift in Sources */,
-				03D68652252EF37F003CD2D5 /* oddsB.swift in Sources */,
-				03E6984C2548716200096D22 /* accessors.swift in Sources */,
+				03E6984925486EEF00096D22 /* enum-strategy.swift in Sources */,
+				03D68652252EF37F003CD2D5 /* dealerOddsOfBusting.swift in Sources */,
+				03E6984C2548716200096D22 /* publicGameVoids.swift in Sources */,
 				03F8E0F3252D2054008F383D /* SceneDelegate.swift in Sources */,
+				03636A8225528B2200BE07F6 /* userStringFormatting.swift in Sources */,
+				03636A4825522F2700BE07F6 /* getData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
