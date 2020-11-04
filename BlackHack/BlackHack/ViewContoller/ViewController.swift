@@ -11,6 +11,10 @@ class ViewController: UIViewController {
     
     //  Outlets
     
+    @IBOutlet weak var resetButton: UIBarButtonItem!
+    
+    
+    
     
         //  Dealer
         
@@ -124,19 +128,4 @@ class ViewController: UIViewController {
         }
     
 }
-
-
-
-
-//  Strategy behaviour
-
-extension ViewController {
-    
-
-    
-}
-
-
-
-
 

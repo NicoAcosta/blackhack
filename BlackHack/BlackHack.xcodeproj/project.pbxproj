@@ -289,9 +289,9 @@
 				03636A3625522CEF00BE07F6 /* didLoad.swift */,
 				03636A3925522D6200BE07F6 /* light-dark.swift */,
 				03636A3C25522DE500BE07F6 /* buttonsActions.swift */,
+				03636A4F255270C300BE07F6 /* buttonsBehaviour.swift */,
 				03636A4725522F2700BE07F6 /* getData.swift */,
 				03636A4A255230B200BE07F6 /* updateViewData.swift */,
-				03636A4F255270C300BE07F6 /* buttonsBehaviour.swift */,
 			);
 			path = ViewContoller;
 			sourceTree = "<group>";

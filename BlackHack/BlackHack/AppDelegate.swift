@@ -14,6 +14,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let navigationBarAppearance = UINavigationBar.appearance()
+        
+        // navigationBarAppearance.barTintColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.00000000000001)
+        
+        navigationBarAppearance.setBackgroundImage(UIImage(), for: .default)
+        navigationBarAppearance.shadowImage = UIImage()
+        navigationBarAppearance.isTranslucent = true
+        
+        navigationBarAppearance.tintColor = .systemBackground
+        
+        let barButtonAppearance = UIBarButtonItem.appearance()
+        
+        barButtonAppearance.setTitleTextAttributes([.font: UIFont(name:"GothamMedium", size: 18)!], for: .normal)
+        
         return true
     }
 

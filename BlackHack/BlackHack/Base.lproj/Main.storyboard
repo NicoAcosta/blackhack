@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wtq-ML-Dhe">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
@@ -22,6 +22,22 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="g6C-Mc-b1g">
+            <objects>
+                <navigationController interfaceStyle="light" id="Wtq-ML-Dhe" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" alpha="0.0" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JMz-gL-hTZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="HoP-AU-SA8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KUL-Ur-qb1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-977" y="-4"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -630,7 +646,6 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Ck5-sp-s5k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1P3-Xn-Af1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qUA-gM-iPM" secondAttribute="trailing" id="Abf-NC-6OP"/>
@@ -644,6 +659,14 @@
                             <constraint firstItem="yfF-3x-SIX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ssh-6F-2Kw"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="zun-en-7Zp">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="menubar.rectangle" catalog="system" id="Qc0-Pv-uY0">
+                            <color key="tintColor" systemColor="systemBackgroundColor"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Reset" id="1Fb-gz-Oja">
+                            <color key="tintColor" systemColor="systemBackgroundColor"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="dealer10" destination="8f2-F7-ltG" id="Qdi-jf-tGn"/>
                         <outlet property="dealer2" destination="eQU-Ew-ccH" id="cnd-WJ-cBf"/>
@@ -670,6 +693,7 @@
                         <outlet property="dealerSumLabel" destination="LX2-tm-4DK" id="c6G-OC-AX8"/>
                         <outlet property="dealerSumStaticLabel" destination="MXU-Qk-hO9" id="za8-c6-TMS"/>
                         <outlet property="dealerUndo" destination="G3v-15-OdE" id="fkl-Px-xzN"/>
+                        <outlet property="resetButton" destination="1Fb-gz-Oja" id="hXt-fw-WNb"/>
                         <outlet property="separator" destination="yfF-3x-SIX" id="Ds8-CP-wVa"/>
                         <outlet property="strategyLabel" destination="EjN-c3-ptr" id="ohO-gN-QOy"/>
                         <outlet property="strategyView" destination="7iL-9F-B1z" id="zGj-cx-AEK"/>
@@ -702,10 +726,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-17.39130434782609" y="93.75"/>
+            <point key="canvasLocation" x="-129" y="-4"/>
         </scene>
     </scenes>
     <resources>
+        <image name="menubar.rectangle" catalog="system" width="128" height="93"/>
         <image name="table1" width="325" height="800"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

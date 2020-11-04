@@ -59,7 +59,7 @@ extension ViewController {
                     userCardsButtons.forEach({$0.enable()})
             }
             if !userClean.isEnabled {
-                userClean.disable(); userUndo.enable()
+                userClean.enable(); userUndo.enable()
             }
         }
     }
