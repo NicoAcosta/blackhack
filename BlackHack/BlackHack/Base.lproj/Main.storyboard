@@ -50,613 +50,779 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qUA-gM-iPM" userLabel="Dealer">
-                                <rect key="frame" x="0.0" y="53.5" width="414" height="393"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FmY-eG-l2h">
+                                <rect key="frame" x="0.0" y="98" width="414" height="754"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dealer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vp5-dN-gTG" userLabel="Dealer Label">
-                                        <rect key="frame" x="20" y="40" width="374" height="29.5"/>
-                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="25"/>
-                                        <color key="textColor" systemColor="systemBackgroundColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="toJ-ok-Jhe" userLabel="Data">
-                                        <rect key="frame" x="10" y="233" width="394" height="150"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qUA-gM-iPM" userLabel="Dealer">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="359.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MM-5N-IV0">
-                                                <rect key="frame" x="10" y="10" width="374" height="30"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="79G-Tb-VLA" userLabel="Dealer Stack">
+                                                <rect key="frame" x="20" y="10" width="374" height="339.5"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Byb-D5-dP4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dealer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vp5-dN-gTG" userLabel="Dealer Label">
+                                                                <rect key="frame" x="20" y="10" width="334" height="20"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="20" id="PId-ln-d7c"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="25"/>
+                                                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="vp5-dN-gTG" firstAttribute="top" secondItem="Byb-D5-dP4" secondAttribute="top" constant="10" id="RQ4-fJ-091"/>
+                                                            <constraint firstAttribute="bottom" secondItem="vp5-dN-gTG" secondAttribute="bottom" constant="20" id="bHE-Oz-4bX"/>
+                                                            <constraint firstAttribute="trailing" secondItem="vp5-dN-gTG" secondAttribute="trailing" constant="20" id="eaQ-hB-niQ"/>
+                                                            <constraint firstItem="vp5-dN-gTG" firstAttribute="leading" secondItem="Byb-D5-dP4" secondAttribute="leading" constant="20" id="x6e-Pg-BKU"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="qBe-f8-tiV" userLabel="Dealer Buttons">
+                                                        <rect key="frame" x="0.0" y="60" width="374" height="129.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="hie-VO-uVp">
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="41"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRm-b0-hYy">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="41"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
+                                                                        <state key="normal" title="A">
+                                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="dealerAddA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D6I-4X-ODM"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQU-Ew-ccH">
+                                                                        <rect key="frame" x="75.5" y="0.0" width="72.5" height="41"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
+                                                                        <state key="normal" title="2">
+                                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="dealerAdd2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6KG-Jw-yLA"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wno-ra-pQm">
+                                                                        <rect key="frame" x="151" y="0.0" width="72" height="41"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
+                                                                        <state key="normal" title="3">
+                                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="dealerAdd3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8mZ-V5-m80"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtN-KC-K9f">
+                                                                        <rect key="frame" x="226" y="0.0" width="72.5" height="41"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
+                                                                        <state key="normal" title="4">
+                                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="dealerAdd4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PdB-RG-dKK"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEZ-2s-ved">
+                                                                        <rect key="frame" x="301.5" y="0.0" width="72.5" height="41"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
+                                                                        <state key="normal" title="5">
+                                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="dealerAdd5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gpe-Wn-Lju"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="ffY-TX-sIx">
+                                                                <rect key="frame" x="0.0" y="44" width="374" height="41.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfl-ZS-Kwh">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="41.5"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
+                                                                        <state key="normal" title="6">
+                                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="dealerAdd6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yT2-uA-EnV"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKJ-Ju-8Bv">
+                                                                        <rect key="frame" x="75.5" y="0.0" width="72.5" height="41.5"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
+                                                                        <state key="normal" title="7">
+                                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="dealerAdd7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P3G-8N-zQA"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZh-q8-4G9">
+                                                                        <rect key="frame" x="151" y="0.0" width="72" height="41.5"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
+                                                                        <state key="normal" title="8">
+                                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="dealerAdd8:" destination="BYZ-38-t0r" eventType="touchUpInside" id="foI-SQ-hJI"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exO-iI-NJ6">
+                                                                        <rect key="frame" x="226" y="0.0" width="72.5" height="41.5"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
+                                                                        <state key="normal" title="9">
+                                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="dealerAdd9:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NM9-X6-3ar"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8f2-F7-ltG">
+                                                                        <rect key="frame" x="301.5" y="0.0" width="72.5" height="41.5"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
+                                                                        <state key="normal" title="10">
+                                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="dealerAdd10:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cXZ-u8-efi"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="MCo-Od-xaT">
+                                                                <rect key="frame" x="0.0" y="88.5" width="374" height="41"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kL3-3Y-aWf">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="41"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
+                                                                        <state key="normal" title="Clean">
+                                                                            <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="dealerClean:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IbK-FA-Ver"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GD0-hu-zeN">
+                                                                        <rect key="frame" x="75.5" y="0.0" width="72.5" height="41"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
+                                                                        <state key="normal" title="J">
+                                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="dealerAddJ:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UbB-rH-SG4"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfF-Ku-Lab">
+                                                                        <rect key="frame" x="151" y="0.0" width="72" height="41"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
+                                                                        <state key="normal" title="Q">
+                                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="dealerAddQ:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xbc-GY-azB"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6j5-FI-WcT">
+                                                                        <rect key="frame" x="226" y="0.0" width="72.5" height="41"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
+                                                                        <state key="normal" title="K">
+                                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="dealerAddK:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xyn-OM-kmH"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3v-15-OdE">
+                                                                        <rect key="frame" x="301.5" y="0.0" width="72.5" height="41"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
+                                                                        <state key="normal" title="Undo">
+                                                                            <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="dealerUndo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zfu-dL-Pa5"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3f-Pg-MTX">
+                                                        <rect key="frame" x="0.0" y="199.5" width="374" height="140"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GWz-dM-w5M" userLabel="Dealer Data Stack">
+                                                                <rect key="frame" x="0.0" y="10" width="374" height="120"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MM-5N-IV0">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="30" id="bX1-MI-GM3"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="19"/>
+                                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bTF-dI-6SW">
+                                                                        <rect key="frame" x="0.0" y="30" width="374" height="40"/>
+                                                                        <subviews>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lu6-Tm-Sb9">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="40"/>
+                                                                                <subviews>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sum:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXU-Qk-hO9">
+                                                                                        <rect key="frame" x="47.5" y="12.5" width="42" height="15.5"/>
+                                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="17"/>
+                                                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LX2-tm-4DK">
+                                                                                        <rect key="frame" x="113.5" y="12" width="40" height="16.5"/>
+                                                                                        <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="18"/>
+                                                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="LX2-tm-4DK" firstAttribute="centerX" secondItem="lu6-Tm-Sb9" secondAttribute="centerX" constant="40" id="0hb-31-3BY"/>
+                                                                                    <constraint firstItem="MXU-Qk-hO9" firstAttribute="centerY" secondItem="lu6-Tm-Sb9" secondAttribute="centerY" id="3IA-aC-lGu"/>
+                                                                                    <constraint firstItem="LX2-tm-4DK" firstAttribute="centerY" secondItem="lu6-Tm-Sb9" secondAttribute="centerY" id="fsk-8x-dhF"/>
+                                                                                    <constraint firstItem="MXU-Qk-hO9" firstAttribute="centerX" secondItem="lu6-Tm-Sb9" secondAttribute="centerX" constant="-25" id="n1t-Wv-Xxo"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VNV-Je-BLs">
+                                                                                <rect key="frame" x="187" y="0.0" width="187" height="40"/>
+                                                                                <subviews>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QB8-fE-XRj">
+                                                                                        <rect key="frame" x="25" y="12.5" width="57.5" height="15.5"/>
+                                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="17"/>
+                                                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLb-aZ-0VJ">
+                                                                                        <rect key="frame" x="95" y="12" width="57.5" height="16.5"/>
+                                                                                        <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="18"/>
+                                                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="QB8-fE-XRj" firstAttribute="centerY" secondItem="VNV-Je-BLs" secondAttribute="centerY" id="JtP-LU-GpA"/>
+                                                                                    <constraint firstItem="QB8-fE-XRj" firstAttribute="centerX" secondItem="VNV-Je-BLs" secondAttribute="centerX" constant="-40" id="Tq8-9q-PXH"/>
+                                                                                    <constraint firstItem="lLb-aZ-0VJ" firstAttribute="centerY" secondItem="VNV-Je-BLs" secondAttribute="centerY" id="ZIl-2N-r3y"/>
+                                                                                    <constraint firstItem="lLb-aZ-0VJ" firstAttribute="centerX" secondItem="VNV-Je-BLs" secondAttribute="centerX" constant="30" id="ubW-VC-edE"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                        </subviews>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="6RT-JQ-ru4"/>
+                                                                        </constraints>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sf8-k7-6AE">
+                                                                        <rect key="frame" x="0.0" y="70" width="374" height="50"/>
+                                                                        <subviews>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4jd-EW-aD3">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="50"/>
+                                                                                <subviews>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Odds of standing:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SF7-Mf-11J">
+                                                                                        <rect key="frame" x="13.5" y="5" width="80" height="40"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="width" constant="80" id="PSe-Ix-9f7"/>
+                                                                                            <constraint firstAttribute="height" constant="40" id="iRq-O1-2rJ"/>
+                                                                                        </constraints>
+                                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="17"/>
+                                                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQf-eG-iIg">
+                                                                                        <rect key="frame" x="97.5" y="11.5" width="82.5" height="27"/>
+                                                                                        <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="30"/>
+                                                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="bQf-eG-iIg" firstAttribute="centerX" secondItem="4jd-EW-aD3" secondAttribute="centerX" constant="45" id="jnk-jk-lVo"/>
+                                                                                    <constraint firstItem="SF7-Mf-11J" firstAttribute="centerY" secondItem="4jd-EW-aD3" secondAttribute="centerY" id="psO-PX-Qrc"/>
+                                                                                    <constraint firstItem="SF7-Mf-11J" firstAttribute="centerX" secondItem="4jd-EW-aD3" secondAttribute="centerX" constant="-40" id="qN4-ou-Bej"/>
+                                                                                    <constraint firstItem="bQf-eG-iIg" firstAttribute="centerY" secondItem="4jd-EW-aD3" secondAttribute="centerY" id="w3m-BI-Zzq"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jxZ-4i-OPU">
+                                                                                <rect key="frame" x="187" y="0.0" width="187" height="50"/>
+                                                                                <subviews>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Odds of busting:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6D-eh-8x7">
+                                                                                        <rect key="frame" x="13.5" y="2.5" width="80" height="45"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="width" constant="80" id="72v-X3-oGi"/>
+                                                                                            <constraint firstAttribute="height" constant="45" id="hrD-Un-XMl"/>
+                                                                                        </constraints>
+                                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="17"/>
+                                                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ks-mt-BLj">
+                                                                                        <rect key="frame" x="92.5" y="11.5" width="82.5" height="27"/>
+                                                                                        <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="30"/>
+                                                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="6Ks-mt-BLj" firstAttribute="centerY" secondItem="jxZ-4i-OPU" secondAttribute="centerY" id="XJs-HF-31Q"/>
+                                                                                    <constraint firstItem="6Ks-mt-BLj" firstAttribute="centerX" secondItem="jxZ-4i-OPU" secondAttribute="centerX" constant="40" id="Xxc-ef-M0j"/>
+                                                                                    <constraint firstItem="h6D-eh-8x7" firstAttribute="centerY" secondItem="jxZ-4i-OPU" secondAttribute="centerY" id="ogU-fd-N21"/>
+                                                                                    <constraint firstItem="h6D-eh-8x7" firstAttribute="centerX" secondItem="jxZ-4i-OPU" secondAttribute="centerX" constant="-40" id="zoX-hv-Bce"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                        </subviews>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="50" id="wu3-BJ-X5B"/>
+                                                                        </constraints>
+                                                                    </stackView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="GWz-dM-w5M" secondAttribute="bottom" constant="10" id="gwy-7k-J3v"/>
+                                                            <constraint firstItem="GWz-dM-w5M" firstAttribute="centerX" secondItem="c3f-Pg-MTX" secondAttribute="centerX" id="lY6-7r-PHu"/>
+                                                            <constraint firstItem="GWz-dM-w5M" firstAttribute="top" secondItem="c3f-Pg-MTX" secondAttribute="top" constant="10" id="yhJ-wc-C9p"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="mf5-0z-eN4"/>
+                                                    <constraint firstItem="qBe-f8-tiV" firstAttribute="leading" secondItem="79G-Tb-VLA" secondAttribute="leading" constant="35" id="CB2-kE-h4F"/>
+                                                    <constraint firstAttribute="trailing" secondItem="qBe-f8-tiV" secondAttribute="trailing" constant="35" id="etj-pr-gWL"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="19"/>
-                                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sum:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXU-Qk-hO9">
-                                                <rect key="frame" x="35" y="60" width="60" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="17"/>
-                                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LX2-tm-4DK">
-                                                <rect key="frame" x="83" y="64" width="80" height="22"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="18"/>
-                                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QB8-fE-XRj">
-                                                <rect key="frame" x="184" y="60" width="75" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="17"/>
-                                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Odds of standing:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SF7-Mf-11J">
-                                                <rect key="frame" x="21" y="94" width="89" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="17"/>
-                                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQf-eG-iIg">
-                                                <rect key="frame" x="96" y="102" width="107" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="30"/>
-                                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ks-mt-BLj">
-                                                <rect key="frame" x="286" y="93" width="108" height="51"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="30"/>
-                                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLb-aZ-0VJ">
-                                                <rect key="frame" x="250" y="53" width="134" height="44"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="18"/>
-                                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Odds of busting:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6D-eh-8x7">
-                                                <rect key="frame" x="214" y="91" width="77" height="55"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="17"/>
-                                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            </stackView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="9MM-5N-IV0" firstAttribute="top" secondItem="toJ-ok-Jhe" secondAttribute="top" constant="10" id="HlG-3t-YC7"/>
-                                            <constraint firstAttribute="height" constant="150" id="eGK-ZU-LuE"/>
-                                            <constraint firstAttribute="trailing" secondItem="9MM-5N-IV0" secondAttribute="trailing" constant="10" id="frf-1c-kBe"/>
-                                            <constraint firstItem="9MM-5N-IV0" firstAttribute="leading" secondItem="toJ-ok-Jhe" secondAttribute="leading" constant="10" id="rPx-5d-Eus"/>
+                                            <constraint firstAttribute="trailing" secondItem="79G-Tb-VLA" secondAttribute="trailing" constant="20" id="H4h-Uk-dfc"/>
+                                            <constraint firstItem="79G-Tb-VLA" firstAttribute="leading" secondItem="qUA-gM-iPM" secondAttribute="leading" constant="20" id="J7F-oW-R55"/>
+                                            <constraint firstItem="79G-Tb-VLA" firstAttribute="top" secondItem="qUA-gM-iPM" secondAttribute="top" constant="10" id="T0a-Zb-acV"/>
+                                            <constraint firstAttribute="bottom" secondItem="79G-Tb-VLA" secondAttribute="bottom" constant="10" id="dQF-Hv-DEa"/>
                                         </constraints>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="qBe-f8-tiV" userLabel="Dealer Buttons">
-                                        <rect key="frame" x="30" y="89.5" width="354" height="123.5"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPj-ca-H6d" userLabel="Middle">
+                                        <rect key="frame" x="0.0" y="359.5" width="414" height="35"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="hie-VO-uVp">
-                                                <rect key="frame" x="0.0" y="0.0" width="354" height="39"/>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yfF-3x-SIX" userLabel="Separador">
+                                                <rect key="frame" x="0.0" y="16" width="414" height="3"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="3" id="GGc-Ta-iWY"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7iL-9F-B1z" userLabel="strategyView">
+                                                <rect key="frame" x="157" y="0.0" width="100" height="35"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRm-b0-hYy">
-                                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="39"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
-                                                        <state key="normal" title="A">
-                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="dealerAddA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D6I-4X-ODM"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQU-Ew-ccH">
-                                                        <rect key="frame" x="71.5" y="0.0" width="68.5" height="39"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
-                                                        <state key="normal" title="2">
-                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="dealerAdd2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6KG-Jw-yLA"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wno-ra-pQm">
-                                                        <rect key="frame" x="143" y="0.0" width="68" height="39"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
-                                                        <state key="normal" title="3">
-                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="dealerAdd3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8mZ-V5-m80"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtN-KC-K9f">
-                                                        <rect key="frame" x="214" y="0.0" width="68.5" height="39"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
-                                                        <state key="normal" title="4">
-                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="dealerAdd4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PdB-RG-dKK"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEZ-2s-ved">
-                                                        <rect key="frame" x="285.5" y="0.0" width="68.5" height="39"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
-                                                        <state key="normal" title="5">
-                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="dealerAdd5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gpe-Wn-Lju"/>
-                                                        </connections>
-                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strategy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjN-c3-ptr">
+                                                        <rect key="frame" x="11.5" y="10" width="77" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="GothamUltra" family="Gotham Ultra" pointSize="17"/>
+                                                        <color key="textColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="ffY-TX-sIx">
-                                                <rect key="frame" x="0.0" y="42" width="354" height="39.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="EjN-c3-ptr" firstAttribute="centerY" secondItem="7iL-9F-B1z" secondAttribute="centerY" id="Ek9-h9-EQg"/>
+                                                    <constraint firstItem="EjN-c3-ptr" firstAttribute="centerX" secondItem="7iL-9F-B1z" secondAttribute="centerX" id="LHY-y4-ZKZ"/>
+                                                    <constraint firstAttribute="width" constant="100" id="y7s-3v-vzg"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="7iL-9F-B1z" secondAttribute="bottom" id="44f-Uq-ffq"/>
+                                            <constraint firstItem="7iL-9F-B1z" firstAttribute="top" secondItem="mPj-ca-H6d" secondAttribute="top" id="CVX-CF-iM0"/>
+                                            <constraint firstItem="yfF-3x-SIX" firstAttribute="centerX" secondItem="mPj-ca-H6d" secondAttribute="centerX" id="OLC-UT-nGt"/>
+                                            <constraint firstItem="7iL-9F-B1z" firstAttribute="centerY" secondItem="mPj-ca-H6d" secondAttribute="centerY" id="Pgb-Ft-NEJ"/>
+                                            <constraint firstItem="7iL-9F-B1z" firstAttribute="centerX" secondItem="mPj-ca-H6d" secondAttribute="centerX" id="S30-8l-nus"/>
+                                            <constraint firstItem="yfF-3x-SIX" firstAttribute="centerY" secondItem="mPj-ca-H6d" secondAttribute="centerY" id="X0y-4Y-Pxd"/>
+                                            <constraint firstAttribute="height" constant="35" id="sUZ-y7-5Hh"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ck5-sp-s5k" userLabel="User">
+                                        <rect key="frame" x="0.0" y="394.5" width="414" height="359.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qhj-aO-v7T" userLabel="User Stack">
+                                                <rect key="frame" x="20" y="10" width="374" height="339.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfl-ZS-Kwh">
-                                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="39.5"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
-                                                        <state key="normal" title="6">
-                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="dealerAdd6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yT2-uA-EnV"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKJ-Ju-8Bv">
-                                                        <rect key="frame" x="71.5" y="0.0" width="68.5" height="39.5"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
-                                                        <state key="normal" title="7">
-                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="dealerAdd7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P3G-8N-zQA"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZh-q8-4G9">
-                                                        <rect key="frame" x="143" y="0.0" width="68" height="39.5"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
-                                                        <state key="normal" title="8">
-                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="dealerAdd8:" destination="BYZ-38-t0r" eventType="touchUpInside" id="foI-SQ-hJI"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exO-iI-NJ6">
-                                                        <rect key="frame" x="214" y="0.0" width="68.5" height="39.5"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
-                                                        <state key="normal" title="9">
-                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="dealerAdd9:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NM9-X6-3ar"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8f2-F7-ltG">
-                                                        <rect key="frame" x="285.5" y="0.0" width="68.5" height="39.5"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
-                                                        <state key="normal" title="10">
-                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="dealerAdd10:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cXZ-u8-efi"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="MCo-Od-xaT">
-                                                <rect key="frame" x="0.0" y="84.5" width="354" height="39"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kL3-3Y-aWf">
-                                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="39"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
-                                                        <state key="normal" title="Clean">
-                                                            <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="dealerClean:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IbK-FA-Ver"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GD0-hu-zeN">
-                                                        <rect key="frame" x="71.5" y="0.0" width="68.5" height="39"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
-                                                        <state key="normal" title="J">
-                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="dealerAddJ:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UbB-rH-SG4"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfF-Ku-Lab">
-                                                        <rect key="frame" x="143" y="0.0" width="68" height="39"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
-                                                        <state key="normal" title="Q">
-                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="dealerAddQ:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xbc-GY-azB"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6j5-FI-WcT">
-                                                        <rect key="frame" x="214" y="0.0" width="68.5" height="39"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
-                                                        <state key="normal" title="K">
-                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="dealerAddK:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xyn-OM-kmH"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3v-15-OdE">
-                                                        <rect key="frame" x="285.5" y="0.0" width="68.5" height="39"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
-                                                        <state key="normal" title="Undo">
-                                                            <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="dealerUndo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zfu-dL-Pa5"/>
-                                                        </connections>
-                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bEw-mf-Ep2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="140"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="g2L-Mi-UTf" userLabel="User Data Stack">
+                                                                <rect key="frame" x="0.0" y="10" width="374" height="120"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Xc6-X3-32y" userLabel="Odds">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                                                        <subviews>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nAp-Fp-TZF">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="50"/>
+                                                                                <subviews>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Odds of not busting if hit:" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jP9-WB-JKB">
+                                                                                        <rect key="frame" x="3.5" y="2.5" width="90" height="45"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="45" id="9Ax-WU-UU7"/>
+                                                                                            <constraint firstAttribute="width" constant="90" id="vZD-aA-XrX"/>
+                                                                                        </constraints>
+                                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="15"/>
+                                                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjb-V7-pll">
+                                                                                        <rect key="frame" x="97.5" y="11.5" width="82.5" height="27"/>
+                                                                                        <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="30"/>
+                                                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="jP9-WB-JKB" firstAttribute="centerY" secondItem="nAp-Fp-TZF" secondAttribute="centerY" id="6lT-io-psf"/>
+                                                                                    <constraint firstItem="jP9-WB-JKB" firstAttribute="centerX" secondItem="nAp-Fp-TZF" secondAttribute="centerX" constant="-45" id="7kY-xE-DLd"/>
+                                                                                    <constraint firstItem="Yjb-V7-pll" firstAttribute="centerX" secondItem="nAp-Fp-TZF" secondAttribute="centerX" constant="45" id="Rk5-b0-1hB"/>
+                                                                                    <constraint firstItem="Yjb-V7-pll" firstAttribute="centerY" secondItem="nAp-Fp-TZF" secondAttribute="centerY" id="TGH-Wa-Blc"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2el-Q2-9ha">
+                                                                                <rect key="frame" x="187" y="0.0" width="187" height="50"/>
+                                                                                <subviews>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Odds of busting if hit:" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oc-OI-MDh">
+                                                                                        <rect key="frame" x="13.5" y="2.5" width="90" height="45"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="width" constant="90" id="WpW-x4-zef"/>
+                                                                                            <constraint firstAttribute="height" constant="45" id="oeB-hm-Hn8"/>
+                                                                                        </constraints>
+                                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="15"/>
+                                                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5i-zu-aRn">
+                                                                                        <rect key="frame" x="92.5" y="11.5" width="82.5" height="27"/>
+                                                                                        <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="30"/>
+                                                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="w5i-zu-aRn" firstAttribute="centerX" secondItem="2el-Q2-9ha" secondAttribute="centerX" constant="40" id="7vr-1V-Occ"/>
+                                                                                    <constraint firstItem="4oc-OI-MDh" firstAttribute="centerX" secondItem="2el-Q2-9ha" secondAttribute="centerX" constant="-35" id="9Ka-g9-TAc"/>
+                                                                                    <constraint firstItem="w5i-zu-aRn" firstAttribute="centerY" secondItem="2el-Q2-9ha" secondAttribute="centerY" id="nyn-ob-WBN"/>
+                                                                                    <constraint firstItem="4oc-OI-MDh" firstAttribute="centerY" secondItem="2el-Q2-9ha" secondAttribute="centerY" id="uwi-0p-zyH"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                        </subviews>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="50" id="VTg-jo-QqI"/>
+                                                                        </constraints>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4r9-ha-R0z" userLabel="Sum">
+                                                                        <rect key="frame" x="0.0" y="50" width="374" height="40"/>
+                                                                        <subviews>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PnG-yB-l5J">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="40"/>
+                                                                                <subviews>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sum:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXS-QE-1nZ">
+                                                                                        <rect key="frame" x="42.5" y="12.5" width="42" height="15.5"/>
+                                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="17"/>
+                                                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuK-cg-GXK">
+                                                                                        <rect key="frame" x="103.5" y="12" width="40" height="16.5"/>
+                                                                                        <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="18"/>
+                                                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="eXS-QE-1nZ" firstAttribute="centerY" secondItem="PnG-yB-l5J" secondAttribute="centerY" id="EXk-bh-jVa"/>
+                                                                                    <constraint firstItem="NuK-cg-GXK" firstAttribute="centerX" secondItem="PnG-yB-l5J" secondAttribute="centerX" constant="30" id="OV5-NQ-9oX"/>
+                                                                                    <constraint firstItem="NuK-cg-GXK" firstAttribute="centerY" secondItem="PnG-yB-l5J" secondAttribute="centerY" id="fp3-kq-Jlr"/>
+                                                                                    <constraint firstItem="eXS-QE-1nZ" firstAttribute="centerX" secondItem="PnG-yB-l5J" secondAttribute="centerX" constant="-30" id="iFj-Rd-wlr"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Guk-Lv-ze2">
+                                                                                <rect key="frame" x="187" y="0.0" width="187" height="40"/>
+                                                                                <subviews>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSu-sa-cct">
+                                                                                        <rect key="frame" x="95" y="12" width="57.5" height="16.5"/>
+                                                                                        <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="18"/>
+                                                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qk-aZ-60y">
+                                                                                        <rect key="frame" x="25" y="12.5" width="57.5" height="15.5"/>
+                                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="17"/>
+                                                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="zSu-sa-cct" firstAttribute="centerY" secondItem="Guk-Lv-ze2" secondAttribute="centerY" id="0vq-Xg-beZ"/>
+                                                                                    <constraint firstItem="6qk-aZ-60y" firstAttribute="centerX" secondItem="Guk-Lv-ze2" secondAttribute="centerX" constant="-40" id="BcH-A8-6bF"/>
+                                                                                    <constraint firstItem="6qk-aZ-60y" firstAttribute="centerY" secondItem="Guk-Lv-ze2" secondAttribute="centerY" id="dwE-nQ-SWH"/>
+                                                                                    <constraint firstItem="zSu-sa-cct" firstAttribute="centerX" secondItem="Guk-Lv-ze2" secondAttribute="centerX" constant="30" id="vSt-Rp-oqc"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                        </subviews>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="E2V-Nb-YgO"/>
+                                                                        </constraints>
+                                                                    </stackView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ud5-Ak-6Yb">
+                                                                        <rect key="frame" x="0.0" y="90" width="374" height="30"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="30" id="QhZ-fR-CIB"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="19"/>
+                                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="g2L-Mi-UTf" firstAttribute="top" secondItem="bEw-mf-Ep2" secondAttribute="top" constant="10" id="7S9-LK-4mi"/>
+                                                            <constraint firstAttribute="bottom" secondItem="g2L-Mi-UTf" secondAttribute="bottom" constant="10" id="MF8-UO-geT"/>
+                                                            <constraint firstItem="g2L-Mi-UTf" firstAttribute="centerX" secondItem="bEw-mf-Ep2" secondAttribute="centerX" id="fjj-aW-HWd"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="jOA-aM-drn" userLabel="User Buttons">
+                                                        <rect key="frame" x="0.0" y="140" width="374" height="139.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="1hf-Fd-pIe">
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="44.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OvG-Cv-q2a">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="44.5"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
+                                                                        <state key="normal" title="A">
+                                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="userAddA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q9s-Bi-Iug"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0U9-dz-J6g">
+                                                                        <rect key="frame" x="75.5" y="0.0" width="72.5" height="44.5"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
+                                                                        <state key="normal" title="2">
+                                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="userAdd2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f5l-nu-m5u"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3q-FG-6MK">
+                                                                        <rect key="frame" x="151" y="0.0" width="72" height="44.5"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
+                                                                        <state key="normal" title="3">
+                                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="userAdd3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wfz-4H-p1C"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gY8-eT-ELh">
+                                                                        <rect key="frame" x="226" y="0.0" width="72.5" height="44.5"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
+                                                                        <state key="normal" title="4">
+                                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="userAdd4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p1p-JA-L5j"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6H-tz-RIl">
+                                                                        <rect key="frame" x="301.5" y="0.0" width="72.5" height="44.5"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
+                                                                        <state key="normal" title="5">
+                                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="userAdd5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SFw-6J-n16"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="scL-s4-1BQ">
+                                                                <rect key="frame" x="0.0" y="47.5" width="374" height="44.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cn0-2j-QFQ">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="44.5"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
+                                                                        <state key="normal" title="6">
+                                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="userAdd6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dL7-8x-9aq"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klC-il-6V4">
+                                                                        <rect key="frame" x="75.5" y="0.0" width="72.5" height="44.5"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
+                                                                        <state key="normal" title="7">
+                                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="userAdd7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t3N-ZE-rnN"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsL-2p-erl">
+                                                                        <rect key="frame" x="151" y="0.0" width="72" height="44.5"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
+                                                                        <state key="normal" title="8">
+                                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="userAdd8:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r7e-zo-Bna"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2s-lv-bWD">
+                                                                        <rect key="frame" x="226" y="0.0" width="72.5" height="44.5"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
+                                                                        <state key="normal" title="9">
+                                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="userAdd9:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ri4-wb-JH7"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53D-1x-vfz">
+                                                                        <rect key="frame" x="301.5" y="0.0" width="72.5" height="44.5"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
+                                                                        <state key="normal" title="10">
+                                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="userAdd10:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hO6-tB-pVa"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="eJE-gi-Sff">
+                                                                <rect key="frame" x="0.0" y="95" width="374" height="44.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6i-0T-ddu">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="44.5"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
+                                                                        <state key="normal" title="Clean">
+                                                                            <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="userClean:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ubf-VI-5CU"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAL-R7-vnP">
+                                                                        <rect key="frame" x="75.5" y="0.0" width="72.5" height="44.5"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
+                                                                        <state key="normal" title="J">
+                                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="userAddJ:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4qS-de-fLF"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnW-35-H1I">
+                                                                        <rect key="frame" x="151" y="0.0" width="72" height="44.5"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
+                                                                        <state key="normal" title="Q">
+                                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="userAddQ:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iX4-gc-F9J"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpH-1T-XvN">
+                                                                        <rect key="frame" x="226" y="0.0" width="72.5" height="44.5"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
+                                                                        <state key="normal" title="K">
+                                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="userAddK:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VT6-zH-2PU"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P32-5P-eaG">
+                                                                        <rect key="frame" x="301.5" y="0.0" width="72.5" height="44.5"/>
+                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
+                                                                        <state key="normal" title="Undo">
+                                                                            <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="userUndo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jtc-nx-LLt"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Een-Qe-MC1">
+                                                        <rect key="frame" x="0.0" y="279.5" width="374" height="60"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGL-wd-cVm">
+                                                                <rect key="frame" x="0.0" y="20" width="374" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="0Wg-7R-Tgv"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="25"/>
+                                                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="AGL-wd-cVm" secondAttribute="bottom" constant="10" id="Wk3-MK-cjL"/>
+                                                            <constraint firstItem="AGL-wd-cVm" firstAttribute="top" secondItem="Een-Qe-MC1" secondAttribute="top" constant="20" id="m8T-9W-GOS"/>
+                                                        </constraints>
+                                                    </view>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                    </stackView>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="qhj-aO-v7T" secondAttribute="trailing" constant="20" id="FzM-MG-gxB"/>
+                                            <constraint firstItem="qhj-aO-v7T" firstAttribute="leading" secondItem="Ck5-sp-s5k" secondAttribute="leading" constant="20" id="b5g-mw-gRe"/>
+                                            <constraint firstAttribute="bottom" secondItem="qhj-aO-v7T" secondAttribute="bottom" constant="10" id="lK0-nW-1Ca"/>
+                                            <constraint firstItem="qhj-aO-v7T" firstAttribute="top" secondItem="Ck5-sp-s5k" secondAttribute="top" constant="10" id="zhl-Bg-f8g"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="qBe-f8-tiV" firstAttribute="top" secondItem="vp5-dN-gTG" secondAttribute="bottom" constant="20" id="2lv-qb-YSj"/>
-                                    <constraint firstAttribute="trailing" secondItem="vp5-dN-gTG" secondAttribute="trailing" constant="20" id="9zh-66-ayI"/>
-                                    <constraint firstAttribute="height" constant="393" id="EbR-hr-P5h"/>
-                                    <constraint firstItem="vp5-dN-gTG" firstAttribute="leading" secondItem="qUA-gM-iPM" secondAttribute="leading" constant="20" id="GbM-hm-4KH"/>
-                                    <constraint firstAttribute="trailing" secondItem="toJ-ok-Jhe" secondAttribute="trailing" constant="10" id="Imi-Hg-zUn"/>
-                                    <constraint firstItem="vp5-dN-gTG" firstAttribute="top" secondItem="qUA-gM-iPM" secondAttribute="top" constant="40" id="Yom-Eh-oTf"/>
-                                    <constraint firstItem="qBe-f8-tiV" firstAttribute="leading" secondItem="qUA-gM-iPM" secondAttribute="leading" constant="30" id="bjS-bL-Rmm"/>
-                                    <constraint firstAttribute="trailing" secondItem="qBe-f8-tiV" secondAttribute="trailing" constant="30" id="bxq-yZ-WI0"/>
-                                    <constraint firstAttribute="bottom" secondItem="toJ-ok-Jhe" secondAttribute="bottom" constant="10" id="c4d-XL-Omm"/>
-                                    <constraint firstItem="toJ-ok-Jhe" firstAttribute="leading" secondItem="qUA-gM-iPM" secondAttribute="leading" constant="10" id="mX5-zT-eZb"/>
-                                    <constraint firstItem="toJ-ok-Jhe" firstAttribute="top" secondItem="qBe-f8-tiV" secondAttribute="bottom" constant="20" id="vdx-VO-DEu"/>
+                                    <constraint firstItem="mPj-ca-H6d" firstAttribute="centerY" secondItem="FmY-eG-l2h" secondAttribute="centerY" id="Snt-9i-iD5"/>
                                 </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfF-3x-SIX" userLabel="Separador">
-                                <rect key="frame" x="0.0" y="456.5" width="414" height="3"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="3" id="GGc-Ta-iWY"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ck5-sp-s5k" userLabel="User">
-                                <rect key="frame" x="0.0" y="469.5" width="414" height="393"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdg-ua-47F" userLabel="Data">
-                                        <rect key="frame" x="10" y="10" width="394" height="150"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ud5-Ak-6Yb">
-                                                <rect key="frame" x="10" y="120" width="374" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="VPO-ri-5Qt"/>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="jeD-sE-dyH"/>
-                                                    <constraint firstAttribute="height" constant="30" id="kXF-Rv-k2w"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="19"/>
-                                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sum:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXS-QE-1nZ">
-                                                <rect key="frame" x="35" y="73" width="60" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="17"/>
-                                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuK-cg-GXK">
-                                                <rect key="frame" x="83" y="77" width="80" height="22"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="18"/>
-                                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qk-aZ-60y">
-                                                <rect key="frame" x="184" y="73" width="75" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="17"/>
-                                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Odds of not busting if hit:" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jP9-WB-JKB">
-                                                <rect key="frame" x="14" y="9" width="87" height="61"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="15"/>
-                                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjb-V7-pll">
-                                                <rect key="frame" x="103" y="23" width="103" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="30"/>
-                                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5i-zu-aRn">
-                                                <rect key="frame" x="289" y="14" width="105" height="51"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="30"/>
-                                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSu-sa-cct">
-                                                <rect key="frame" x="250" y="66" width="136" height="44"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="18"/>
-                                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Odds of busting if hit:" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oc-OI-MDh">
-                                                <rect key="frame" x="220" y="12" width="63" height="55"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="15"/>
-                                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="Ud5-Ak-6Yb" secondAttribute="trailing" constant="10" id="1aN-yF-nvU"/>
-                                            <constraint firstAttribute="bottom" secondItem="Ud5-Ak-6Yb" secondAttribute="bottom" id="B7F-wz-hU8"/>
-                                            <constraint firstItem="Ud5-Ak-6Yb" firstAttribute="leading" secondItem="kdg-ua-47F" secondAttribute="leading" constant="10" id="sa1-nR-QTE"/>
-                                            <constraint firstAttribute="height" constant="150" id="xpa-qN-QXC"/>
-                                        </constraints>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGL-wd-cVm">
-                                        <rect key="frame" x="10" y="323" width="394" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="M3P-gi-ETY"/>
-                                            <constraint firstAttribute="height" constant="30" id="O72-tz-MSR"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="25"/>
-                                        <color key="textColor" systemColor="systemBackgroundColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="jOA-aM-drn" userLabel="User Buttons">
-                                        <rect key="frame" x="30" y="180" width="354" height="123"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="1hf-Fd-pIe">
-                                                <rect key="frame" x="0.0" y="0.0" width="354" height="39"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OvG-Cv-q2a">
-                                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="39"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
-                                                        <state key="normal" title="A">
-                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="userAddA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q9s-Bi-Iug"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0U9-dz-J6g">
-                                                        <rect key="frame" x="71.5" y="0.0" width="68.5" height="39"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
-                                                        <state key="normal" title="2">
-                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="userAdd2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f5l-nu-m5u"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3q-FG-6MK">
-                                                        <rect key="frame" x="143" y="0.0" width="68" height="39"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
-                                                        <state key="normal" title="3">
-                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="userAdd3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wfz-4H-p1C"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gY8-eT-ELh">
-                                                        <rect key="frame" x="214" y="0.0" width="68.5" height="39"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
-                                                        <state key="normal" title="4">
-                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="userAdd4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p1p-JA-L5j"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6H-tz-RIl">
-                                                        <rect key="frame" x="285.5" y="0.0" width="68.5" height="39"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
-                                                        <state key="normal" title="5">
-                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="userAdd5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SFw-6J-n16"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="scL-s4-1BQ">
-                                                <rect key="frame" x="0.0" y="42" width="354" height="39"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cn0-2j-QFQ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="39"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
-                                                        <state key="normal" title="6">
-                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="userAdd6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dL7-8x-9aq"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klC-il-6V4">
-                                                        <rect key="frame" x="71.5" y="0.0" width="68.5" height="39"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
-                                                        <state key="normal" title="7">
-                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="userAdd7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t3N-ZE-rnN"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsL-2p-erl">
-                                                        <rect key="frame" x="143" y="0.0" width="68" height="39"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
-                                                        <state key="normal" title="8">
-                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="userAdd8:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r7e-zo-Bna"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2s-lv-bWD">
-                                                        <rect key="frame" x="214" y="0.0" width="68.5" height="39"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
-                                                        <state key="normal" title="9">
-                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="userAdd9:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ri4-wb-JH7"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53D-1x-vfz">
-                                                        <rect key="frame" x="285.5" y="0.0" width="68.5" height="39"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
-                                                        <state key="normal" title="10">
-                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="userAdd10:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hO6-tB-pVa"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="eJE-gi-Sff">
-                                                <rect key="frame" x="0.0" y="84" width="354" height="39"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6i-0T-ddu">
-                                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="39"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
-                                                        <state key="normal" title="Clean">
-                                                            <color key="titleColor" systemColor="systemBackgroundColor"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="userClean:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ubf-VI-5CU"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAL-R7-vnP">
-                                                        <rect key="frame" x="71.5" y="0.0" width="68.5" height="39"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
-                                                        <state key="normal" title="J">
-                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="userAddJ:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4qS-de-fLF"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnW-35-H1I">
-                                                        <rect key="frame" x="143" y="0.0" width="68" height="39"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
-                                                        <state key="normal" title="Q">
-                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="userAddQ:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iX4-gc-F9J"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpH-1T-XvN">
-                                                        <rect key="frame" x="214" y="0.0" width="68.5" height="39"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
-                                                        <state key="normal" title="K">
-                                                            <color key="titleColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="userAddK:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VT6-zH-2PU"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P32-5P-eaG">
-                                                        <rect key="frame" x="285.5" y="0.0" width="68.5" height="39"/>
-                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
-                                                        <state key="normal" title="Undo">
-                                                            <color key="titleColor" systemColor="systemBackgroundColor"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="userUndo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jtc-nx-LLt"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7iL-9F-B1z" userLabel="strategyView">
-                                        <rect key="frame" x="153" y="-32" width="109" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Strategy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjN-c3-ptr">
-                                                <rect key="frame" x="6" y="5" width="96" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="GothamUltra" family="Gotham Ultra" pointSize="17"/>
-                                                <color key="textColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="jOA-aM-drn" secondAttribute="trailing" constant="30" id="6Uh-fU-RLc"/>
-                                    <constraint firstItem="AGL-wd-cVm" firstAttribute="top" secondItem="jOA-aM-drn" secondAttribute="bottom" constant="20" id="6WC-Ky-Trz"/>
-                                    <constraint firstItem="jOA-aM-drn" firstAttribute="leading" secondItem="Ck5-sp-s5k" secondAttribute="leading" constant="30" id="7Z2-uQ-LBq"/>
-                                    <constraint firstItem="jOA-aM-drn" firstAttribute="top" secondItem="kdg-ua-47F" secondAttribute="bottom" constant="20" id="Ihl-kh-3OF"/>
-                                    <constraint firstAttribute="height" constant="393" id="UWe-KQ-so9"/>
-                                    <constraint firstItem="kdg-ua-47F" firstAttribute="leading" secondItem="Ck5-sp-s5k" secondAttribute="leading" constant="10" id="hFx-82-G3M"/>
-                                    <constraint firstAttribute="bottom" secondItem="AGL-wd-cVm" secondAttribute="bottom" constant="40" id="hZC-ML-2Xu"/>
-                                    <constraint firstItem="kdg-ua-47F" firstAttribute="top" secondItem="Ck5-sp-s5k" secondAttribute="top" constant="10" id="lSh-MN-NXL"/>
-                                    <constraint firstAttribute="trailing" secondItem="AGL-wd-cVm" secondAttribute="trailing" constant="10" id="mCK-ZA-YqV"/>
-                                    <constraint firstItem="AGL-wd-cVm" firstAttribute="leading" secondItem="Ck5-sp-s5k" secondAttribute="leading" constant="10" id="oEy-iY-eXe"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="393" id="qI3-U1-bA8"/>
-                                    <constraint firstAttribute="trailing" secondItem="kdg-ua-47F" secondAttribute="trailing" constant="10" id="wfN-zc-DRM"/>
-                                </constraints>
-                            </view>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <constraints>
-                            <constraint firstItem="Ck5-sp-s5k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1P3-Xn-Af1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qUA-gM-iPM" secondAttribute="trailing" id="Abf-NC-6OP"/>
-                            <constraint firstItem="qUA-gM-iPM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CpH-tf-oBM"/>
-                            <constraint firstItem="yfF-3x-SIX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H86-Ho-1vh"/>
-                            <constraint firstItem="yfF-3x-SIX" firstAttribute="top" secondItem="qUA-gM-iPM" secondAttribute="bottom" constant="10" id="HoO-L8-gdv"/>
-                            <constraint firstItem="Ck5-sp-s5k" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YtG-WL-7iA"/>
-                            <constraint firstItem="Ck5-sp-s5k" firstAttribute="top" secondItem="yfF-3x-SIX" secondAttribute="bottom" constant="10" id="bsT-GX-pyE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yfF-3x-SIX" secondAttribute="trailing" id="eAR-hy-iaB"/>
-                            <constraint firstItem="yfF-3x-SIX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="10" id="jQ9-4e-z5m"/>
-                            <constraint firstItem="yfF-3x-SIX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ssh-6F-2Kw"/>
+                            <constraint firstItem="FmY-eG-l2h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Oo-3h-abv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FmY-eG-l2h" secondAttribute="bottom" constant="10" id="3O3-6O-Psk"/>
+                            <constraint firstItem="FmY-eG-l2h" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SXe-7R-t6h"/>
+                            <constraint firstItem="FmY-eG-l2h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="jqk-6p-eea"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zun-en-7Zp">
@@ -729,7 +895,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-129" y="-4"/>
+            <point key="canvasLocation" x="-130.43478260869566" y="-4.0178571428571423"/>
         </scene>
     </scenes>
     <resources>

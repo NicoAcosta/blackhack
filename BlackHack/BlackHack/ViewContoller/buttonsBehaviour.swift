@@ -33,7 +33,7 @@ extension ViewController {
                     dealerCardsButtons.forEach({$0.enable()})
             }
             if !dealerClean.isEnabled {
-                dealerClean.disable(); dealerUndo.enable()
+                dealerClean.enable(); dealerUndo.enable()
             }
         }
         
