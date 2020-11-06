@@ -20,7 +20,7 @@ extension ViewController {
         userCardsButtons    =   [userA, user2, user3, user4, user5, user6, user7, user8, user9, user10, userJ, userQ, userK]
         backgroundButtons   =   dealerCardsButtons + userCardsButtons
         textButtons         =   [userClean, userUndo, dealerClean, dealerUndo]
-        thinLabels          =   [dealerLabel, dealerCardsLabel, dealerSumStaticLabel, dealerStatusLabel, dealerOddsSStaticLabel, dealerOddsBStaticLabel, userLabel, userOddsBStaticLabel, userOddsNBStaticLabel, userSumStaticLabel, userStatusLabel]
+        thinLabels          =   [dealerLabel, dealerCardsLabel, dealerSumStaticLabel, dealerStatusStaticLabel, dealerOddsSStaticLabel, dealerOddsBStaticLabel, userLabel, userOddsBStaticLabel, userOddsNBStaticLabel, userSumStaticLabel, userStatusStaticLabel, userCardsLabel]
         thickLabels         =   [dealerSumLabel, dealerStatusLabel, dealerOddsBLabel, dealerOddsSLabel, userOddsBLabel, userOddsNBLabel, userSumLabel, userStatusLabel]
         
         updateBoth()

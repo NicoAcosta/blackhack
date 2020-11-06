@@ -17,56 +17,67 @@ enum Style {
 
 
 extension ViewController {
-    /*
-    func buttonsAndLabelsColor(_ color: UIColor) {
-        backgroundButtons.forEach({$0.backgroundColor = color})
-        textButtons.forEach({$0.setTitleColor(color, for: .normal)})
-        thinLabels.forEach({$0.textColor = color})
-        thickLabels.forEach({$0.textColor = color})
-        strategyView.backgroundColor = color
-        separator.backgroundColor = color
-    }
-    */
     
     func updateStyle(style: Style) {
         
         switch style {
-        case .light:
-            //buttonsAndLabelsColor(.white)
-            myPreferredStatusBarStyle = .light
-        default:
-            //buttonsAndLabelsColor(.black)
+        case .dark:
             myPreferredStatusBarStyle = .dark
+        case .light:
+            myPreferredStatusBarStyle = .light
         }
         
         setNeedsStatusBarAppearanceUpdate()
     }
     
-    func initStyle() {
+    
+    
+    func checkStyle() {
         
         switch traitCollection.userInterfaceStyle {
         case .unspecified:
             updateStyle(style: .light)
+            //lightFonts()
         case .light:
             updateStyle(style: .light)
+            //lightFonts()
         case .dark:
             updateStyle(style: .dark)
+            //darkFonts()
         @unknown default:
             updateStyle(style: .light)
+            //lightFonts()
         }
+        
     }
     
+    
+    
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        switch traitCollection.userInterfaceStyle {
-        case .unspecified:
-            updateStyle(style: .light)
-        case .light:
-            updateStyle(style: .light)
-        case .dark:
-            updateStyle(style: .dark)
-        @unknown default:
-            updateStyle(style: .light)
-        }
+        
+        checkStyle()
+        
     }
+    
+    
+    
+    func darkFonts() {
+        /*
+        backgroundButtons.forEach({$0.font("GothamMedium")})
+        textButtons.forEach({$0.font("GothamMedium")})
+        thinLabels.forEach({$0.font("GothamMedium")})
+        thickLabels.forEach({$0.font("GothamBold")})
+        */
+    }
+    
+    func lightFonts() {
+        
+        backgroundButtons.forEach({$0.font("GothamLight")})
+        textButtons.forEach({$0.font("GothamLight")})
+        thinLabels.forEach({$0.font("GothamLight")})
+        thickLabels.forEach({$0.font("GothamMedium")})
+        
+    }
+    
     
 }

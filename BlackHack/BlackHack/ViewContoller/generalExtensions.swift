@@ -40,6 +40,12 @@ extension UIButton {
         self.backgroundColor = color
     }
     
+    func font(_ name: String) {
+        self.titleLabel?.font = UIFont(name: name, size: (self.titleLabel?.font.pointSize)!)!
+    }
+    
+    
+    
 }
 
 extension UILabel {
@@ -50,6 +56,10 @@ extension UILabel {
     
     func text(_ text: String) {
         self.text = text
+    }
+    
+    func font(_ name: String) {
+        self.font = UIFont(name: name, size: self.font.pointSize)!
     }
     
 }
