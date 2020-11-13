@@ -11,7 +11,7 @@ import Foundation
 
 
 
-extension ViewController {
+extension PlayViewController {
     
     //  Si no tiene cartas, deshabilitar Clean y Undo
     

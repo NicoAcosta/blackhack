@@ -9,7 +9,7 @@ import Foundation
 
 // Update view elements
 
-extension ViewController {
+extension PlayViewController {
     
     func updateDealerAndUser() {
         updateUser()

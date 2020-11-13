@@ -9,7 +9,7 @@ import Foundation
 
 //  Info
 
-extension ViewController {
+extension PlayViewController {
     
     //  Actualizar data de dealer
     

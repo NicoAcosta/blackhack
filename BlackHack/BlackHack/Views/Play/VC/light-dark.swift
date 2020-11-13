@@ -1,32 +1,22 @@
 //
-//  NavigationController.swift
+//  interfaceStyle-light-dark.swift
 //  BlackHack
 //
-//  Created by Nicolás Acosta on 13/11/2020.
+//  Created by Nicolás Acosta on 03/11/2020.
 //
 
 import Foundation
 import UIKit
 
-class NavigationController : UINavigationController {
-    
-    
-    
-    //  Variable para poder cambiar el status bar style
-    var myPreferredStatusBarStyle : Style = .light
-    
-    
-    
-    //  Cambiar la varialble que define el statur bar style
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        switch myPreferredStatusBarStyle {
-        case .dark:
-            return .darkContent
-        case .light:
-            return .lightContent
-        }
-    }
-    
+
+
+enum Style {
+    case light, dark
+}
+
+
+
+extension PlayViewController {
     
     
     //  Cambiar status bar style
@@ -62,13 +52,27 @@ class NavigationController : UINavigationController {
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         checkInterfaceStyle()
     }
+
     
+    /*
     
-    
-    //  Al cargar el view controller, chequear interface style -> status bar style
-    override func viewDidLoad() {
-        checkInterfaceStyle()
+    func darkFonts() {
+        backgroundButtons.forEach({$0.font("GothamMedium")})
+        textButtons.forEach({$0.font("GothamMedium")})
+        thinLabels.forEach({$0.font("GothamMedium")})
+        thickLabels.forEach({$0.font("GothamBold")})
     }
+    
+    func lightFonts() {
+        
+        backgroundButtons.forEach({$0.font("GothamLight")})
+        textButtons.forEach({$0.font("GothamLight")})
+        thinLabels.forEach({$0.font("GothamLight")})
+        thickLabels.forEach({$0.font("GothamMedium")})
+        
+    }
+ 
+    */
     
     
 }

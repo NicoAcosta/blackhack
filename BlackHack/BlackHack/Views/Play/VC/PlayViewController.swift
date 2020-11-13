@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import InteractiveSideMenu
 
-class ViewController: UIViewController {
+class PlayViewController: UIViewController, SideMenuItemContent {
     
     //  Outlets
     
@@ -115,3 +116,21 @@ class ViewController: UIViewController {
     
     
     
+    //  Inferface Style + Status Bar Style
+    
+        //  Variable para poder cambiar el status bar style
+        var myPreferredStatusBarStyle : Style = .light
+        
+        //  Cambiar la varialble que define el statur bar style
+        override var preferredStatusBarStyle: UIStatusBarStyle {
+            switch myPreferredStatusBarStyle {
+            case .dark:
+                return .darkContent
+            case .light:
+                return .lightContent
+            }
+        }
+    
+    
+    
+}

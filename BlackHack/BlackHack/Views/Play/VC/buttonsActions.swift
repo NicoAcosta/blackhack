@@ -9,7 +9,7 @@ import Foundation
 
 //  Buttons actions
 
-extension ViewController {
+extension PlayViewController {
     
     
     

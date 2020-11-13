@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension ViewController {
+extension PlayViewController {
     
     
     
@@ -36,6 +36,9 @@ extension ViewController {
         //  Actualizar data de dealer y user
         
         updateDealerAndUser()
+        
+        
+        checkInterfaceStyle()
         
         
         

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -49,7 +49,6 @@
 		03D369DE252EE90400F4D1DD /* userOddsAses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369DD252EE90400F4D1DD /* userOddsAses.swift */; };
 		03D68652252EF37F003CD2D5 /* dealerOddsOfBusting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D68651252EF37F003CD2D5 /* dealerOddsOfBusting.swift */; };
 		03D68655252EF38C003CD2D5 /* dealerOddsOfStanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D68654252EF38C003CD2D5 /* dealerOddsOfStanding.swift */; };
-		03DEDFD4255ECED7000B2B96 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DEDFD3255ECED7000B2B96 /* NavigationController.swift */; };
 		03DEDFD9255EE48C000B2B96 /* deckPublicReturns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DEDFD8255EE48C000B2B96 /* deckPublicReturns.swift */; };
 		03E6983A254864A200096D22 /* strategies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E69839254864A200096D22 /* strategies.swift */; };
 		03E6983F2548678600096D22 /* enum-status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6983E2548678600096D22 /* enum-status.swift */; };
@@ -60,10 +59,11 @@
 		03E69855254872EA00096D22 /* struct-data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E69854254872EA00096D22 /* struct-data.swift */; };
 		03F8E0F1252D2054008F383D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8E0F0252D2054008F383D /* AppDelegate.swift */; };
 		03F8E0F3252D2054008F383D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8E0F2252D2054008F383D /* SceneDelegate.swift */; };
-		03F8E0F5252D2054008F383D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8E0F4252D2054008F383D /* ViewController.swift */; };
+		03F8E0F5252D2054008F383D /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8E0F4252D2054008F383D /* PlayViewController.swift */; };
 		03F8E0F8252D2054008F383D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F8E0F6252D2054008F383D /* Main.storyboard */; };
 		03F8E0FA252D2057008F383D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F8E0F9252D2057008F383D /* Assets.xcassets */; };
 		03F8E0FD252D2057008F383D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F8E0FB252D2057008F383D /* LaunchScreen.storyboard */; };
+		58EFC6418A970EB219092CD6 /* Pods_BlackHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28015B32AC68EE670E7BD47B /* Pods_BlackHack.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,7 +109,6 @@
 		03D369DD252EE90400F4D1DD /* userOddsAses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userOddsAses.swift; sourceTree = "<group>"; };
 		03D68651252EF37F003CD2D5 /* dealerOddsOfBusting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dealerOddsOfBusting.swift; sourceTree = "<group>"; };
 		03D68654252EF38C003CD2D5 /* dealerOddsOfStanding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dealerOddsOfStanding.swift; sourceTree = "<group>"; };
-		03DEDFD3255ECED7000B2B96 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		03DEDFD8255EE48C000B2B96 /* deckPublicReturns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deckPublicReturns.swift; sourceTree = "<group>"; };
 		03E69839254864A200096D22 /* strategies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = strategies.swift; sourceTree = "<group>"; };
 		03E6983E2548678600096D22 /* enum-status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "enum-status.swift"; sourceTree = "<group>"; };
@@ -121,11 +120,14 @@
 		03F8E0ED252D2054008F383D /* BlackHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F8E0F0252D2054008F383D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03F8E0F2252D2054008F383D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		03F8E0F4252D2054008F383D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		03F8E0F4252D2054008F383D /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		03F8E0F7252D2054008F383D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03F8E0F9252D2057008F383D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03F8E0FC252D2057008F383D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03F8E0FE252D2057008F383D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D2E7F263D6A2B54E1D365A2 /* Pods-BlackHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHack.release.xcconfig"; path = "Target Support Files/Pods-BlackHack/Pods-BlackHack.release.xcconfig"; sourceTree = "<group>"; };
+		28015B32AC68EE670E7BD47B /* Pods_BlackHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3760B8BFAC000E930F26AF1 /* Pods-BlackHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHack.debug.xcconfig"; path = "Target Support Files/Pods-BlackHack/Pods-BlackHack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,12 +135,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58EFC6418A970EB219092CD6 /* Pods_BlackHack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0331B4A9255F0F9D002AE2ED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03636A3F25522E5300BE07F6 /* generalExtensions.swift */,
+				0331B4AA255F0FDE002AE2ED /* Play */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0331B4AA255F0FDE002AE2ED /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				03F8E0F6252D2054008F383D /* Main.storyboard */,
+				03DEDFD1255ECEB0000B2B96 /* VC */,
+			);
+			path = Play;
+			sourceTree = "<group>";
+		};
 		03636A5F25527C8F00BE07F6 /* types */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,15 +287,11 @@
 			path = Game;
 			sourceTree = "<group>";
 		};
-		03A681F72551F32B008E7A7F /* ViewContoller */ = {
+		03A681F72551F32B008E7A7F /* PlayViewContoller */ = {
 			isa = PBXGroup;
 			children = (
-				03F8E0F6252D2054008F383D /* Main.storyboard */,
-				03636A3F25522E5300BE07F6 /* generalExtensions.swift */,
-				03DEDFD2255ECEBA000B2B96 /* NC */,
-				03DEDFD1255ECEB0000B2B96 /* VC */,
 			);
-			path = ViewContoller;
+			path = PlayViewContoller;
 			sourceTree = "<group>";
 		};
 		03D369A6252EC98E00F4D1DD /* Source */ = {
@@ -328,7 +345,7 @@
 		03DEDFD1255ECEB0000B2B96 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				03F8E0F4252D2054008F383D /* ViewController.swift */,
+				03F8E0F4252D2054008F383D /* PlayViewController.swift */,
 				03636A3625522CEF00BE07F6 /* didLoad.swift */,
 				03636A3925522D6200BE07F6 /* light-dark.swift */,
 				03636A3C25522DE500BE07F6 /* buttonsActions.swift */,
@@ -337,14 +354,6 @@
 				03636A4A255230B200BE07F6 /* updateViewData.swift */,
 			);
 			path = VC;
-			sourceTree = "<group>";
-		};
-		03DEDFD2255ECEBA000B2B96 /* NC */ = {
-			isa = PBXGroup;
-			children = (
-				03DEDFD3255ECED7000B2B96 /* NavigationController.swift */,
-			);
-			path = NC;
 			sourceTree = "<group>";
 		};
 		03E6983D2548676A00096D22 /* types */ = {
@@ -362,6 +371,8 @@
 			children = (
 				03F8E0EF252D2054008F383D /* BlackHack */,
 				03F8E0EE252D2054008F383D /* Products */,
+				6101ED7F8C0D74D1A7BCCE10 /* Pods */,
+				46426999736B96AFEA84CAE1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -378,14 +389,32 @@
 			children = (
 				037EAC2E2550A5CA001093A4 /* Fonts */,
 				03D369A6252EC98E00F4D1DD /* Source */,
+				0331B4A9255F0F9D002AE2ED /* Views */,
 				03F8E0F0252D2054008F383D /* AppDelegate.swift */,
 				03F8E0F2252D2054008F383D /* SceneDelegate.swift */,
-				03A681F72551F32B008E7A7F /* ViewContoller */,
+				03A681F72551F32B008E7A7F /* PlayViewContoller */,
 				03F8E0F9252D2057008F383D /* Assets.xcassets */,
 				03F8E0FB252D2057008F383D /* LaunchScreen.storyboard */,
 				03F8E0FE252D2057008F383D /* Info.plist */,
 			);
 			path = BlackHack;
+			sourceTree = "<group>";
+		};
+		46426999736B96AFEA84CAE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28015B32AC68EE670E7BD47B /* Pods_BlackHack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6101ED7F8C0D74D1A7BCCE10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3760B8BFAC000E930F26AF1 /* Pods-BlackHack.debug.xcconfig */,
+				0D2E7F263D6A2B54E1D365A2 /* Pods-BlackHack.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,9 +424,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03F8E101252D2057008F383D /* Build configuration list for PBXNativeTarget "BlackHack" */;
 			buildPhases = (
+				364C8074443838709F1BB36A /* [CP] Check Pods Manifest.lock */,
 				03F8E0E9252D2054008F383D /* Sources */,
 				03F8E0EA252D2054008F383D /* Frameworks */,
 				03F8E0EB252D2054008F383D /* Resources */,
+				F42DC58A72872B72A27D0E8F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -467,6 +498,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		364C8074443838709F1BB36A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlackHack-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F42DC58A72872B72A27D0E8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlackHack/Pods-BlackHack-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlackHack/Pods-BlackHack-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BlackHack/Pods-BlackHack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		03F8E0E9252D2054008F383D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -475,7 +548,7 @@
 				03636A3A25522D6200BE07F6 /* light-dark.swift in Sources */,
 				03636A7825528A3F00BE07F6 /* dealerData.swift in Sources */,
 				03636A53255271A600BE07F6 /* status.swift in Sources */,
-				03F8E0F5252D2054008F383D /* ViewController.swift in Sources */,
+				03F8E0F5252D2054008F383D /* PlayViewController.swift in Sources */,
 				03D369AC252EC9B700F4D1DD /* user.swift in Sources */,
 				03636A702552888700BE07F6 /* updateVoids.swift in Sources */,
 				03D369CD252ED07300F4D1DD /* cardsVoids.swift in Sources */,
@@ -507,7 +580,6 @@
 				03D369A8252EC9AE00F4D1DD /* card.swift in Sources */,
 				03E6984925486EEF00096D22 /* enum-strategy.swift in Sources */,
 				03D68652252EF37F003CD2D5 /* dealerOddsOfBusting.swift in Sources */,
-				03DEDFD4255ECED7000B2B96 /* NavigationController.swift in Sources */,
 				03E6984C2548716200096D22 /* publicGameVoids.swift in Sources */,
 				03F8E0F3252D2054008F383D /* SceneDelegate.swift in Sources */,
 				03636A8225528B2200BE07F6 /* userStringFormatting.swift in Sources */,
@@ -655,6 +727,7 @@
 		};
 		03F8E102252D2057008F383D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3760B8BFAC000E930F26AF1 /* Pods-BlackHack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -674,6 +747,7 @@
 		};
 		03F8E103252D2057008F383D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D2E7F263D6A2B54E1D365A2 /* Pods-BlackHack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
