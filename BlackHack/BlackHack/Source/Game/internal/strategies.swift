@@ -9,6 +9,13 @@ import Foundation
 
 extension Game {
     
+    
+    
+    
+    
+    //  (Bool)  Si debe calcular una estrategia.
+    //          Esto es si el usuario no se queda (menos de 21), y si dealer tiene solo una carta y user 2 o más
+    
     internal func hasStrategy() -> Bool {
         if user.stands() {
             return false
@@ -17,6 +24,13 @@ extension Game {
             dealer.amountOfCards()  ==  1   &&
             user.amountOfCards()    >=  2
     }
+    
+    
+    
+    
+    
+    //  (Strategy)  Si debe tener una, calcula la estrategia.
+    //              Si no tiene, devuelve nil
     
     internal var strategy : Strategy? {
         
@@ -36,6 +50,12 @@ extension Game {
         
     }
     
+    
+    
+    
+    
+    //  (String)    Devuele el string de la strategy calculada, o nil si no tiene.
+    
     internal func strategyString() -> String? {
         
         if let aStrategy = strategy {
@@ -53,9 +73,11 @@ extension Game {
 
 extension Game {
     
+    //  Estrategia en caso de no ser un par
+    
     internal func strategyNoPairs(hit hitHandValues: [Int]?, double doubleHandValues: [Int]?, stand standHandValues: [Int]?) -> Strategy? {
         
-        let sum = user.sum.value
+        let sum = user.sumValue()
         
         if let values = hitHandValues,      values.contains(sum) {
             return .hit
@@ -70,9 +92,15 @@ extension Game {
         
     }
     
+    
+    
+    
+    
+    //  En caso de tener un par, devuelve si separar; o en caso de no separar, quedarse, doblar o pedir
+    
     internal func strategyPairs(hit hitPairs: [Int]?, double doublePairs: [Int]?, stand standPairs: [Int]?, split splitPairs: [Int]?) -> Strategy? {
         
-        let sum = user.cards.first!.value
+        let sum = user.firstCardValue()!
         
         if let values = hitPairs,       values.contains(sum) {
             return .hit
@@ -98,9 +126,12 @@ extension Game {
 
 extension Game {
     
+    
+    //  Strategy para cuando tiene mano hard
+    
     internal func hardTotalsStrategy() -> Strategy? {
         
-        switch dealer.cards.first! {
+        switch dealer.firstCard()! {
         
         case .two:
             return strategyNoPairs      (hit: Array(5...9) + [12],            double: [10, 11],       stand: Array(13...21))
@@ -116,9 +147,13 @@ extension Game {
         
     }
     
+    
+    
+    //  Strategy para cuando tiene mano soft
+    
     internal func softTotalsStrategy() -> Strategy? {
         
-        switch dealer.cards.first! {
+        switch dealer.firstCard()! {
         
         case .two:
             return strategyNoPairs      (hit: Array(3...6),     double: [7],            stand: Array(8...10))
@@ -137,9 +172,12 @@ extension Game {
         
     }
     
+    
+    //  Strategy para cuando tiene un par
+    
     internal func pairsStrategy() -> Strategy? {
         
-        switch dealer.cards.first! {
+        switch dealer.firstCard()! {
         
         case .two:
             return strategyPairs        (hit: [2, 3, 4],            double: [5],        stand: [10],            split: [6, 7, 8, 9, 11])

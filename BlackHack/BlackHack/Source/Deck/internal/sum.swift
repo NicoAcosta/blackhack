@@ -15,6 +15,8 @@ extension Deck {
             amountOfCards() == 2   &&  hasAce()   &&  hasTens()
     }
     
+    
+    //  (SumResult) Returns sum result
     internal func sumResult() -> SumResult {
         
         let sumNoAces = cards.filter({$0 != .ace}).map({$0.value}).reduce(0, +)
@@ -39,10 +41,7 @@ extension Deck {
         
     }
     
-    internal func isHandType(_ handType: HandType) -> Bool {
-        return sum.handType == handType
-    }
-    
+    //  (Void)  Updates sum variable
     internal func updateResult() {
         sum = sumResult()
     }

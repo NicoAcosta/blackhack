@@ -11,11 +11,14 @@ import Foundation
 
 extension ViewController {
     
-    func updateBoth() {
+    func updateDealerAndUser() {
         updateUser()
         updateDealer()
         checkStrategy()
     }
+    
+    
+    //  Actualizar data y view de dealer
     
     func updateDealer() {
         game.dealerUpdate()
@@ -23,11 +26,19 @@ extension ViewController {
         checkDealerButtonsBehaviour()
     }
     
+    
+    
+    //  Actualizar data y view de user
+    
     func updateUser() {
         game.userUpdate()
         updateUserData()
         checkUserButtonsBehaviour()
     }
+    
+    
+    
+    //  Mostrar y actualizar strategy si corresponde
     
     func checkStrategy() {
         if let strategy = game.strategyString() {

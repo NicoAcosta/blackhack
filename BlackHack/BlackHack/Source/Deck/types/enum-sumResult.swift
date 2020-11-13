@@ -10,6 +10,6 @@ import Foundation
 struct SumResult {
     
     let value: Int
-    let handType: HandType
+    let handType: HandType // soft / hard / blackJack
 
 }

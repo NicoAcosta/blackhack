@@ -11,11 +11,18 @@ import Foundation
 
 extension ViewController {
     
+    
+    
+    
+    
     @IBAction func resetButtonAction(_ sender: Any) {
         game.reset()
-        updateBoth()
+        updateDealerAndUser()
     }
-
+    
+    
+    
+    
     
     @IBAction func dealerAddA(_ sender: Any) {
         game.dealerAdd(.ace)
@@ -96,6 +103,7 @@ extension ViewController {
     
     
     
+    
     @IBAction func userAddA(_ sender: Any) {
         game.userAdd(.ace)
         updateUser()
@@ -171,6 +179,8 @@ extension ViewController {
         updateUser()
         checkStrategy()
     }
+    
+    
     
     
 }

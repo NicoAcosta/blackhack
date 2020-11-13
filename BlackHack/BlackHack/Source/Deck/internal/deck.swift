@@ -18,6 +18,9 @@ class Deck {
     //  Result                     sum      hard/soft
     internal  var sum: SumResult = SumResult(value: 0, handType: .hard)
     
+    
+    
+    
     // esta aca para poder overridearlo
     internal func stands() -> Bool {
         return true

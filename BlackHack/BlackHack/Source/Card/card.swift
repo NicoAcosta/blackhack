@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Card { //}: Comparable {
+enum Card {
     
     //  Posibles códigos del enum
     case ace, two, three, four, five, six, seven, eight, nine, ten, jack, queen, king
@@ -32,46 +32,13 @@ enum Card { //}: Comparable {
     }
   
     
-    //  (String)   Devuelve el valor de cada carta
+    //  (String)   Devuelve el nombre de cada carta
     var name: String {
         if self == .ace{
             return "A"
         }
         return String(self.value)
     }
-    
-    
-//    //  (String)   Devuelve el valor de cada carta
-//    func name() -> String {
-//        switch self {
-//        case .two:      return "2"
-//        case .three:    return "3"
-//        case .four:     return "4"
-//        case .five:     return "5"
-//        case .six:      return "6"
-//        case .seven:    return "7"
-//        case .eight:    return "8"
-//        case .nine:     return "9"
-//        case .ten:      return "10"
-//        case .jack:     return "J"
-//        case .queen:    return "Q"
-//        case .king:     return "K"
-//        case .ace:      return "A"
-//        }
-//    }
-    
-    
-//    //  >: de acuerdo al valor de la carta
-//    static func > (aCard: Card, anotherCard: Card) -> Bool {
-//        return  aCard.value() > anotherCard.value()
-//    }
-//
-//    //  <: de acuerda al valor de la carta
-//    static func < (aCard:Card, anotherCard: Card) -> Bool {
-//        return aCard.value() < anotherCard.value()
-//    }
- 
 
-    
 }
 

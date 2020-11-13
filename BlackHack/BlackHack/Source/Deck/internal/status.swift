@@ -14,6 +14,7 @@ extension Deck {
         return sum.value > 21
     }
     
+    //  (Void)  Actualizar variable status
     internal func updateStatus() {
         
                 if isEmpty() {

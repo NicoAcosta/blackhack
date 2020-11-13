@@ -25,7 +25,7 @@
         <!--Navigation Controller-->
         <scene sceneID="g6C-Mc-b1g">
             <objects>
-                <navigationController interfaceStyle="light" id="Wtq-ML-Dhe" sceneMemberID="viewController">
+                <navigationController interfaceStyle="light" id="Wtq-ML-Dhe" customClass="NavigationController" customModule="BlackHack" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" alpha="0.0" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JMz-gL-hTZ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -46,9 +46,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="table1" translatesAutoresizingMaskIntoConstraints="NO" id="4Vr-Jo-Nl1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="table1" translatesAutoresizingMaskIntoConstraints="NO" id="4Vr-Jo-Nl1">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FmY-eG-l2h">
                                 <rect key="frame" x="0.0" y="98" width="414" height="754"/>
@@ -884,9 +883,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <constraints>
                             <constraint firstItem="FmY-eG-l2h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Oo-3h-abv"/>
+                            <constraint firstItem="4Vr-Jo-Nl1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1dM-fp-gnb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FmY-eG-l2h" secondAttribute="bottom" constant="10" id="3O3-6O-Psk"/>
                             <constraint firstItem="FmY-eG-l2h" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SXe-7R-t6h"/>
+                            <constraint firstItem="4Vr-Jo-Nl1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="axU-kr-qk6"/>
+                            <constraint firstAttribute="bottom" secondItem="4Vr-Jo-Nl1" secondAttribute="bottom" id="jF2-gn-LUx"/>
                             <constraint firstItem="FmY-eG-l2h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="jqk-6p-eea"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Vr-Jo-Nl1" secondAttribute="trailing" id="nQ3-OE-1z3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zun-en-7Zp">
@@ -959,7 +962,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-804" y="4"/>
+            <point key="canvasLocation" x="-804" y="-4"/>
         </scene>
     </scenes>
     <resources>

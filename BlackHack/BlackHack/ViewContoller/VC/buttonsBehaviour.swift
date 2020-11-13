@@ -13,6 +13,15 @@ import Foundation
 
 extension ViewController {
     
+    //  Si no tiene cartas, deshabilitar Clean y Undo
+    
+    //  Si se pasa, se queda o blackjack, deshabilitar botones de cartas
+    
+    
+    
+    
+    // Ocultar/mostrar botones de dealer segun corresponda
+    
     func checkDealerButtonsBehaviour() {
         
         switch game.dealerStatus {
@@ -38,6 +47,8 @@ extension ViewController {
         }
         
     }
+    
+    // Ocultar/mostrar botones de user segun corresponda
     
     func checkUserButtonsBehaviour() {
         

@@ -111,21 +111,7 @@ class ViewController: UIViewController {
         var thickLabels:            [UILabel]   =  []
         
         let game = Game()
-    
-    
-    
-        //  Interface Style
-    
-        var myPreferredStatusBarStyle : Style = .light
-        
-        override var preferredStatusBarStyle: UIStatusBarStyle {
-            switch myPreferredStatusBarStyle {
-            case .dark:
-                return .darkContent
-            case .light:
-                return .lightContent
-            }
-        }
-    
-}
 
+    
+    
+    

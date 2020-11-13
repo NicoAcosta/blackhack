@@ -11,6 +11,8 @@ import Foundation
 
 extension ViewController {
     
+    //  Actualizar data de dealer
+    
     func updateDealerData() {
         let info = game.dealerData
         dealerSumLabel.text     =   info.sum
@@ -19,6 +21,10 @@ extension ViewController {
         dealerOddsBLabel.text   =   info.oddsNegative
         dealerOddsSLabel.text   =   info.oddsPositive
     }
+    
+    
+    
+    //  Actualizar data de user
     
     func updateUserData() {
         let info = game.userData

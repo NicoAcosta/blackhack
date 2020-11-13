@@ -7,6 +7,9 @@
 
 import Foundation
 
+
+//  Struct para pasar cuando view controller pide data de dealer o user
+
 struct Data {
     
     let cards: String

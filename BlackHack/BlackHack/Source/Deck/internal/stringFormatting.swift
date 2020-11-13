@@ -9,15 +9,19 @@ import Foundation
 
 extension Double {
     
+    //  (String)    24.456456 -> "24.46 %"
     var decimalsPercentage : String {
         return String(format: "%.2f", self * 100) + " %"
     }
+    
+    //  (String)    24.456456 -> "24 %"
     var intPercentage : String {
         let int : Int = Int((self * 100).rounded())
         return String(int) + " %"
     }
 }
 
+    // (String)     String para arrays de Card
 extension Array where Iterator.Element == Card {
     
     var string : String {
