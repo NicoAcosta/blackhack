@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import InteractiveSideMenu
 
 //  Buttons actions
 
@@ -18,6 +19,12 @@ extension PlayViewController {
     @IBAction func resetButtonAction(_ sender: Any) {
         game.reset()
         updateDealerAndUser()
+    }
+    
+    @IBAction func menuButtonAction(_ sender: Any) {
+        
+        showSideMenu()
+        
     }
     
     

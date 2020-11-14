@@ -22,15 +22,15 @@
         </array>
     </customFonts>
     <scenes>
-        <!--PlayViewController-->
+        <!--play-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="PlayViewController" id="BYZ-38-t0r" customClass="PlayViewController" customModule="BlackHack" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="play" id="BYZ-38-t0r" customClass="PlayViewController" customModule="BlackHack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="table1" translatesAutoresizingMaskIntoConstraints="NO" id="4Vr-Jo-Nl1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="table1" translatesAutoresizingMaskIntoConstraints="NO" id="4Vr-Jo-Nl1">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0H-U4-HcA">
@@ -42,6 +42,9 @@
                                     <navigationItem id="DN7-9u-tqy">
                                         <barButtonItem key="leftBarButtonItem" title="Item" image="line.horizontal.3" catalog="system" id="Qc0-Pv-uY0">
                                             <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                            <connections>
+                                                <action selector="menuButtonAction:" destination="BYZ-38-t0r" id="v5a-ec-r9g"/>
+                                            </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Reset" image="clear.fill" catalog="system" id="1Fb-gz-Oja">
                                             <color key="tintColor" systemColor="systemBackgroundColor"/>
@@ -925,6 +928,7 @@
                         <outlet property="dealerSumLabel" destination="LX2-tm-4DK" id="c6G-OC-AX8"/>
                         <outlet property="dealerSumStaticLabel" destination="MXU-Qk-hO9" id="za8-c6-TMS"/>
                         <outlet property="dealerUndo" destination="G3v-15-OdE" id="fkl-Px-xzN"/>
+                        <outlet property="menuButton" destination="Qc0-Pv-uY0" id="M4f-IO-x1d"/>
                         <outlet property="resetButton" destination="1Fb-gz-Oja" id="hXt-fw-WNb"/>
                         <outlet property="separator" destination="yfF-3x-SIX" id="Ds8-CP-wVa"/>
                         <outlet property="strategyLabel" destination="EjN-c3-ptr" id="ohO-gN-QOy"/>

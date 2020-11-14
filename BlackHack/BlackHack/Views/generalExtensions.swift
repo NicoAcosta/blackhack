@@ -62,4 +62,8 @@ extension UILabel {
         self.font = UIFont(name: name, size: self.font.pointSize)!
     }
     
+    func fontWithSize(_ name: String, _ size: CGFloat) {
+        self.font = UIFont(name: name, size: size)
+    }
+    
 }

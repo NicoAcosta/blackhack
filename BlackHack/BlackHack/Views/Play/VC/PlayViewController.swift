@@ -8,12 +8,13 @@
 import UIKit
 import InteractiveSideMenu
 
-class PlayViewController: UIViewController, SideMenuItemContent {
+class PlayViewController: UIViewController, SideMenuItemContent, Storyboardable {
     
     //  Outlets
     
     @IBOutlet weak var resetButton: UIBarButtonItem!
     
+    @IBOutlet weak var menuButton: UIBarButtonItem!
     
     
     
@@ -94,9 +95,7 @@ class PlayViewController: UIViewController, SideMenuItemContent {
         @IBOutlet weak var strategyView:                UIView!
         @IBOutlet weak var strategyLabel:               UILabel!
         @IBOutlet weak var separator:                   UIView!
-    
-    
-    
+        
     
     
     //  Logic
@@ -130,6 +129,9 @@ class PlayViewController: UIViewController, SideMenuItemContent {
                 return .lightContent
             }
         }
+    
+    //  For gradient background
+    var gradientLayer = CAGradientLayer()
     
     
     
