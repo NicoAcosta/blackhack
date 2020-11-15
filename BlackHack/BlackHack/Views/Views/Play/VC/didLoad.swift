@@ -10,17 +10,11 @@ import UIKit
 
 extension PlayViewController {
     
-    
-    
     //  viewDidLoad
     
     override func viewDidLoad() {
         
-        
-        
         super.viewDidLoad()
-        
-        
         
         //  Grupos de buttons y labels para cambiar cosas después
         
@@ -31,16 +25,10 @@ extension PlayViewController {
         thinLabels          =   [dealerLabel, dealerCardsLabel, dealerSumStaticLabel, dealerStatusStaticLabel, dealerOddsSStaticLabel, dealerOddsBStaticLabel, userLabel, userOddsBStaticLabel, userOddsNBStaticLabel, userSumStaticLabel, userStatusStaticLabel, userCardsLabel]
         thickLabels         =   [dealerSumLabel, dealerStatusLabel, dealerOddsBLabel, dealerOddsSLabel, userOddsBLabel, userOddsNBLabel, userSumLabel, userStatusLabel]
         
-        
-        
         //  Actualizar data de dealer y user
-        
         updateDealerAndUser()
         
-        
-        checkInterfaceStyle()
-        
-        
+        setNeedsStatusBarAppearanceUpdate()
         
     }
     

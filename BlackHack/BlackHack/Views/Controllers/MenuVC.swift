@@ -11,10 +11,6 @@ import InteractiveSideMenu
 class MenuVC: MenuViewController, Storyboardable {
     
     @IBOutlet fileprivate weak var tableView: UITableView!
-    
-    private var gradientLayer = CAGradientLayer()
-
-    private var gradientApplied: Bool = false
 
     override var prefersStatusBarHidden: Bool {
         return false
@@ -30,23 +26,14 @@ class MenuVC: MenuViewController, Storyboardable {
         // Select the initial row
         tableView.selectRow(at: IndexPath(row: 0, section: 0), animated: false, scrollPosition: UITableView.ScrollPosition.none)
         
+        //  Alto de fila = alto de tableView / cantidad de items -> aprovechar todo el alto posible
         tableView.rowHeight = tableView.bounds.height / CGFloat(tableView.numberOfRows(inSection: 0))
         
     }
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-
-        if gradientLayer.superlayer != nil {
-            gradientLayer.removeFromSuperlayer()
-        }
-        let topColor = UIColor(red: 0.0/255.0, green: 30.0/255.0, blue: 5.0/255.0, alpha: 1.0)
-        let bottomColor = UIColor(red: 0.0/255.0, green: 60.0/255.0, blue: 7.0/255.0, alpha: 1.0)
-        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
-        gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
-        gradientLayer.colors = [topColor.cgColor, bottomColor.cgColor]
-        gradientLayer.frame = view.bounds
-        view.layer.insertSublayer(gradientLayer, at: 0)
+        greenGradientLayer()
     }
 
     deinit{

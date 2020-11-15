@@ -9,65 +9,6 @@ import Foundation
 import UIKit
 
 
-class UITextFieldPadding : UITextField {
-    
-      let padding = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
-      
-      required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-      }
-      
-      override func textRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.inset(by: padding)
-      }
-      
-      override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.inset(by: padding)
-      }
-      
-      override func editingRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.inset(by: padding)
-      }
-    
-}
-
-
-class UITextViewPadding : UITextView {
-    
-      required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        textContainerInset = UIEdgeInsets(top: 20, left: 10, bottom: 20, right: 10)
-      }
-    
-}
-
-
-
-
-
-extension UIViewController {
-    
-    func okAlert(title: String, message: String) {
-        let alert = OkAlert(title: title, message: message)
-        present(alert, animated: true, completion: nil)
-    }
-    
-    
-}
-
-
-class OkAlert : UIAlertController {
-    
-    let okAction = UIAlertAction(title: "Ok", style: .default)
-    
-    convenience init(title: String?, message: String?) {
-        self.init(title: title, message: message, preferredStyle: .alert)
-        addAction(okAction)
-    }
-    
-}
-
-
 extension UIView {
     
     func hide() {
@@ -127,3 +68,4 @@ extension UILabel {
     }
     
 }
+

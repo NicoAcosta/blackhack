@@ -117,22 +117,18 @@ class PlayViewController: UIViewController, SideMenuItemContent, Storyboardable 
     
     //  Inferface Style + Status Bar Style
     
-        //  Variable para poder cambiar el status bar style
-        var myPreferredStatusBarStyle : Style = .light
-        
         //  Cambiar la varialble que define el statur bar style
         override var preferredStatusBarStyle: UIStatusBarStyle {
-            switch myPreferredStatusBarStyle {
+            switch traitCollection.userInterfaceStyle {
+            case .unspecified:
+                return .lightContent
+            case .light:
+                return .lightContent
             case .dark:
                 return .darkContent
-            case .light:
+            @unknown default:
                 return .lightContent
             }
         }
-    
-    //  For gradient background
-    var gradientLayer = CAGradientLayer()
-    
-    
     
 }

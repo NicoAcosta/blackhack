@@ -14,16 +14,9 @@ import NotificationCenter
 
 class SupportVC : UIViewController, SideMenuItemContent, Storyboardable {
     
-    var activeTextField : UITextField? = nil
     var activeTextView : UITextView? = nil
     
-    
-    //  For gradient background
-    var gradientLayer = CAGradientLayer()
-    
-    
     @IBOutlet weak var belowMessageFieldView: UIView!
-    
     
     @IBOutlet weak var subjectField: UITextField!
     @IBOutlet weak var messageField: UITextView!
@@ -32,7 +25,6 @@ class SupportVC : UIViewController, SideMenuItemContent, Storyboardable {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,26 +62,14 @@ class SupportVC : UIViewController, SideMenuItemContent, Storyboardable {
         mail()
     }
     
+    //  gradient background
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-
-        if gradientLayer.superlayer != nil {
-            gradientLayer.removeFromSuperlayer()
-        }
-        let topColor = UIColor(red: 0.0/255.0, green: 30.0/255.0, blue: 5.0/255.0, alpha: 1.0)
-        let bottomColor = UIColor(red: 0.0/255.0, green: 60.0/255.0, blue: 7.0/255.0, alpha: 1.0)
-        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
-        gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
-        gradientLayer.colors = [topColor.cgColor, bottomColor.cgColor]
-        gradientLayer.frame = view.bounds
-        view.layer.insertSublayer(gradientLayer, at: 0)
+        greenGradientLayer()
     }
     
     
 }
-
-
-
 
 
 
@@ -140,14 +120,6 @@ extension SupportVC : UITextFieldDelegate {
         return true
     }
     
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        activeTextField = textField
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
-        activeTextField = nil
-    }
-    
 }
 
 
@@ -185,7 +157,7 @@ extension SupportVC {
 
 
 
-    
+    // Volver a posición original al cerrar el tecladoc
     @objc func keyboardWillHide(notifiation: NSNotification) {
         self.view.frame.origin.y = 0
     }

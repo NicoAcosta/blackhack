@@ -51,6 +51,9 @@
 		039605D6255F683100195B68 /* TermsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039605D5255F683100195B68 /* TermsVC.swift */; };
 		039605DE255F815900195B68 /* TermsVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039605DD255F815900195B68 /* TermsVC.storyboard */; };
 		039605E3255F935900195B68 /* background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039605E2255F935900195B68 /* background.swift */; };
+		03A098012561900300825C09 /* alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A098002561900300825C09 /* alerts.swift */; };
+		03A098082561905600825C09 /* padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A098072561905600825C09 /* padding.swift */; };
+		03A0980C256191BF00825C09 /* gradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A0980B256191BF00825C09 /* gradientBackground.swift */; };
 		03D369A8252EC9AE00F4D1DD /* card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369A7252EC9AE00F4D1DD /* card.swift */; };
 		03D369AC252EC9B700F4D1DD /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369AB252EC9B700F4D1DD /* user.swift */; };
 		03D369AF252EC9C400F4D1DD /* dealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369AE252EC9C400F4D1DD /* dealer.swift */; };
@@ -126,6 +129,9 @@
 		039605D5255F683100195B68 /* TermsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsVC.swift; sourceTree = "<group>"; };
 		039605DD255F815900195B68 /* TermsVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TermsVC.storyboard; sourceTree = "<group>"; };
 		039605E2255F935900195B68 /* background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = background.swift; sourceTree = "<group>"; };
+		03A098002561900300825C09 /* alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alerts.swift; sourceTree = "<group>"; };
+		03A098072561905600825C09 /* padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = padding.swift; sourceTree = "<group>"; };
+		03A0980B256191BF00825C09 /* gradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gradientBackground.swift; sourceTree = "<group>"; };
 		03D369A7252EC9AE00F4D1DD /* card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = card.swift; sourceTree = "<group>"; };
 		03D369AB252EC9B700F4D1DD /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
 		03D369AE252EC9C400F4D1DD /* dealer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dealer.swift; sourceTree = "<group>"; };
@@ -379,7 +385,10 @@
 			isa = PBXGroup;
 			children = (
 				03636A3F25522E5300BE07F6 /* generalExtensions.swift */,
+				03A098002561900300825C09 /* alerts.swift */,
 				0331B4D0255F29C6002AE2ED /* InteractiveSideMenu */,
+				03A098072561905600825C09 /* padding.swift */,
+				03A0980B256191BF00825C09 /* gradientBackground.swift */,
 			);
 			path = Aux;
 			sourceTree = "<group>";
@@ -662,6 +671,7 @@
 				03636A702552888700BE07F6 /* updateVoids.swift in Sources */,
 				03D369CD252ED07300F4D1DD /* cardsVoids.swift in Sources */,
 				03F8E0F1252D2054008F383D /* AppDelegate.swift in Sources */,
+				03A098082561905600825C09 /* padding.swift in Sources */,
 				03636A4025522E5300BE07F6 /* generalExtensions.swift in Sources */,
 				03D369B2252EC9F100F4D1DD /* deck.swift in Sources */,
 				03636A5A255277EA00BE07F6 /* publicGameReturns.swift in Sources */,
@@ -676,9 +686,11 @@
 				03E6983F2548678600096D22 /* enum-status.swift in Sources */,
 				0331B4C0255F1F0F002AE2ED /* storyboardable.swift in Sources */,
 				03636A8525528B4600BE07F6 /* userData.swift in Sources */,
+				03A0980C256191BF00825C09 /* gradientBackground.swift in Sources */,
 				03E698462548681200096D22 /* enum-sumResult.swift in Sources */,
 				03D369C2252ECFA500F4D1DD /* cardsInternalReturns.swift in Sources */,
 				03D369D8252EE89C00F4D1DD /* userOddsOfBusting.swift in Sources */,
+				03A098012561900300825C09 /* alerts.swift in Sources */,
 				03D369C6252ECFF100F4D1DD /* sum.swift in Sources */,
 				03D369AF252EC9C400F4D1DD /* dealer.swift in Sources */,
 				03636A50255270C300BE07F6 /* buttonsBehaviour.swift in Sources */,
