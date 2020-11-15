@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,11 @@
 		032A92622552AA7F00CE10CB /* GothamThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 032A92542552AA7F00CE10CB /* GothamThinItalic.ttf */; };
 		032A92632552AA7F00CE10CB /* GothamThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 032A92552552AA7F00CE10CB /* GothamThin.ttf */; };
 		032A92642552AA7F00CE10CB /* GothamBlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 032A92562552AA7F00CE10CB /* GothamBlackItalic.ttf */; };
+		0331B4B7255F17DA002AE2ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0331B4B6255F17DA002AE2ED /* Main.storyboard */; };
+		0331B4BB255F1831002AE2ED /* HostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0331B4BA255F1831002AE2ED /* HostVC.swift */; };
+		0331B4C0255F1F0F002AE2ED /* storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0331B4BF255F1F0F002AE2ED /* storyboardable.swift */; };
+		0331B4C4255F20AB002AE2ED /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0331B4C3255F20AB002AE2ED /* MenuVC.swift */; };
+		0331B4D2255F29EB002AE2ED /* sampleTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0331B4D1255F29EB002AE2ED /* sampleTableCell.swift */; };
 		03636A3725522CEF00BE07F6 /* didLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A3625522CEF00BE07F6 /* didLoad.swift */; };
 		03636A3A25522D6200BE07F6 /* light-dark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A3925522D6200BE07F6 /* light-dark.swift */; };
 		03636A3D25522DE500BE07F6 /* buttonsActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A3C25522DE500BE07F6 /* buttonsActions.swift */; };
@@ -36,6 +41,16 @@
 		03636A8225528B2200BE07F6 /* userStringFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A8125528B2200BE07F6 /* userStringFormatting.swift */; };
 		03636A8525528B4600BE07F6 /* userData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A8425528B4600BE07F6 /* userData.swift */; };
 		039126ED2547A3AF00F60F0B /* game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039126EC2547A3AF00F60F0B /* game.swift */; };
+		039605B1255F35B300195B68 /* MenuVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039605B0255F35B300195B68 /* MenuVC.storyboard */; };
+		039605BC255F61B400195B68 /* SupportVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039605BB255F61B400195B68 /* SupportVC.storyboard */; };
+		039605BF255F61C100195B68 /* SupportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039605BE255F61C100195B68 /* SupportVC.swift */; };
+		039605C4255F626D00195B68 /* PrivacyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039605C3255F626D00195B68 /* PrivacyVC.swift */; };
+		039605C8255F631E00195B68 /* PrivacyVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039605C7255F631E00195B68 /* PrivacyVC.storyboard */; };
+		039605CC255F633900195B68 /* CoffeeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039605CB255F633900195B68 /* CoffeeVC.storyboard */; };
+		039605CF255F634A00195B68 /* CoffeeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039605CE255F634A00195B68 /* CoffeeVC.swift */; };
+		039605D6255F683100195B68 /* TermsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039605D5255F683100195B68 /* TermsVC.swift */; };
+		039605DE255F815900195B68 /* TermsVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039605DD255F815900195B68 /* TermsVC.storyboard */; };
+		039605E3255F935900195B68 /* background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039605E2255F935900195B68 /* background.swift */; };
 		03D369A8252EC9AE00F4D1DD /* card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369A7252EC9AE00F4D1DD /* card.swift */; };
 		03D369AC252EC9B700F4D1DD /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369AB252EC9B700F4D1DD /* user.swift */; };
 		03D369AF252EC9C400F4D1DD /* dealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369AE252EC9C400F4D1DD /* dealer.swift */; };
@@ -49,7 +64,6 @@
 		03D369DE252EE90400F4D1DD /* userOddsAses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D369DD252EE90400F4D1DD /* userOddsAses.swift */; };
 		03D68652252EF37F003CD2D5 /* dealerOddsOfBusting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D68651252EF37F003CD2D5 /* dealerOddsOfBusting.swift */; };
 		03D68655252EF38C003CD2D5 /* dealerOddsOfStanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D68654252EF38C003CD2D5 /* dealerOddsOfStanding.swift */; };
-		03DEDFD4255ECED7000B2B96 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DEDFD3255ECED7000B2B96 /* NavigationController.swift */; };
 		03DEDFD9255EE48C000B2B96 /* deckPublicReturns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DEDFD8255EE48C000B2B96 /* deckPublicReturns.swift */; };
 		03E6983A254864A200096D22 /* strategies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E69839254864A200096D22 /* strategies.swift */; };
 		03E6983F2548678600096D22 /* enum-status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6983E2548678600096D22 /* enum-status.swift */; };
@@ -60,10 +74,11 @@
 		03E69855254872EA00096D22 /* struct-data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E69854254872EA00096D22 /* struct-data.swift */; };
 		03F8E0F1252D2054008F383D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8E0F0252D2054008F383D /* AppDelegate.swift */; };
 		03F8E0F3252D2054008F383D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8E0F2252D2054008F383D /* SceneDelegate.swift */; };
-		03F8E0F5252D2054008F383D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8E0F4252D2054008F383D /* ViewController.swift */; };
-		03F8E0F8252D2054008F383D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F8E0F6252D2054008F383D /* Main.storyboard */; };
+		03F8E0F5252D2054008F383D /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8E0F4252D2054008F383D /* PlayViewController.swift */; };
+		03F8E0F8252D2054008F383D /* PlayViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F8E0F6252D2054008F383D /* PlayViewController.storyboard */; };
 		03F8E0FA252D2057008F383D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F8E0F9252D2057008F383D /* Assets.xcassets */; };
 		03F8E0FD252D2057008F383D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F8E0FB252D2057008F383D /* LaunchScreen.storyboard */; };
+		58EFC6418A970EB219092CD6 /* Pods_BlackHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28015B32AC68EE670E7BD47B /* Pods_BlackHack.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +96,11 @@
 		032A92542552AA7F00CE10CB /* GothamThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamThinItalic.ttf; sourceTree = "<group>"; };
 		032A92552552AA7F00CE10CB /* GothamThin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamThin.ttf; sourceTree = "<group>"; };
 		032A92562552AA7F00CE10CB /* GothamBlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamBlackItalic.ttf; sourceTree = "<group>"; };
+		0331B4B6255F17DA002AE2ED /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0331B4BA255F1831002AE2ED /* HostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostVC.swift; sourceTree = "<group>"; };
+		0331B4BF255F1F0F002AE2ED /* storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyboardable.swift; sourceTree = "<group>"; };
+		0331B4C3255F20AB002AE2ED /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		0331B4D1255F29EB002AE2ED /* sampleTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleTableCell.swift; sourceTree = "<group>"; };
 		03636A3625522CEF00BE07F6 /* didLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = didLoad.swift; sourceTree = "<group>"; };
 		03636A3925522D6200BE07F6 /* light-dark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "light-dark.swift"; sourceTree = "<group>"; };
 		03636A3C25522DE500BE07F6 /* buttonsActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonsActions.swift; sourceTree = "<group>"; };
@@ -96,6 +116,16 @@
 		03636A8125528B2200BE07F6 /* userStringFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userStringFormatting.swift; sourceTree = "<group>"; };
 		03636A8425528B4600BE07F6 /* userData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userData.swift; sourceTree = "<group>"; };
 		039126EC2547A3AF00F60F0B /* game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = game.swift; sourceTree = "<group>"; };
+		039605B0255F35B300195B68 /* MenuVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuVC.storyboard; sourceTree = "<group>"; };
+		039605BB255F61B400195B68 /* SupportVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SupportVC.storyboard; sourceTree = "<group>"; };
+		039605BE255F61C100195B68 /* SupportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportVC.swift; sourceTree = "<group>"; };
+		039605C3255F626D00195B68 /* PrivacyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyVC.swift; sourceTree = "<group>"; };
+		039605C7255F631E00195B68 /* PrivacyVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PrivacyVC.storyboard; sourceTree = "<group>"; };
+		039605CB255F633900195B68 /* CoffeeVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoffeeVC.storyboard; sourceTree = "<group>"; };
+		039605CE255F634A00195B68 /* CoffeeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeVC.swift; sourceTree = "<group>"; };
+		039605D5255F683100195B68 /* TermsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsVC.swift; sourceTree = "<group>"; };
+		039605DD255F815900195B68 /* TermsVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TermsVC.storyboard; sourceTree = "<group>"; };
+		039605E2255F935900195B68 /* background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = background.swift; sourceTree = "<group>"; };
 		03D369A7252EC9AE00F4D1DD /* card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = card.swift; sourceTree = "<group>"; };
 		03D369AB252EC9B700F4D1DD /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
 		03D369AE252EC9C400F4D1DD /* dealer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dealer.swift; sourceTree = "<group>"; };
@@ -109,7 +139,6 @@
 		03D369DD252EE90400F4D1DD /* userOddsAses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userOddsAses.swift; sourceTree = "<group>"; };
 		03D68651252EF37F003CD2D5 /* dealerOddsOfBusting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dealerOddsOfBusting.swift; sourceTree = "<group>"; };
 		03D68654252EF38C003CD2D5 /* dealerOddsOfStanding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dealerOddsOfStanding.swift; sourceTree = "<group>"; };
-		03DEDFD3255ECED7000B2B96 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		03DEDFD8255EE48C000B2B96 /* deckPublicReturns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deckPublicReturns.swift; sourceTree = "<group>"; };
 		03E69839254864A200096D22 /* strategies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = strategies.swift; sourceTree = "<group>"; };
 		03E6983E2548678600096D22 /* enum-status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "enum-status.swift"; sourceTree = "<group>"; };
@@ -121,11 +150,14 @@
 		03F8E0ED252D2054008F383D /* BlackHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F8E0F0252D2054008F383D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03F8E0F2252D2054008F383D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		03F8E0F4252D2054008F383D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		03F8E0F7252D2054008F383D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03F8E0F4252D2054008F383D /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		03F8E0F7252D2054008F383D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PlayViewController.storyboard; sourceTree = "<group>"; };
 		03F8E0F9252D2057008F383D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03F8E0FC252D2057008F383D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03F8E0FE252D2057008F383D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D2E7F263D6A2B54E1D365A2 /* Pods-BlackHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHack.release.xcconfig"; path = "Target Support Files/Pods-BlackHack/Pods-BlackHack.release.xcconfig"; sourceTree = "<group>"; };
+		28015B32AC68EE670E7BD47B /* Pods_BlackHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3760B8BFAC000E930F26AF1 /* Pods-BlackHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHack.debug.xcconfig"; path = "Target Support Files/Pods-BlackHack/Pods-BlackHack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,12 +165,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58EFC6418A970EB219092CD6 /* Pods_BlackHack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0331B4A9255F0F9D002AE2ED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03F8E0FB252D2057008F383D /* LaunchScreen.storyboard */,
+				039605ED256075B900195B68 /* Aux */,
+				0331B4B9255F181D002AE2ED /* Controllers */,
+				039605EF2560818400195B68 /* Views */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0331B4AA255F0FDE002AE2ED /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				03F8E0F6252D2054008F383D /* PlayViewController.storyboard */,
+				03DEDFD1255ECEB0000B2B96 /* VC */,
+			);
+			path = Play;
+			sourceTree = "<group>";
+		};
+		0331B4B9255F181D002AE2ED /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0331B4B6255F17DA002AE2ED /* Main.storyboard */,
+				0331B4BA255F1831002AE2ED /* HostVC.swift */,
+				0331B4C3255F20AB002AE2ED /* MenuVC.swift */,
+				039605B0255F35B300195B68 /* MenuVC.storyboard */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0331B4D0255F29C6002AE2ED /* InteractiveSideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				0331B4BF255F1F0F002AE2ED /* storyboardable.swift */,
+				0331B4D1255F29EB002AE2ED /* sampleTableCell.swift */,
+			);
+			path = InteractiveSideMenu;
+			sourceTree = "<group>";
+		};
 		03636A5F25527C8F00BE07F6 /* types */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,15 +339,61 @@
 			path = Game;
 			sourceTree = "<group>";
 		};
-		03A681F72551F32B008E7A7F /* ViewContoller */ = {
+		039605B9255F48F100195B68 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				03F8E0F6252D2054008F383D /* Main.storyboard */,
-				03636A3F25522E5300BE07F6 /* generalExtensions.swift */,
-				03DEDFD2255ECEBA000B2B96 /* NC */,
-				03DEDFD1255ECEB0000B2B96 /* VC */,
+				039605BB255F61B400195B68 /* SupportVC.storyboard */,
+				039605BE255F61C100195B68 /* SupportVC.swift */,
 			);
-			path = ViewContoller;
+			path = Support;
+			sourceTree = "<group>";
+		};
+		039605C2255F623300195B68 /* PrivacyPolicy */ = {
+			isa = PBXGroup;
+			children = (
+				039605C3255F626D00195B68 /* PrivacyVC.swift */,
+				039605C7255F631E00195B68 /* PrivacyVC.storyboard */,
+			);
+			path = PrivacyPolicy;
+			sourceTree = "<group>";
+		};
+		039605CA255F632500195B68 /* BuyMeACoffe */ = {
+			isa = PBXGroup;
+			children = (
+				039605CB255F633900195B68 /* CoffeeVC.storyboard */,
+				039605CE255F634A00195B68 /* CoffeeVC.swift */,
+			);
+			path = BuyMeACoffe;
+			sourceTree = "<group>";
+		};
+		039605D4255F681D00195B68 /* Terms */ = {
+			isa = PBXGroup;
+			children = (
+				039605D5255F683100195B68 /* TermsVC.swift */,
+				039605DD255F815900195B68 /* TermsVC.storyboard */,
+			);
+			path = Terms;
+			sourceTree = "<group>";
+		};
+		039605ED256075B900195B68 /* Aux */ = {
+			isa = PBXGroup;
+			children = (
+				03636A3F25522E5300BE07F6 /* generalExtensions.swift */,
+				0331B4D0255F29C6002AE2ED /* InteractiveSideMenu */,
+			);
+			path = Aux;
+			sourceTree = "<group>";
+		};
+		039605EF2560818400195B68 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0331B4AA255F0FDE002AE2ED /* Play */,
+				039605B9255F48F100195B68 /* Support */,
+				039605CA255F632500195B68 /* BuyMeACoffe */,
+				039605C2255F623300195B68 /* PrivacyPolicy */,
+				039605D4255F681D00195B68 /* Terms */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		03D369A6252EC98E00F4D1DD /* Source */ = {
@@ -328,7 +447,8 @@
 		03DEDFD1255ECEB0000B2B96 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				03F8E0F4252D2054008F383D /* ViewController.swift */,
+				03F8E0F4252D2054008F383D /* PlayViewController.swift */,
+				039605E2255F935900195B68 /* background.swift */,
 				03636A3625522CEF00BE07F6 /* didLoad.swift */,
 				03636A3925522D6200BE07F6 /* light-dark.swift */,
 				03636A3C25522DE500BE07F6 /* buttonsActions.swift */,
@@ -337,14 +457,6 @@
 				03636A4A255230B200BE07F6 /* updateViewData.swift */,
 			);
 			path = VC;
-			sourceTree = "<group>";
-		};
-		03DEDFD2255ECEBA000B2B96 /* NC */ = {
-			isa = PBXGroup;
-			children = (
-				03DEDFD3255ECED7000B2B96 /* NavigationController.swift */,
-			);
-			path = NC;
 			sourceTree = "<group>";
 		};
 		03E6983D2548676A00096D22 /* types */ = {
@@ -362,6 +474,8 @@
 			children = (
 				03F8E0EF252D2054008F383D /* BlackHack */,
 				03F8E0EE252D2054008F383D /* Products */,
+				6101ED7F8C0D74D1A7BCCE10 /* Pods */,
+				46426999736B96AFEA84CAE1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -378,14 +492,30 @@
 			children = (
 				037EAC2E2550A5CA001093A4 /* Fonts */,
 				03D369A6252EC98E00F4D1DD /* Source */,
+				0331B4A9255F0F9D002AE2ED /* Views */,
 				03F8E0F0252D2054008F383D /* AppDelegate.swift */,
 				03F8E0F2252D2054008F383D /* SceneDelegate.swift */,
-				03A681F72551F32B008E7A7F /* ViewContoller */,
 				03F8E0F9252D2057008F383D /* Assets.xcassets */,
-				03F8E0FB252D2057008F383D /* LaunchScreen.storyboard */,
 				03F8E0FE252D2057008F383D /* Info.plist */,
 			);
 			path = BlackHack;
+			sourceTree = "<group>";
+		};
+		46426999736B96AFEA84CAE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28015B32AC68EE670E7BD47B /* Pods_BlackHack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6101ED7F8C0D74D1A7BCCE10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3760B8BFAC000E930F26AF1 /* Pods-BlackHack.debug.xcconfig */,
+				0D2E7F263D6A2B54E1D365A2 /* Pods-BlackHack.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,9 +525,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03F8E101252D2057008F383D /* Build configuration list for PBXNativeTarget "BlackHack" */;
 			buildPhases = (
+				364C8074443838709F1BB36A /* [CP] Check Pods Manifest.lock */,
 				03F8E0E9252D2054008F383D /* Sources */,
 				03F8E0EA252D2054008F383D /* Frameworks */,
 				03F8E0EB252D2054008F383D /* Resources */,
+				F42DC58A72872B72A27D0E8F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -445,9 +577,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				039605C8255F631E00195B68 /* PrivacyVC.storyboard in Resources */,
 				032A92582552AA7F00CE10CB /* GothamBlack.ttf in Resources */,
 				032A925D2552AA7F00CE10CB /* GothamXLightItalic.ttf in Resources */,
 				032A925A2552AA7F00CE10CB /* GothamXLight.ttf in Resources */,
+				039605BC255F61B400195B68 /* SupportVC.storyboard in Resources */,
+				039605B1255F35B300195B68 /* MenuVC.storyboard in Resources */,
 				032A925C2552AA7F00CE10CB /* GothamBold.ttf in Resources */,
 				03F8E0FD252D2057008F383D /* LaunchScreen.storyboard in Resources */,
 				032A92642552AA7F00CE10CB /* GothamBlackItalic.ttf in Resources */,
@@ -455,17 +590,62 @@
 				03F8E0FA252D2057008F383D /* Assets.xcassets in Resources */,
 				032A925F2552AA7F00CE10CB /* GothamMediumItalic.ttf in Resources */,
 				032A925E2552AA7F00CE10CB /* GothamUltra.ttf in Resources */,
+				039605CC255F633900195B68 /* CoffeeVC.storyboard in Resources */,
 				032A92572552AA7F00CE10CB /* GothamMedium.ttf in Resources */,
 				032A92592552AA7F00CE10CB /* GothamLightItalic.ttf in Resources */,
 				032A92622552AA7F00CE10CB /* GothamThinItalic.ttf in Resources */,
 				032A92612552AA7F00CE10CB /* GothamBoldItalic.ttf in Resources */,
 				032A92632552AA7F00CE10CB /* GothamThin.ttf in Resources */,
-				03F8E0F8252D2054008F383D /* Main.storyboard in Resources */,
+				0331B4B7255F17DA002AE2ED /* Main.storyboard in Resources */,
+				03F8E0F8252D2054008F383D /* PlayViewController.storyboard in Resources */,
+				039605DE255F815900195B68 /* TermsVC.storyboard in Resources */,
 				032A925B2552AA7F00CE10CB /* GothamLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		364C8074443838709F1BB36A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlackHack-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F42DC58A72872B72A27D0E8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlackHack/Pods-BlackHack-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlackHack/Pods-BlackHack-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BlackHack/Pods-BlackHack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		03F8E0E9252D2054008F383D /* Sources */ = {
@@ -473,9 +653,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				03636A3A25522D6200BE07F6 /* light-dark.swift in Sources */,
+				039605C4255F626D00195B68 /* PrivacyVC.swift in Sources */,
+				039605CF255F634A00195B68 /* CoffeeVC.swift in Sources */,
 				03636A7825528A3F00BE07F6 /* dealerData.swift in Sources */,
 				03636A53255271A600BE07F6 /* status.swift in Sources */,
-				03F8E0F5252D2054008F383D /* ViewController.swift in Sources */,
+				03F8E0F5252D2054008F383D /* PlayViewController.swift in Sources */,
 				03D369AC252EC9B700F4D1DD /* user.swift in Sources */,
 				03636A702552888700BE07F6 /* updateVoids.swift in Sources */,
 				03D369CD252ED07300F4D1DD /* cardsVoids.swift in Sources */,
@@ -488,7 +670,11 @@
 				03E69855254872EA00096D22 /* struct-data.swift in Sources */,
 				03E6983A254864A200096D22 /* strategies.swift in Sources */,
 				039126ED2547A3AF00F60F0B /* game.swift in Sources */,
+				039605BF255F61C100195B68 /* SupportVC.swift in Sources */,
+				0331B4BB255F1831002AE2ED /* HostVC.swift in Sources */,
+				0331B4C4255F20AB002AE2ED /* MenuVC.swift in Sources */,
 				03E6983F2548678600096D22 /* enum-status.swift in Sources */,
+				0331B4C0255F1F0F002AE2ED /* storyboardable.swift in Sources */,
 				03636A8525528B4600BE07F6 /* userData.swift in Sources */,
 				03E698462548681200096D22 /* enum-sumResult.swift in Sources */,
 				03D369C2252ECFA500F4D1DD /* cardsInternalReturns.swift in Sources */,
@@ -503,11 +689,13 @@
 				03636A4B255230B200BE07F6 /* updateViewData.swift in Sources */,
 				03D369DB252EE8B100F4D1DD /* userOddsOfNotBusting.swift in Sources */,
 				03D68655252EF38C003CD2D5 /* dealerOddsOfStanding.swift in Sources */,
+				039605D6255F683100195B68 /* TermsVC.swift in Sources */,
 				03D369DE252EE90400F4D1DD /* userOddsAses.swift in Sources */,
+				039605E3255F935900195B68 /* background.swift in Sources */,
+				0331B4D2255F29EB002AE2ED /* sampleTableCell.swift in Sources */,
 				03D369A8252EC9AE00F4D1DD /* card.swift in Sources */,
 				03E6984925486EEF00096D22 /* enum-strategy.swift in Sources */,
 				03D68652252EF37F003CD2D5 /* dealerOddsOfBusting.swift in Sources */,
-				03DEDFD4255ECED7000B2B96 /* NavigationController.swift in Sources */,
 				03E6984C2548716200096D22 /* publicGameVoids.swift in Sources */,
 				03F8E0F3252D2054008F383D /* SceneDelegate.swift in Sources */,
 				03636A8225528B2200BE07F6 /* userStringFormatting.swift in Sources */,
@@ -518,12 +706,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		03F8E0F6252D2054008F383D /* Main.storyboard */ = {
+		03F8E0F6252D2054008F383D /* PlayViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				03F8E0F7252D2054008F383D /* Base */,
 			);
-			name = Main.storyboard;
+			name = PlayViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		03F8E0FB252D2057008F383D /* LaunchScreen.storyboard */ = {
@@ -655,6 +843,7 @@
 		};
 		03F8E102252D2057008F383D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3760B8BFAC000E930F26AF1 /* Pods-BlackHack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -674,6 +863,7 @@
 		};
 		03F8E103252D2057008F383D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D2E7F263D6A2B54E1D365A2 /* Pods-BlackHack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
