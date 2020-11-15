@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--terms and cons-->
+        <!--t&c-->
         <scene sceneID="yPL-rq-cdQ">
             <objects>
-                <viewController title="terms and cons" id="7Jf-6i-Dd2" customClass="TermsVC" customModule="BlackHack" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="t&amp;c" id="7Jf-6i-Dd2" customClass="TermsVC" customModule="BlackHack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="84y-ZH-F7s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                                 <items>
                                     <navigationItem title="Terms and Conditions" id="ycl-ly-tAU">
                                         <barButtonItem key="leftBarButtonItem" title="Item" image="line.horizontal.3" catalog="system" id="rTL-KI-yyt">
-                                            <color key="tintColor" systemColor="systemGreenColor"/>
+                                            <color key="tintColor" red="0.086274509803921567" green="0.59999999999999998" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <action selector="menu:" destination="7Jf-6i-Dd2" id="8Wc-04-3xX"/>
                                             </connections>
@@ -66,9 +66,6 @@
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

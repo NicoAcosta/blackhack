@@ -25,8 +25,6 @@
 		0331B4BB255F1831002AE2ED /* HostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0331B4BA255F1831002AE2ED /* HostVC.swift */; };
 		0331B4C0255F1F0F002AE2ED /* storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0331B4BF255F1F0F002AE2ED /* storyboardable.swift */; };
 		0331B4C4255F20AB002AE2ED /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0331B4C3255F20AB002AE2ED /* MenuVC.swift */; };
-		0331B4C9255F2336002AE2ED /* sameStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0331B4C8255F2336002AE2ED /* sameStyle.swift */; };
-		0331B4CD255F2620002AE2ED /* differentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0331B4CC255F2620002AE2ED /* differentStyle.swift */; };
 		0331B4D2255F29EB002AE2ED /* sampleTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0331B4D1255F29EB002AE2ED /* sampleTableCell.swift */; };
 		03636A3725522CEF00BE07F6 /* didLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A3625522CEF00BE07F6 /* didLoad.swift */; };
 		03636A3A25522D6200BE07F6 /* light-dark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A3925522D6200BE07F6 /* light-dark.swift */; };
@@ -102,8 +100,6 @@
 		0331B4BA255F1831002AE2ED /* HostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostVC.swift; sourceTree = "<group>"; };
 		0331B4BF255F1F0F002AE2ED /* storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyboardable.swift; sourceTree = "<group>"; };
 		0331B4C3255F20AB002AE2ED /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
-		0331B4C8255F2336002AE2ED /* sameStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sameStyle.swift; sourceTree = "<group>"; };
-		0331B4CC255F2620002AE2ED /* differentStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = differentStyle.swift; sourceTree = "<group>"; };
 		0331B4D1255F29EB002AE2ED /* sampleTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleTableCell.swift; sourceTree = "<group>"; };
 		03636A3625522CEF00BE07F6 /* didLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = didLoad.swift; sourceTree = "<group>"; };
 		03636A3925522D6200BE07F6 /* light-dark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "light-dark.swift"; sourceTree = "<group>"; };
@@ -179,15 +175,10 @@
 		0331B4A9255F0F9D002AE2ED /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				03636A3F25522E5300BE07F6 /* generalExtensions.swift */,
+				03F8E0FB252D2057008F383D /* LaunchScreen.storyboard */,
+				039605ED256075B900195B68 /* Aux */,
 				0331B4B9255F181D002AE2ED /* Controllers */,
-				0331B4AA255F0FDE002AE2ED /* Play */,
-				039605B9255F48F100195B68 /* Support */,
-				039605CA255F632500195B68 /* BuyMeACoffe */,
-				039605C2255F623300195B68 /* PrivacyPolicy */,
-				039605D4255F681D00195B68 /* Terms */,
-				0331B4C8255F2336002AE2ED /* sameStyle.swift */,
-				0331B4CC255F2620002AE2ED /* differentStyle.swift */,
+				039605EF2560818400195B68 /* Views */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -384,6 +375,27 @@
 			path = Terms;
 			sourceTree = "<group>";
 		};
+		039605ED256075B900195B68 /* Aux */ = {
+			isa = PBXGroup;
+			children = (
+				03636A3F25522E5300BE07F6 /* generalExtensions.swift */,
+				0331B4D0255F29C6002AE2ED /* InteractiveSideMenu */,
+			);
+			path = Aux;
+			sourceTree = "<group>";
+		};
+		039605EF2560818400195B68 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0331B4AA255F0FDE002AE2ED /* Play */,
+				039605B9255F48F100195B68 /* Support */,
+				039605CA255F632500195B68 /* BuyMeACoffe */,
+				039605C2255F623300195B68 /* PrivacyPolicy */,
+				039605D4255F681D00195B68 /* Terms */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		03D369A6252EC98E00F4D1DD /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -481,11 +493,9 @@
 				037EAC2E2550A5CA001093A4 /* Fonts */,
 				03D369A6252EC98E00F4D1DD /* Source */,
 				0331B4A9255F0F9D002AE2ED /* Views */,
-				0331B4D0255F29C6002AE2ED /* InteractiveSideMenu */,
 				03F8E0F0252D2054008F383D /* AppDelegate.swift */,
 				03F8E0F2252D2054008F383D /* SceneDelegate.swift */,
 				03F8E0F9252D2057008F383D /* Assets.xcassets */,
-				03F8E0FB252D2057008F383D /* LaunchScreen.storyboard */,
 				03F8E0FE252D2057008F383D /* Info.plist */,
 			);
 			path = BlackHack;
@@ -655,7 +665,6 @@
 				03636A4025522E5300BE07F6 /* generalExtensions.swift in Sources */,
 				03D369B2252EC9F100F4D1DD /* deck.swift in Sources */,
 				03636A5A255277EA00BE07F6 /* publicGameReturns.swift in Sources */,
-				0331B4CD255F2620002AE2ED /* differentStyle.swift in Sources */,
 				03636A3725522CEF00BE07F6 /* didLoad.swift in Sources */,
 				03D369B9252ECE1500F4D1DD /* stringFormatting.swift in Sources */,
 				03E69855254872EA00096D22 /* struct-data.swift in Sources */,
@@ -673,7 +682,6 @@
 				03D369C6252ECFF100F4D1DD /* sum.swift in Sources */,
 				03D369AF252EC9C400F4D1DD /* dealer.swift in Sources */,
 				03636A50255270C300BE07F6 /* buttonsBehaviour.swift in Sources */,
-				0331B4C9255F2336002AE2ED /* sameStyle.swift in Sources */,
 				03636A7C25528A7100BE07F6 /* dealerStringFormatting.swift in Sources */,
 				03E69843254867AA00096D22 /* enum-handType.swift in Sources */,
 				03DEDFD9255EE48C000B2B96 /* deckPublicReturns.swift in Sources */,
