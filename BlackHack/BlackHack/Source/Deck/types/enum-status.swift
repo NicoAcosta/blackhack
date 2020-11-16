@@ -25,7 +25,7 @@ enum Status {
         case .stood:
             return "Stood"
         case .empty:
-            return "Not started"
+            return "-"
         case .blackJack:
             return "BlackJack!"
         }
