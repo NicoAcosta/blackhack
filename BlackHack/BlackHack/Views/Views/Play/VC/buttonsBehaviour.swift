@@ -27,22 +27,22 @@ extension PlayViewController {
         switch game.dealerStatus {
         
         case .empty:
-            if !dealerA.isEnabled {
-                    dealerCardsButtons.forEach({$0.enable()})
+            if !dealerCardsButtons.areEnabled {
+                    dealerCardsButtons.enable()
             }
-            if dealerClean.isEnabled {
-                dealerClean.disable(); dealerUndo.disable()
+            if dealerCleanUndoButtons.areEnabled {
+                dealerCleanUndoButtons.disable()
             }
         case .stood, .bust, .blackJack:
-            if dealerA.isEnabled {
-                dealerCardsButtons.forEach({$0.disable()})
+            if dealerCardsButtons.areEnabled {
+                dealerCardsButtons.disable()
             }
         case .playing:
-            if !dealerA.isEnabled {
-                    dealerCardsButtons.forEach({$0.enable()})
+            if !dealerCardsButtons.areEnabled {
+                    dealerCardsButtons.enable()
             }
-            if !dealerClean.isEnabled {
-                dealerClean.enable(); dealerUndo.enable()
+            if !dealerCleanUndoButtons.areEnabled {
+                dealerCleanUndoButtons.enable()
             }
         }
         
@@ -55,22 +55,22 @@ extension PlayViewController {
         switch game.userStatus {
         
         case .empty:
-            if !userA.isEnabled {
-                    userCardsButtons.forEach({$0.enable()})
+            if !userCardsButtons.areEnabled {
+                    userCardsButtons.enable()
             }
-            if userClean.isEnabled {
-                userClean.disable(); userUndo.disable()
+            if userCleanUndoButtons.areEnabled {
+                userCleanUndoButtons.disable()
             }
         case .stood, .bust, .blackJack:
-            if userA.isEnabled {
-                userCardsButtons.forEach({$0.disable()})
+            if userCardsButtons.areEnabled {
+                userCardsButtons.disable()
             }
         case .playing:
-            if !userA.isEnabled {
-                    userCardsButtons.forEach({$0.enable()})
+            if !userCardsButtons.areEnabled {
+                    userCardsButtons.enable()
             }
-            if !userClean.isEnabled {
-                userClean.enable(); userUndo.enable()
+            if !userCleanUndoButtons.areEnabled {
+                userCleanUndoButtons.enable()
             }
         }
     }

@@ -46,7 +46,7 @@
                                         </constraints>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dzu-Mk-YFa">
-                                        <rect key="frame" x="0.0" y="200" width="414" height="568"/>
+                                        <rect key="frame" x="0.0" y="200" width="414" height="418"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SampleTableCell" id="pZQ-0w-Haq" customClass="SampleTableCell" customModule="BlackHack" customModuleProvider="target">
@@ -100,7 +100,7 @@
                                     <constraint firstAttribute="trailing" secondItem="9h2-O5-cdQ" secondAttribute="trailing" id="Oga-3u-hq8"/>
                                     <constraint firstItem="9h2-O5-cdQ" firstAttribute="top" secondItem="oPk-o3-eGh" secondAttribute="top" id="P6U-mR-2rW"/>
                                     <constraint firstItem="Dzu-Mk-YFa" firstAttribute="top" secondItem="9h2-O5-cdQ" secondAttribute="bottom" id="utI-WJ-wLA"/>
-                                    <constraint firstAttribute="bottom" secondItem="Dzu-Mk-YFa" secondAttribute="bottom" constant="50" id="yca-DA-VtM"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dzu-Mk-YFa" secondAttribute="bottom" constant="200" id="yca-DA-VtM"/>
                                 </constraints>
                             </view>
                         </subviews>

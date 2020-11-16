@@ -69,3 +69,20 @@ extension UILabel {
     
 }
 
+
+extension Array where Iterator.Element == UIButton {
+    
+    func enable() {
+        self.forEach({$0.enable()})
+    }
+    
+    func disable() {
+        self.forEach({$0.disable()})
+    }
+    
+    var areEnabled : Bool {
+        return first!.isEnabled
+    }
+    
+    
+}

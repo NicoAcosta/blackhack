@@ -103,7 +103,9 @@ class PlayViewController: UIViewController, SideMenuItemContent, Storyboardable 
         //  Outlet arrays
         
         var dealerCardsButtons:     [UIButton]  =  []
+        var dealerCleanUndoButtons: [UIButton]  =  []
         var userCardsButtons:       [UIButton]  =  []
+        var userCleanUndoButtons:   [UIButton]  =  []
         var backgroundButtons:      [UIButton]  =  []
         var textButtons:            [UIButton]  =  []
         

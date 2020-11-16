@@ -21,33 +21,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BMC Logo - White" translatesAutoresizingMaskIntoConstraints="NO" id="EpV-Gb-evV">
-                                <rect key="frame" x="-235" y="148" width="884" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="aJf-cJ-VVo"/>
-                                </constraints>
-                            </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMC-oJ-yBU">
-                                <rect key="frame" x="30" y="652" width="354" height="60"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Cw-09-X1f">
-                                        <rect key="frame" x="90" y="17" width="175" height="33"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="BMC wordmark - Black"/>
-                                        <connections>
-                                            <action selector="coffeeAction:" destination="fHZ-ih-BUE" eventType="touchUpInside" id="cLr-Dz-AIu"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.97150725130000004" green="0.8915130496" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="n03-Jp-kd7"/>
-                                </constraints>
-                            </view>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wkP-o1-aK3">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="cXf-mU-vs5"/>
+                                    <constraint firstAttribute="height" constant="44" id="QJZ-BX-3dG"/>
                                 </constraints>
                                 <items>
                                     <navigationItem id="EDL-La-5VP">
@@ -60,13 +37,19 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gkw-Py-Qt6">
-                                <rect key="frame" x="30" y="363" width="354" height="274"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BMC Logo - White" translatesAutoresizingMaskIntoConstraints="NO" id="EpV-Gb-evV">
+                                <rect key="frame" x="30" y="188" width="354" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="4mS-SR-WKk"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gkw-Py-Qt6" userLabel="text view">
+                                <rect key="frame" x="30" y="438" width="354" height="184"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QU6-Yh-GFD">
-                                        <rect key="frame" x="0.0" y="42" width="354" height="190"/>
+                                        <rect key="frame" x="0.0" y="17" width="354" height="150"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="190" id="kJn-O9-PD9"/>
+                                            <constraint firstAttribute="height" constant="150" id="Lcm-XY-Yw8"/>
                                         </constraints>
                                         <string key="text">If you find this app useful...
 
@@ -80,27 +63,45 @@ improve it keeping it for free!</string>
                                     </textView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="QU6-Yh-GFD" firstAttribute="leading" secondItem="Gkw-Py-Qt6" secondAttribute="leading" id="bKO-bz-BAa"/>
-                                    <constraint firstItem="QU6-Yh-GFD" firstAttribute="centerY" secondItem="Gkw-Py-Qt6" secondAttribute="centerY" id="f88-QG-Vhi"/>
-                                    <constraint firstAttribute="trailing" secondItem="QU6-Yh-GFD" secondAttribute="trailing" id="phF-wp-tYa"/>
+                                    <constraint firstItem="QU6-Yh-GFD" firstAttribute="leading" secondItem="Gkw-Py-Qt6" secondAttribute="leading" id="NH0-pu-bhc"/>
+                                    <constraint firstItem="QU6-Yh-GFD" firstAttribute="centerY" secondItem="Gkw-Py-Qt6" secondAttribute="centerY" id="XuR-2E-ort"/>
+                                    <constraint firstAttribute="trailing" secondItem="QU6-Yh-GFD" secondAttribute="trailing" id="mBl-j5-5Rh"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMC-oJ-yBU">
+                                <rect key="frame" x="30" y="662" width="354" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Cw-09-X1f">
+                                        <rect key="frame" x="92" y="14.5" width="170" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="BMC wordmark - Black"/>
+                                        <connections>
+                                            <action selector="coffeeAction:" destination="fHZ-ih-BUE" eventType="touchUpInside" id="cLr-Dz-AIu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97150725130000004" green="0.8915130496" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="igm-a7-Io0"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="88w-XE-Fef"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="eMC-oJ-yBU" firstAttribute="leading" secondItem="88w-XE-Fef" secondAttribute="leading" constant="30" id="37O-iy-Djy"/>
-                            <constraint firstItem="wkP-o1-aK3" firstAttribute="top" secondItem="88w-XE-Fef" secondAttribute="top" id="93A-PS-jMb"/>
-                            <constraint firstItem="wkP-o1-aK3" firstAttribute="leading" secondItem="88w-XE-Fef" secondAttribute="leading" id="GxN-I7-yUC"/>
-                            <constraint firstItem="88w-XE-Fef" firstAttribute="trailing" secondItem="eMC-oJ-yBU" secondAttribute="trailing" constant="30" id="L8T-CM-Abp"/>
-                            <constraint firstItem="EpV-Gb-evV" firstAttribute="centerX" secondItem="8Lg-Hi-NTB" secondAttribute="centerX" id="LiR-5g-pQo"/>
-                            <constraint firstItem="Gkw-Py-Qt6" firstAttribute="top" secondItem="EpV-Gb-evV" secondAttribute="bottom" constant="15" id="Tm8-kU-TOW"/>
-                            <constraint firstItem="eMC-oJ-yBU" firstAttribute="top" secondItem="Gkw-Py-Qt6" secondAttribute="bottom" constant="15" id="del-Kh-4aB"/>
-                            <constraint firstItem="wkP-o1-aK3" firstAttribute="trailing" secondItem="88w-XE-Fef" secondAttribute="trailing" id="fZz-5P-JeY"/>
-                            <constraint firstItem="EpV-Gb-evV" firstAttribute="top" secondItem="wkP-o1-aK3" secondAttribute="bottom" constant="60" id="gka-SK-Qqw"/>
-                            <constraint firstItem="88w-XE-Fef" firstAttribute="bottom" secondItem="eMC-oJ-yBU" secondAttribute="bottom" constant="150" id="rfK-eC-OHU"/>
-                            <constraint firstItem="88w-XE-Fef" firstAttribute="trailing" secondItem="Gkw-Py-Qt6" secondAttribute="trailing" constant="30" id="wb6-1J-mfg"/>
-                            <constraint firstItem="Gkw-Py-Qt6" firstAttribute="leading" secondItem="88w-XE-Fef" secondAttribute="leading" constant="30" id="zya-75-eDK"/>
+                            <constraint firstItem="wkP-o1-aK3" firstAttribute="trailing" secondItem="88w-XE-Fef" secondAttribute="trailing" id="3Fh-vN-Z32"/>
+                            <constraint firstItem="88w-XE-Fef" firstAttribute="trailing" secondItem="Gkw-Py-Qt6" secondAttribute="trailing" constant="30" id="FH1-CL-DlW"/>
+                            <constraint firstItem="Gkw-Py-Qt6" firstAttribute="leading" secondItem="88w-XE-Fef" secondAttribute="leading" constant="30" id="RGp-c5-5Sd"/>
+                            <constraint firstItem="wkP-o1-aK3" firstAttribute="leading" secondItem="88w-XE-Fef" secondAttribute="leading" id="Tbf-R6-9Ol"/>
+                            <constraint firstItem="Gkw-Py-Qt6" firstAttribute="top" secondItem="EpV-Gb-evV" secondAttribute="bottom" constant="50" id="VIS-x6-P2S"/>
+                            <constraint firstItem="EpV-Gb-evV" firstAttribute="top" secondItem="wkP-o1-aK3" secondAttribute="bottom" constant="100" id="Zmt-nH-RVK"/>
+                            <constraint firstItem="88w-XE-Fef" firstAttribute="bottom" secondItem="eMC-oJ-yBU" secondAttribute="bottom" constant="150" id="bA8-Sn-DzX"/>
+                            <constraint firstItem="EpV-Gb-evV" firstAttribute="leading" secondItem="88w-XE-Fef" secondAttribute="leading" constant="30" id="d61-CR-KSo"/>
+                            <constraint firstItem="88w-XE-Fef" firstAttribute="trailing" secondItem="EpV-Gb-evV" secondAttribute="trailing" constant="30" id="eqq-Rw-Z4g"/>
+                            <constraint firstItem="88w-XE-Fef" firstAttribute="trailing" secondItem="eMC-oJ-yBU" secondAttribute="trailing" constant="30" id="gFn-eF-D0I"/>
+                            <constraint firstItem="eMC-oJ-yBU" firstAttribute="top" secondItem="Gkw-Py-Qt6" secondAttribute="bottom" constant="40" id="ieO-QF-Knj"/>
+                            <constraint firstItem="eMC-oJ-yBU" firstAttribute="leading" secondItem="88w-XE-Fef" secondAttribute="leading" constant="30" id="jR2-Tf-BS8"/>
+                            <constraint firstItem="wkP-o1-aK3" firstAttribute="top" secondItem="88w-XE-Fef" secondAttribute="top" id="xzH-qU-uH2"/>
                         </constraints>
                     </view>
                     <connections>
