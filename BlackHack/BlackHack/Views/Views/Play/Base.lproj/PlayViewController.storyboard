@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -27,14 +27,11 @@
             <objects>
                 <viewController title="play" id="BYZ-38-t0r" customClass="PlayViewController" customModule="BlackHack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="table1" translatesAutoresizingMaskIntoConstraints="NO" id="4Vr-Jo-Nl1">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0H-U4-HcA">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="4XT-78-iy2"/>
                                 </constraints>
@@ -55,20 +52,20 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FmY-eG-l2h">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nlm-we-amw" userLabel="All">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qUA-gM-iPM" userLabel="Dealer">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="299"/>
+                                        <rect key="frame" x="20" y="0.0" width="374" height="359.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="79G-Tb-VLA" userLabel="Dealer Stack">
-                                                <rect key="frame" x="20" y="0.0" width="335" height="289"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="359.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Byb-D5-dP4" userLabel="Dealer Label View">
-                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dealer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vp5-dN-gTG" userLabel="Dealer Label">
-                                                                <rect key="frame" x="20" y="10" width="295" height="25"/>
+                                                                <rect key="frame" x="0.0" y="10" width="374" height="25"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="25" id="qef-Pu-s5e"/>
                                                                 </constraints>
@@ -78,21 +75,21 @@
                                                             </label>
                                                         </subviews>
                                                         <constraints>
-                                                            <constraint firstAttribute="trailing" secondItem="vp5-dN-gTG" secondAttribute="trailing" constant="20" id="0Er-4b-iqA"/>
+                                                            <constraint firstAttribute="trailing" secondItem="vp5-dN-gTG" secondAttribute="trailing" id="0Er-4b-iqA"/>
                                                             <constraint firstItem="vp5-dN-gTG" firstAttribute="top" secondItem="Byb-D5-dP4" secondAttribute="top" constant="10" id="5BG-25-Vr9"/>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Mlw-va-elS"/>
                                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="mwJ-rp-f22"/>
-                                                            <constraint firstItem="vp5-dN-gTG" firstAttribute="leading" secondItem="Byb-D5-dP4" secondAttribute="leading" constant="20" id="y2c-jC-343"/>
+                                                            <constraint firstItem="vp5-dN-gTG" firstAttribute="leading" secondItem="Byb-D5-dP4" secondAttribute="leading" id="y2c-jC-343"/>
                                                         </constraints>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="qBe-f8-tiV" userLabel="Dealer Buttons">
-                                                        <rect key="frame" x="0.0" y="60" width="335" height="84"/>
+                                                        <rect key="frame" x="0.0" y="70" width="374" height="119.5"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="hie-VO-uVp">
-                                                                <rect key="frame" x="0.0" y="0.0" width="335" height="26"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="38"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRm-b0-hYy">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="64.5" height="26"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="38"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
                                                                         <state key="normal" title="A">
@@ -103,7 +100,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQU-Ew-ccH">
-                                                                        <rect key="frame" x="67.5" y="0.0" width="64.5" height="26"/>
+                                                                        <rect key="frame" x="75.5" y="0.0" width="72.5" height="38"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
                                                                         <state key="normal" title="2">
@@ -114,7 +111,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wno-ra-pQm">
-                                                                        <rect key="frame" x="135" y="0.0" width="65" height="26"/>
+                                                                        <rect key="frame" x="151" y="0.0" width="72" height="38"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
                                                                         <state key="normal" title="3">
@@ -125,7 +122,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtN-KC-K9f">
-                                                                        <rect key="frame" x="203" y="0.0" width="64.5" height="26"/>
+                                                                        <rect key="frame" x="226" y="0.0" width="72.5" height="38"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
                                                                         <state key="normal" title="4">
@@ -136,7 +133,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEZ-2s-ved">
-                                                                        <rect key="frame" x="270.5" y="0.0" width="64.5" height="26"/>
+                                                                        <rect key="frame" x="301.5" y="0.0" width="72.5" height="38"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
                                                                         <state key="normal" title="5">
@@ -149,10 +146,10 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="ffY-TX-sIx">
-                                                                <rect key="frame" x="0.0" y="29" width="335" height="26"/>
+                                                                <rect key="frame" x="0.0" y="41" width="374" height="37.5"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfl-ZS-Kwh">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="64.5" height="26"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="37.5"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
                                                                         <state key="normal" title="6">
@@ -163,7 +160,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKJ-Ju-8Bv">
-                                                                        <rect key="frame" x="67.5" y="0.0" width="64.5" height="26"/>
+                                                                        <rect key="frame" x="75.5" y="0.0" width="72.5" height="37.5"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
                                                                         <state key="normal" title="7">
@@ -174,7 +171,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZh-q8-4G9">
-                                                                        <rect key="frame" x="135" y="0.0" width="65" height="26"/>
+                                                                        <rect key="frame" x="151" y="0.0" width="72" height="37.5"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
                                                                         <state key="normal" title="8">
@@ -185,7 +182,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exO-iI-NJ6">
-                                                                        <rect key="frame" x="203" y="0.0" width="64.5" height="26"/>
+                                                                        <rect key="frame" x="226" y="0.0" width="72.5" height="37.5"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
                                                                         <state key="normal" title="9">
@@ -196,7 +193,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8f2-F7-ltG">
-                                                                        <rect key="frame" x="270.5" y="0.0" width="64.5" height="26"/>
+                                                                        <rect key="frame" x="301.5" y="0.0" width="72.5" height="37.5"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
                                                                         <state key="normal" title="10">
@@ -209,10 +206,10 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="MCo-Od-xaT">
-                                                                <rect key="frame" x="0.0" y="58" width="335" height="26"/>
+                                                                <rect key="frame" x="0.0" y="81.5" width="374" height="38"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kL3-3Y-aWf">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="64.5" height="26"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="38"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
                                                                         <state key="normal" title="Clean">
                                                                             <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
@@ -222,7 +219,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GD0-hu-zeN">
-                                                                        <rect key="frame" x="67.5" y="0.0" width="64.5" height="26"/>
+                                                                        <rect key="frame" x="75.5" y="0.0" width="72.5" height="38"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
                                                                         <state key="normal" title="J">
@@ -233,7 +230,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfF-Ku-Lab">
-                                                                        <rect key="frame" x="135" y="0.0" width="65" height="26"/>
+                                                                        <rect key="frame" x="151" y="0.0" width="72" height="38"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
                                                                         <state key="normal" title="Q">
@@ -244,7 +241,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6j5-FI-WcT">
-                                                                        <rect key="frame" x="203" y="0.0" width="64.5" height="26"/>
+                                                                        <rect key="frame" x="226" y="0.0" width="72.5" height="38"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
                                                                         <state key="normal" title="K">
@@ -255,7 +252,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3v-15-OdE">
-                                                                        <rect key="frame" x="270.5" y="0.0" width="64.5" height="26"/>
+                                                                        <rect key="frame" x="301.5" y="0.0" width="72.5" height="38"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
                                                                         <state key="normal" title="Undo">
                                                                             <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
@@ -272,16 +269,16 @@
                                                         </constraints>
                                                     </stackView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ou-HR-tbv" userLabel="Dealer Data">
-                                                        <rect key="frame" x="0.0" y="154" width="335" height="135"/>
+                                                        <rect key="frame" x="0.0" y="199.5" width="374" height="160"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Xxw-ZF-cUS" userLabel="Dealer Data Stack">
-                                                                <rect key="frame" x="0.0" y="10" width="335" height="115"/>
+                                                                <rect key="frame" x="0.0" y="10" width="374" height="140"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="efQ-Fg-Vsd" userLabel="Cards">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MM-5N-IV0">
-                                                                                <rect key="frame" x="10" y="6.5" width="315" height="17"/>
+                                                                                <rect key="frame" x="10" y="16.5" width="354" height="17"/>
                                                                                 <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="19"/>
                                                                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                 <nil key="highlightedColor"/>
@@ -296,31 +293,31 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qiG-d2-009" userLabel="Sum Status">
-                                                                        <rect key="frame" x="0.0" y="30" width="335" height="35"/>
+                                                                        <rect key="frame" x="0.0" y="50" width="374" height="40"/>
                                                                         <subviews>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nHF-fS-wmS">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="335" height="35"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sum:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXU-Qk-hO9">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="84" height="35"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="40"/>
                                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LX2-tm-4DK">
-                                                                                        <rect key="frame" x="84" y="0.0" width="83.5" height="35"/>
+                                                                                        <rect key="frame" x="93.5" y="0.0" width="93.5" height="40"/>
                                                                                         <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="20"/>
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QB8-fE-XRj">
-                                                                                        <rect key="frame" x="167.5" y="0.0" width="84" height="35"/>
+                                                                                        <rect key="frame" x="187" y="0.0" width="93.5" height="40"/>
                                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLb-aZ-0VJ">
-                                                                                        <rect key="frame" x="251.5" y="0.0" width="83.5" height="35"/>
+                                                                                        <rect key="frame" x="280.5" y="0.0" width="93.5" height="40"/>
                                                                                         <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="20"/>
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                         <nil key="highlightedColor"/>
@@ -337,31 +334,31 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PrD-J3-3Of" userLabel="Odds">
-                                                                        <rect key="frame" x="0.0" y="65" width="335" height="50"/>
+                                                                        <rect key="frame" x="0.0" y="90" width="374" height="50"/>
                                                                         <subviews>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Lm2-nE-GGA">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Standing:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SF7-Mf-11J">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="84" height="50"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="50"/>
                                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQf-eG-iIg">
-                                                                                        <rect key="frame" x="84" y="0.0" width="83.5" height="50"/>
+                                                                                        <rect key="frame" x="93.5" y="0.0" width="93.5" height="50"/>
                                                                                         <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="28"/>
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Busting:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6D-eh-8x7">
-                                                                                        <rect key="frame" x="167.5" y="0.0" width="84" height="50"/>
+                                                                                        <rect key="frame" x="187" y="0.0" width="93.5" height="50"/>
                                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ks-mt-BLj">
-                                                                                        <rect key="frame" x="251.5" y="0.0" width="83.5" height="50"/>
+                                                                                        <rect key="frame" x="280.5" y="0.0" width="93.5" height="50"/>
                                                                                         <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="28"/>
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                         <nil key="highlightedColor"/>
@@ -392,27 +389,27 @@
                                             </stackView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="79G-Tb-VLA" secondAttribute="trailing" constant="20" id="H4h-Uk-dfc"/>
-                                            <constraint firstItem="79G-Tb-VLA" firstAttribute="leading" secondItem="qUA-gM-iPM" secondAttribute="leading" constant="20" id="J7F-oW-R55"/>
-                                            <constraint firstItem="79G-Tb-VLA" firstAttribute="top" secondItem="qUA-gM-iPM" secondAttribute="top" id="T0a-Zb-acV"/>
-                                            <constraint firstAttribute="bottom" secondItem="79G-Tb-VLA" secondAttribute="bottom" constant="10" id="dQF-Hv-DEa"/>
+                                            <constraint firstAttribute="bottom" secondItem="79G-Tb-VLA" secondAttribute="bottom" id="4GR-Vy-air"/>
+                                            <constraint firstAttribute="trailing" secondItem="79G-Tb-VLA" secondAttribute="trailing" id="N8F-zu-mNP"/>
+                                            <constraint firstItem="79G-Tb-VLA" firstAttribute="leading" secondItem="qUA-gM-iPM" secondAttribute="leading" id="NWn-Uy-xSn"/>
+                                            <constraint firstItem="79G-Tb-VLA" firstAttribute="top" secondItem="qUA-gM-iPM" secondAttribute="top" id="i40-AV-n1w"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPj-ca-H6d" userLabel="Middle">
-                                        <rect key="frame" x="0.0" y="299" width="375" height="25"/>
+                                        <rect key="frame" x="0.0" y="369.5" width="414" height="35"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfF-3x-SIX" userLabel="Separador">
-                                                <rect key="frame" x="0.0" y="11.5" width="375" height="2"/>
+                                                <rect key="frame" x="0.0" y="16.5" width="414" height="2"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="2" id="GGc-Ta-iWY"/>
+                                                    <constraint firstAttribute="height" constant="2" id="OqW-ZS-4IL"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7iL-9F-B1z" userLabel="strategyView">
-                                                <rect key="frame" x="137.5" y="0.0" width="100" height="25"/>
+                                                <rect key="frame" x="157" y="0.0" width="100" height="35"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strategy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjN-c3-ptr">
-                                                        <rect key="frame" x="11.5" y="5" width="77" height="15.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="35"/>
                                                         <fontDescription key="fontDescription" name="GothamUltra" family="Gotham Ultra" pointSize="17"/>
                                                         <color key="textColor" red="0.16078431369999999" green="0.29411764709999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -420,63 +417,62 @@
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="EjN-c3-ptr" firstAttribute="centerY" secondItem="7iL-9F-B1z" secondAttribute="centerY" id="Ek9-h9-EQg"/>
-                                                    <constraint firstItem="EjN-c3-ptr" firstAttribute="centerX" secondItem="7iL-9F-B1z" secondAttribute="centerX" id="LHY-y4-ZKZ"/>
-                                                    <constraint firstAttribute="width" constant="100" id="y7s-3v-vzg"/>
+                                                    <constraint firstAttribute="width" constant="100" id="8ja-JE-90U"/>
+                                                    <constraint firstItem="EjN-c3-ptr" firstAttribute="top" secondItem="7iL-9F-B1z" secondAttribute="top" id="E1D-sf-sMa"/>
+                                                    <constraint firstAttribute="trailing" secondItem="EjN-c3-ptr" secondAttribute="trailing" id="bB8-fu-sYa"/>
+                                                    <constraint firstItem="EjN-c3-ptr" firstAttribute="leading" secondItem="7iL-9F-B1z" secondAttribute="leading" id="dGS-UA-2TT"/>
+                                                    <constraint firstAttribute="bottom" secondItem="EjN-c3-ptr" secondAttribute="bottom" id="vNe-Mz-dAK"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="7iL-9F-B1z" secondAttribute="bottom" id="44f-Uq-ffq"/>
-                                            <constraint firstAttribute="trailing" secondItem="yfF-3x-SIX" secondAttribute="trailing" id="APs-ig-f9Y"/>
-                                            <constraint firstItem="yfF-3x-SIX" firstAttribute="centerY" secondItem="mPj-ca-H6d" secondAttribute="centerY" id="Bbc-kL-en0"/>
-                                            <constraint firstItem="7iL-9F-B1z" firstAttribute="top" secondItem="mPj-ca-H6d" secondAttribute="top" id="CVX-CF-iM0"/>
-                                            <constraint firstItem="7iL-9F-B1z" firstAttribute="centerY" secondItem="mPj-ca-H6d" secondAttribute="centerY" id="Pgb-Ft-NEJ"/>
-                                            <constraint firstItem="7iL-9F-B1z" firstAttribute="centerX" secondItem="mPj-ca-H6d" secondAttribute="centerX" id="S30-8l-nus"/>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="35" id="XSm-hN-h0s"/>
-                                            <constraint firstItem="yfF-3x-SIX" firstAttribute="centerX" secondItem="mPj-ca-H6d" secondAttribute="centerX" id="fr4-bU-Inf"/>
-                                            <constraint firstItem="yfF-3x-SIX" firstAttribute="leading" secondItem="mPj-ca-H6d" secondAttribute="leading" id="pwa-Tr-aAC"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="sUZ-y7-5Hh"/>
+                                            <constraint firstItem="7iL-9F-B1z" firstAttribute="top" secondItem="mPj-ca-H6d" secondAttribute="top" id="82m-qn-IHl"/>
+                                            <constraint firstAttribute="trailing" secondItem="yfF-3x-SIX" secondAttribute="trailing" id="CjZ-HB-Er7"/>
+                                            <constraint firstAttribute="bottom" secondItem="7iL-9F-B1z" secondAttribute="bottom" id="Ljc-le-lSt"/>
+                                            <constraint firstItem="7iL-9F-B1z" firstAttribute="centerX" secondItem="mPj-ca-H6d" secondAttribute="centerX" id="M5Z-yR-7bT"/>
+                                            <constraint firstItem="yfF-3x-SIX" firstAttribute="centerY" secondItem="mPj-ca-H6d" secondAttribute="centerY" id="OuK-ES-EXi"/>
+                                            <constraint firstItem="yfF-3x-SIX" firstAttribute="leading" secondItem="mPj-ca-H6d" secondAttribute="leading" id="VQH-7Z-ngn"/>
+                                            <constraint firstAttribute="height" constant="35" id="pcz-7Z-3jG"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ck5-sp-s5k" userLabel="User">
-                                        <rect key="frame" x="0.0" y="324" width="375" height="299"/>
+                                        <rect key="frame" x="20" y="414.5" width="374" height="359.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qhj-aO-v7T" userLabel="User Stack">
-                                                <rect key="frame" x="20" y="10" width="335" height="289"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="359.5"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hme-qg-kqK" userLabel="User Data">
-                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="143"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hme-qg-kqK" userLabel="User Data">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="160"/>
                                                         <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="w9M-zR-GeC" userLabel="User Data Stack">
-                                                                <rect key="frame" x="0.0" y="10" width="335" height="123"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="w9M-zR-GeC" userLabel="User Data Stack">
+                                                                <rect key="frame" x="0.0" y="10" width="374" height="140"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfQ-0p-3V1" userLabel="Odds">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
                                                                         <subviews>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HD5-7e-6us">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not busting             if hit:" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jP9-WB-JKB">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="84" height="50"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="50"/>
                                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjb-V7-pll">
-                                                                                        <rect key="frame" x="84" y="0.0" width="83.5" height="50"/>
+                                                                                        <rect key="frame" x="93.5" y="0.0" width="93.5" height="50"/>
                                                                                         <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="26"/>
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Busting if hit:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oc-OI-MDh">
-                                                                                        <rect key="frame" x="167.5" y="0.0" width="84" height="50"/>
+                                                                                        <rect key="frame" x="187" y="0.0" width="93.5" height="50"/>
                                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5i-zu-aRn">
-                                                                                        <rect key="frame" x="251.5" y="0.0" width="83.5" height="50"/>
+                                                                                        <rect key="frame" x="280.5" y="0.0" width="93.5" height="50"/>
                                                                                         <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="27"/>
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                         <nil key="highlightedColor"/>
@@ -493,31 +489,31 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RsZ-wt-vLb" userLabel="Sum Status">
-                                                                        <rect key="frame" x="0.0" y="50" width="335" height="35"/>
+                                                                        <rect key="frame" x="0.0" y="50" width="374" height="40"/>
                                                                         <subviews>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yXH-mI-aM1">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="335" height="35"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sum:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXS-QE-1nZ">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="84" height="35"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="40"/>
                                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuK-cg-GXK">
-                                                                                        <rect key="frame" x="84" y="0.0" width="83.5" height="35"/>
+                                                                                        <rect key="frame" x="93.5" y="0.0" width="93.5" height="40"/>
                                                                                         <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="20"/>
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qk-aZ-60y">
-                                                                                        <rect key="frame" x="167.5" y="0.0" width="84" height="35"/>
+                                                                                        <rect key="frame" x="187" y="0.0" width="93.5" height="40"/>
                                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSu-sa-cct">
-                                                                                        <rect key="frame" x="251.5" y="0.0" width="83.5" height="35"/>
+                                                                                        <rect key="frame" x="280.5" y="0.0" width="93.5" height="40"/>
                                                                                         <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="20"/>
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                         <nil key="highlightedColor"/>
@@ -533,11 +529,11 @@
                                                                             <constraint firstItem="yXH-mI-aM1" firstAttribute="leading" secondItem="RsZ-wt-vLb" secondAttribute="leading" id="yeQ-OQ-MnY"/>
                                                                         </constraints>
                                                                     </view>
-                                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0tx-rW-OQb" userLabel="Cards">
-                                                                        <rect key="frame" x="0.0" y="85" width="335" height="38"/>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0tx-rW-OQb" userLabel="Cards">
+                                                                        <rect key="frame" x="0.0" y="90" width="374" height="50"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ud5-Ak-6Yb">
-                                                                                <rect key="frame" x="10" y="2.5" width="315" height="25"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ud5-Ak-6Yb">
+                                                                                <rect key="frame" x="10" y="16.5" width="354" height="17"/>
                                                                                 <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="19"/>
                                                                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                 <nil key="highlightedColor"/>
@@ -562,14 +558,14 @@
                                                             <constraint firstAttribute="trailing" secondItem="w9M-zR-GeC" secondAttribute="trailing" id="xTB-7Y-BHC"/>
                                                         </constraints>
                                                     </view>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="jOA-aM-drn" userLabel="User Buttons">
-                                                        <rect key="frame" x="0.0" y="143" width="335" height="96"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="jOA-aM-drn" userLabel="User Buttons">
+                                                        <rect key="frame" x="0.0" y="160" width="374" height="139.5"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="1hf-Fd-pIe">
-                                                                <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="44.5"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OvG-Cv-q2a">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="64.5" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="44.5"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
                                                                         <state key="normal" title="A">
@@ -580,7 +576,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0U9-dz-J6g">
-                                                                        <rect key="frame" x="67.5" y="0.0" width="64.5" height="30"/>
+                                                                        <rect key="frame" x="75.5" y="0.0" width="72.5" height="44.5"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
                                                                         <state key="normal" title="2">
@@ -591,7 +587,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3q-FG-6MK">
-                                                                        <rect key="frame" x="135" y="0.0" width="65" height="30"/>
+                                                                        <rect key="frame" x="151" y="0.0" width="72" height="44.5"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
                                                                         <state key="normal" title="3">
@@ -602,7 +598,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gY8-eT-ELh">
-                                                                        <rect key="frame" x="203" y="0.0" width="64.5" height="30"/>
+                                                                        <rect key="frame" x="226" y="0.0" width="72.5" height="44.5"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
                                                                         <state key="normal" title="4">
@@ -613,7 +609,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6H-tz-RIl">
-                                                                        <rect key="frame" x="270.5" y="0.0" width="64.5" height="30"/>
+                                                                        <rect key="frame" x="301.5" y="0.0" width="72.5" height="44.5"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
                                                                         <state key="normal" title="5">
@@ -626,10 +622,10 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="scL-s4-1BQ">
-                                                                <rect key="frame" x="0.0" y="33" width="335" height="30"/>
+                                                                <rect key="frame" x="0.0" y="47.5" width="374" height="44.5"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cn0-2j-QFQ">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="64.5" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="44.5"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
                                                                         <state key="normal" title="6">
@@ -640,7 +636,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klC-il-6V4">
-                                                                        <rect key="frame" x="67.5" y="0.0" width="64.5" height="30"/>
+                                                                        <rect key="frame" x="75.5" y="0.0" width="72.5" height="44.5"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
                                                                         <state key="normal" title="7">
@@ -651,7 +647,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsL-2p-erl">
-                                                                        <rect key="frame" x="135" y="0.0" width="65" height="30"/>
+                                                                        <rect key="frame" x="151" y="0.0" width="72" height="44.5"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
                                                                         <state key="normal" title="8">
@@ -662,7 +658,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2s-lv-bWD">
-                                                                        <rect key="frame" x="203" y="0.0" width="64.5" height="30"/>
+                                                                        <rect key="frame" x="226" y="0.0" width="72.5" height="44.5"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
                                                                         <state key="normal" title="9">
@@ -673,7 +669,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53D-1x-vfz">
-                                                                        <rect key="frame" x="270.5" y="0.0" width="64.5" height="30"/>
+                                                                        <rect key="frame" x="301.5" y="0.0" width="72.5" height="44.5"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
                                                                         <state key="normal" title="10">
@@ -686,10 +682,10 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="eJE-gi-Sff">
-                                                                <rect key="frame" x="0.0" y="66" width="335" height="30"/>
+                                                                <rect key="frame" x="0.0" y="95" width="374" height="44.5"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6i-0T-ddu">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="64.5" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="44.5"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
                                                                         <state key="normal" title="Clean">
                                                                             <color key="titleColor" systemColor="systemBackgroundColor"/>
@@ -699,7 +695,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAL-R7-vnP">
-                                                                        <rect key="frame" x="67.5" y="0.0" width="64.5" height="30"/>
+                                                                        <rect key="frame" x="75.5" y="0.0" width="72.5" height="44.5"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
                                                                         <state key="normal" title="J">
@@ -710,7 +706,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnW-35-H1I">
-                                                                        <rect key="frame" x="135" y="0.0" width="65" height="30"/>
+                                                                        <rect key="frame" x="151" y="0.0" width="72" height="44.5"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
                                                                         <state key="normal" title="Q">
@@ -721,7 +717,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpH-1T-XvN">
-                                                                        <rect key="frame" x="203" y="0.0" width="64.5" height="30"/>
+                                                                        <rect key="frame" x="226" y="0.0" width="72.5" height="44.5"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="20"/>
                                                                         <state key="normal" title="K">
@@ -732,7 +728,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P32-5P-eaG">
-                                                                        <rect key="frame" x="270.5" y="0.0" width="64.5" height="30"/>
+                                                                        <rect key="frame" x="301.5" y="0.0" width="72.5" height="44.5"/>
                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
                                                                         <state key="normal" title="Undo">
                                                                             <color key="titleColor" systemColor="systemBackgroundColor"/>
@@ -748,11 +744,11 @@
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="iBC-gt-5p5"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Een-Qe-MC1" userLabel="User Label View">
-                                                        <rect key="frame" x="0.0" y="239" width="335" height="50"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Een-Qe-MC1" userLabel="User Label View">
+                                                        <rect key="frame" x="0.0" y="299.5" width="374" height="60"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGL-wd-cVm">
-                                                                <rect key="frame" x="20" y="15" width="295" height="25"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGL-wd-cVm">
+                                                                <rect key="frame" x="0.0" y="25" width="374" height="25"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="25" id="mxc-UQ-dqc"/>
                                                                 </constraints>
@@ -762,10 +758,10 @@
                                                             </label>
                                                         </subviews>
                                                         <constraints>
-                                                            <constraint firstItem="AGL-wd-cVm" firstAttribute="leading" secondItem="Een-Qe-MC1" secondAttribute="leading" constant="20" id="1Yb-ru-CjN"/>
+                                                            <constraint firstItem="AGL-wd-cVm" firstAttribute="leading" secondItem="Een-Qe-MC1" secondAttribute="leading" id="1Yb-ru-CjN"/>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="DfN-Q8-6x8"/>
                                                             <constraint firstAttribute="bottom" secondItem="AGL-wd-cVm" secondAttribute="bottom" constant="10" id="E3n-a1-t4t"/>
-                                                            <constraint firstAttribute="trailing" secondItem="AGL-wd-cVm" secondAttribute="trailing" constant="20" id="Kb1-Ht-Y8k"/>
+                                                            <constraint firstAttribute="trailing" secondItem="AGL-wd-cVm" secondAttribute="trailing" id="Kb1-Ht-Y8k"/>
                                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="PSb-NS-B9Y"/>
                                                         </constraints>
                                                     </view>
@@ -773,31 +769,38 @@
                                             </stackView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="qhj-aO-v7T" secondAttribute="trailing" constant="20" id="FzM-MG-gxB"/>
-                                            <constraint firstItem="qhj-aO-v7T" firstAttribute="leading" secondItem="Ck5-sp-s5k" secondAttribute="leading" constant="20" id="b5g-mw-gRe"/>
+                                            <constraint firstAttribute="trailing" secondItem="qhj-aO-v7T" secondAttribute="trailing" id="FzM-MG-gxB"/>
+                                            <constraint firstItem="qhj-aO-v7T" firstAttribute="leading" secondItem="Ck5-sp-s5k" secondAttribute="leading" id="b5g-mw-gRe"/>
                                             <constraint firstAttribute="bottom" secondItem="qhj-aO-v7T" secondAttribute="bottom" id="lK0-nW-1Ca"/>
-                                            <constraint firstItem="qhj-aO-v7T" firstAttribute="top" secondItem="Ck5-sp-s5k" secondAttribute="top" constant="10" id="zhl-Bg-f8g"/>
+                                            <constraint firstItem="qhj-aO-v7T" firstAttribute="top" secondItem="Ck5-sp-s5k" secondAttribute="top" id="zhl-Bg-f8g"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="mPj-ca-H6d" firstAttribute="centerY" secondItem="FmY-eG-l2h" secondAttribute="centerY" id="Snt-9i-iD5"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ck5-sp-s5k" secondAttribute="bottom" id="6pM-0C-AtL"/>
+                                    <constraint firstItem="qUA-gM-iPM" firstAttribute="leading" secondItem="nlm-we-amw" secondAttribute="leading" constant="20" id="BnA-LE-v2e"/>
+                                    <constraint firstAttribute="trailing" secondItem="qUA-gM-iPM" secondAttribute="trailing" constant="20" id="FmG-BP-9FW"/>
+                                    <constraint firstItem="Ck5-sp-s5k" firstAttribute="top" secondItem="mPj-ca-H6d" secondAttribute="bottom" constant="10" id="So5-sh-v0C"/>
+                                    <constraint firstItem="mPj-ca-H6d" firstAttribute="centerY" secondItem="nlm-we-amw" secondAttribute="centerY" id="Whv-PR-YNi"/>
+                                    <constraint firstItem="Ck5-sp-s5k" firstAttribute="leading" secondItem="nlm-we-amw" secondAttribute="leading" constant="20" id="Xen-0g-Uqz"/>
+                                    <constraint firstAttribute="trailing" secondItem="mPj-ca-H6d" secondAttribute="trailing" id="Ykt-f9-ll7"/>
+                                    <constraint firstItem="mPj-ca-H6d" firstAttribute="leading" secondItem="nlm-we-amw" secondAttribute="leading" id="ZBb-1Y-hKK"/>
+                                    <constraint firstItem="mPj-ca-H6d" firstAttribute="centerY" secondItem="nlm-we-amw" secondAttribute="centerY" id="fow-6I-F61"/>
+                                    <constraint firstItem="qUA-gM-iPM" firstAttribute="top" secondItem="nlm-we-amw" secondAttribute="top" id="hEP-CI-QHg"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ck5-sp-s5k" secondAttribute="trailing" constant="20" id="i8H-M2-0dL"/>
+                                    <constraint firstItem="mPj-ca-H6d" firstAttribute="top" secondItem="qUA-gM-iPM" secondAttribute="bottom" constant="10" id="jyc-3h-q5m"/>
                                 </constraints>
-                            </stackView>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <constraints>
-                            <constraint firstItem="FmY-eG-l2h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Oo-3h-abv"/>
-                            <constraint firstItem="4Vr-Jo-Nl1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1dM-fp-gnb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FmY-eG-l2h" secondAttribute="bottom" id="3O3-6O-Psk"/>
-                            <constraint firstItem="FmY-eG-l2h" firstAttribute="top" secondItem="t0H-U4-HcA" secondAttribute="bottom" id="HXg-iF-vx2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nlm-we-amw" secondAttribute="bottom" id="EKO-On-Rgu"/>
+                            <constraint firstItem="nlm-we-amw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GRh-ej-xSA"/>
                             <constraint firstItem="t0H-U4-HcA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="P8T-T7-bOx"/>
-                            <constraint firstItem="FmY-eG-l2h" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SXe-7R-t6h"/>
-                            <constraint firstItem="4Vr-Jo-Nl1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="axU-kr-qk6"/>
-                            <constraint firstAttribute="bottom" secondItem="4Vr-Jo-Nl1" secondAttribute="bottom" id="jF2-gn-LUx"/>
+                            <constraint firstItem="nlm-we-amw" firstAttribute="top" secondItem="t0H-U4-HcA" secondAttribute="bottom" id="gg0-QP-8Y6"/>
                             <constraint firstItem="t0H-U4-HcA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jJ0-j1-OvI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Vr-Jo-Nl1" secondAttribute="trailing" id="nQ3-OE-1z3"/>
                             <constraint firstItem="t0H-U4-HcA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rKo-fc-xZZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nlm-we-amw" secondAttribute="trailing" id="wa7-fy-d8u"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zun-en-7Zp"/>
@@ -861,12 +864,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-804" y="-4"/>
+            <point key="canvasLocation" x="-804.34782608695662" y="-4.6875"/>
         </scene>
     </scenes>
     <resources>
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
-        <image name="table1" width="325" height="800"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

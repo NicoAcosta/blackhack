@@ -14,29 +14,48 @@ import NotificationCenter
 
 class SupportVC : UIViewController, SideMenuItemContent, Storyboardable {
     
+    //  Para saber cuando se esta editando meesageField, para mover view y que no se corte
     var activeTextView : UITextView? = nil
     
+    //  View vacía para poder calcular el límite inferior de messageField
     @IBOutlet weak var belowMessageFieldView: UIView!
     
     @IBOutlet weak var subjectField: UITextField!
     @IBOutlet weak var messageField: UITextView!
     @IBOutlet weak var mailButton: UIButton!
     
+    //  Siempre statusBarStyle claro
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
     
+    
+    //  gradient background
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        greenGradientLayer()
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //  Delegar messageField y subjectField en el view controller
+        
         messageField.delegate = self
         subjectField.delegate = self
+        
+        
+        //  Propiedades de subjectField
         
         subjectField.layer.cornerRadius = 5
         subjectField.layer.borderColor = UIColor.systemGray4.cgColor
         subjectField.layer.borderWidth = 1
         subjectField.returnKeyType = .next
         
+        
+        //  Propiedades de messageField
         
         messageField.textColor = .systemGray4
         messageField.layer.cornerRadius = 5
@@ -45,28 +64,39 @@ class SupportVC : UIViewController, SideMenuItemContent, Storyboardable {
         messageField.text = "Write your message here"
         messageField.returnKeyType = .done
         
+        
+        //  Propiedades de mailButton
+        
         mailButton.layer.cornerRadius = 5
         
+        
         // correr keyboardWillShow cada vez que se va a abrir el teclado
+        
         NotificationCenter.default.addObserver(self, selector: #selector(SupportVC.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        
+        
+        // correr keyboardWillHide cada vez que se va a cerrar el teclado
         
         NotificationCenter.default.addObserver(self, selector: #selector(SupportVC.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
+        
     }
+    
+    
+    //  menuButton  ->  Mostrar menu
     
     @IBAction func menuAction(_ sender: Any) {
         showSideMenu()
     }
     
+    
+    //  sendButton  ->  Abrir mail para mandar
+    
     @IBAction func mailAction(_ sender: Any) {
         mail()
     }
     
-    //  gradient background
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        greenGradientLayer()
-    }
+
     
     
 }
@@ -101,6 +131,7 @@ extension SupportVC : UITextViewDelegate {
         return true
     }
     
+    //  activeTextView = messageField   ->  Saber cuando se esta editando ese campo, para saber si se debe mover view al abrir el teclado
     func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
         activeTextView = textView
         return true
@@ -112,7 +143,7 @@ extension SupportVC : UITextViewDelegate {
 
 extension SupportVC : UITextFieldDelegate {
     
-    //  Pasar al mensaje al tocar Siguiente
+    //  Pasar a messageField al tocar Siguiente
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == subjectField {
             messageField.becomeFirstResponder()
@@ -123,54 +154,49 @@ extension SupportVC : UITextFieldDelegate {
 }
 
 
-// Mover view al abrir o cerrar teclado
+//  Mover view al abrir o cerrar teclado
 
 extension SupportVC {
     
+    
     @objc func keyboardWillShow(notification: NSNotification) {
-
-      guard let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
-
-        // if keyboard size is not available for some reason, dont do anything
-        return
-      }
-
-      var shouldMoveViewUp = false
-
-      // if active text field is not nil
-      if activeTextView == messageField {
-
-        let bottomOfTextView = belowMessageFieldView.convert(activeTextView!.bounds, to: self.view).maxY;
         
-        let topOfKeyboard = self.view.frame.height - keyboardSize.height
-
-        // if the bottom of Textfield is below the top of keyboard, move up
-        if bottomOfTextView > topOfKeyboard {
-          shouldMoveViewUp = true
+        guard let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+            //  si no se puede obtener el tamaño del teclado return
+            return
         }
-      }
+        
+        var shouldMoveViewUp = false
 
-      if shouldMoveViewUp {
-        self.view.frame.origin.y = 0 - (keyboardSize.height * 0.7)
-      }
-}
+        //  si está editando messageField
+        if activeTextView == messageField {
+            
+            //  límite inferior de messageField (belowMessageField) es una vista vacía abajo de messageField
+            let bottomOfTextView = belowMessageFieldView.convert(activeTextView!.bounds, to: self.view).maxY;
+            
+            //  alto de teclado
+            let topOfKeyboard = self.view.frame.height - keyboardSize.height
 
+            //  si el alto del teclado esta debajo del límite inferior de messageView, mover view
+            if bottomOfTextView > topOfKeyboard {
+                shouldMoveViewUp = true
+            }
+        }
+        
+        //  si se debe mover -> mover view
+        if shouldMoveViewUp {
+            self.view.frame.origin.y = 0 - (keyboardSize.height * 0.7)
+        }
+    
+    }
 
-
-    // Volver a posición original al cerrar el tecladoc
+    // Volver a posición original al cerrar el teclado
     @objc func keyboardWillHide(notifiation: NSNotification) {
         self.view.frame.origin.y = 0
     }
     
+    
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -179,9 +205,12 @@ extension SupportVC {
 
 extension SupportVC : MFMailComposeViewControllerDelegate {
     
+    //  generar mail
     func mail() {
         
+        //  si se puede mandar mail
         if MFMailComposeViewController.canSendMail() {
+            
             
             let mail = MFMailComposeViewController()
             
@@ -209,6 +238,10 @@ extension SupportVC : MFMailComposeViewControllerDelegate {
                 }
                 
             }
+            
+        } else {
+            
+        okAlert(title: "Mail unavailable", message: "Can't send email. Please write to support@blackhack.app")
             
         }
         
