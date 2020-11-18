@@ -386,9 +386,9 @@
 			children = (
 				03636A3F25522E5300BE07F6 /* generalExtensions.swift */,
 				03A098002561900300825C09 /* alerts.swift */,
-				0331B4D0255F29C6002AE2ED /* InteractiveSideMenu */,
 				03A098072561905600825C09 /* padding.swift */,
 				03A0980B256191BF00825C09 /* gradientBackground.swift */,
+				0331B4D0255F29C6002AE2ED /* InteractiveSideMenu */,
 			);
 			path = Aux;
 			sourceTree = "<group>";
@@ -866,7 +866,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = nico.BlackHack;
+				PRODUCT_BUNDLE_IDENTIFIER = El;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -886,7 +886,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = nico.BlackHack;
+				PRODUCT_BUNDLE_IDENTIFIER = El;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

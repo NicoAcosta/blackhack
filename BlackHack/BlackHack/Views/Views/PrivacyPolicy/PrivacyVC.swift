@@ -18,7 +18,7 @@ class PrivacyVC : UIViewController, SideMenuItemContent, Storyboardable {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let myURL = URL(string:"https://nicoacosta.github.io/blackhackapp/privacyPolicy.html")
+        let myURL = URL(string:"https://blackhack.app/privacyPolicy.html")
         
         let myRequest = URLRequest(url: myURL!)
         

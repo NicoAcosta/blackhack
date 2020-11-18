@@ -18,8 +18,27 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.casino-games</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>GothamBlack.ttf</string>
+		<string>GothamBlackItalic.ttf</string>
+		<string>GothamBold.ttf</string>
+		<string>GothamBoldItalic.ttf</string>
+		<string>GothamLight.ttf</string>
+		<string>GothamLightItalic.ttf</string>
+		<string>GothamMedium.ttf</string>
+		<string>GothamMediumItalic.ttf</string>
+		<string>GothamThin.ttf</string>
+		<string>GothamThinItalic.ttf</string>
+		<string>GothamUltra.ttf</string>
+		<string>GothamUltraItalic.ttf</string>
+		<string>GothamXLight.ttf</string>
+		<string>GothamXLightItalic.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -62,26 +81,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>LSApplicationCategoryType</key>
-	<string>public.app-category.casino-games</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
-	<key>UIAppFonts</key>
-	<array>
-		<string>GothamBlack.ttf</string>
-		<string>GothamBlackItalic.ttf</string>
-		<string>GothamBold.ttf</string>
-		<string>GothamBoldItalic.ttf</string>
-		<string>GothamLight.ttf</string>
-		<string>GothamLightItalic.ttf</string>
-		<string>GothamMedium.ttf</string>
-		<string>GothamMediumItalic.ttf</string>
-		<string>GothamThin.ttf</string>
-		<string>GothamThinItalic.ttf</string>
-		<string>GothamUltra.ttf</string>
-		<string>GothamUltraItalic.ttf</string>
-		<string>GothamXLight.ttf</string>
-		<string>GothamXLightItalic.ttf</string>
-	</array>
 </dict>
 </plist>

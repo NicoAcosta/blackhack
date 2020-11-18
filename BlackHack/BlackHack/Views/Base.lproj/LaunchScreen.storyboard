@@ -25,13 +25,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <constraints>
                             <constraint firstItem="Cxg-JE-Lxj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="30M-H6-XLX"/>
-                            <constraint firstItem="eBn-BL-8fv" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Hdj-eU-6dl"/>
+                            <constraint firstItem="eBn-BL-8fv" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="AL6-zG-YM1"/>
+                            <constraint firstItem="eBn-BL-8fv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="S49-Un-wka"/>
                             <constraint firstItem="Cxg-JE-Lxj" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="TXI-fc-dUB"/>
-                            <constraint firstItem="eBn-BL-8fv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Y33-Le-pJx"/>
                             <constraint firstAttribute="trailing" secondItem="Cxg-JE-Lxj" secondAttribute="trailing" constant="90" id="ZWK-WS-W0e"/>
-                            <constraint firstAttribute="bottom" secondItem="eBn-BL-8fv" secondAttribute="bottom" id="cTb-fy-E02"/>
+                            <constraint firstItem="eBn-BL-8fv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dga-Yn-5JH"/>
                             <constraint firstItem="Cxg-JE-Lxj" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="90" id="e1g-Lj-cp3"/>
-                            <constraint firstItem="eBn-BL-8fv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oYv-48-81K"/>
+                            <constraint firstAttribute="bottom" secondItem="eBn-BL-8fv" secondAttribute="bottom" id="zbn-lq-sxT"/>
                         </constraints>
                     </view>
                 </viewController>

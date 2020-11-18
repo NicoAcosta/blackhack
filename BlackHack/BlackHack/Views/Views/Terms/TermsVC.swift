@@ -18,7 +18,7 @@ class TermsVC : UIViewController, SideMenuItemContent, Storyboardable {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let myURL = URL(string:"https://nicoacosta.github.io/blackhackapp/termsAndConditions.html")
+        let myURL = URL(string:"https://blackhack.app/termsAndConditions.html")
         
         let myRequest = URLRequest(url: myURL!)
         

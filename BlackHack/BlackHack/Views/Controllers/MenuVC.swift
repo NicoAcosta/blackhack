@@ -25,15 +25,20 @@ class MenuVC: MenuViewController, Storyboardable {
 
         // Select the initial row
         tableView.selectRow(at: IndexPath(row: 0, section: 0), animated: false, scrollPosition: UITableView.ScrollPosition.none)
-        
-        //  Alto de fila = alto de tableView / cantidad de items -> aprovechar todo el alto posible
-        tableView.rowHeight = tableView.bounds.height / CGFloat(tableView.numberOfRows(inSection: 0))
+
         
     }
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         greenGradientLayer()
+        
+        //  Alto de fila = alto de tableView / cantidad de items -> aprovechar todo el alto posible
+        let rows = 5
+        let safeAreaHeight = view.safeAreaLayoutGuide.layoutFrame.size.height
+        let tableViewHeight = safeAreaHeight - 400
+        tableView.rowHeight = tableViewHeight / CGFloat(rows)
+        
     }
 
     deinit{
