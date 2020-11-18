@@ -7,6 +7,7 @@
 
 import Foundation
 import InteractiveSideMenu
+import FirebaseAnalytics
 
 //  Buttons actions
 
@@ -19,6 +20,7 @@ extension PlayViewController {
     @IBAction func resetButtonAction(_ sender: Any) {
         game.reset()
         updateDealerAndUser()
+        Analytics.logEvent("Reset", parameters: ["a":"a"])
     }
     
     @IBAction func menuButtonAction(_ sender: Any) {

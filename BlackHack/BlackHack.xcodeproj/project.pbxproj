@@ -26,6 +26,7 @@
 		0331B4C0255F1F0F002AE2ED /* storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0331B4BF255F1F0F002AE2ED /* storyboardable.swift */; };
 		0331B4C4255F20AB002AE2ED /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0331B4C3255F20AB002AE2ED /* MenuVC.swift */; };
 		0331B4D2255F29EB002AE2ED /* sampleTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0331B4D1255F29EB002AE2ED /* sampleTableCell.swift */; };
+		03375D212564CB5E00EAF7BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03375D202564CB5E00EAF7BD /* GoogleService-Info.plist */; };
 		03636A3725522CEF00BE07F6 /* didLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A3625522CEF00BE07F6 /* didLoad.swift */; };
 		03636A3A25522D6200BE07F6 /* light-dark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A3925522D6200BE07F6 /* light-dark.swift */; };
 		03636A3D25522DE500BE07F6 /* buttonsActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A3C25522DE500BE07F6 /* buttonsActions.swift */; };
@@ -104,6 +105,7 @@
 		0331B4BF255F1F0F002AE2ED /* storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyboardable.swift; sourceTree = "<group>"; };
 		0331B4C3255F20AB002AE2ED /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		0331B4D1255F29EB002AE2ED /* sampleTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleTableCell.swift; sourceTree = "<group>"; };
+		03375D202564CB5E00EAF7BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		03636A3625522CEF00BE07F6 /* didLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = didLoad.swift; sourceTree = "<group>"; };
 		03636A3925522D6200BE07F6 /* light-dark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "light-dark.swift"; sourceTree = "<group>"; };
 		03636A3C25522DE500BE07F6 /* buttonsActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonsActions.swift; sourceTree = "<group>"; };
@@ -506,6 +508,7 @@
 				03F8E0F2252D2054008F383D /* SceneDelegate.swift */,
 				03F8E0F9252D2057008F383D /* Assets.xcassets */,
 				03F8E0FE252D2057008F383D /* Info.plist */,
+				03375D202564CB5E00EAF7BD /* GoogleService-Info.plist */,
 			);
 			path = BlackHack;
 			sourceTree = "<group>";
@@ -603,6 +606,7 @@
 				032A92572552AA7F00CE10CB /* GothamMedium.ttf in Resources */,
 				032A92592552AA7F00CE10CB /* GothamLightItalic.ttf in Resources */,
 				032A92622552AA7F00CE10CB /* GothamThinItalic.ttf in Resources */,
+				03375D212564CB5E00EAF7BD /* GoogleService-Info.plist in Resources */,
 				032A92612552AA7F00CE10CB /* GothamBoldItalic.ttf in Resources */,
 				032A92632552AA7F00CE10CB /* GothamThin.ttf in Resources */,
 				0331B4B7255F17DA002AE2ED /* Main.storyboard in Resources */,
@@ -866,7 +870,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = El;
+				PRODUCT_BUNDLE_IDENTIFIER = app.blackhack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -886,7 +890,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = El;
+				PRODUCT_BUNDLE_IDENTIFIER = app.blackhack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
