@@ -298,7 +298,7 @@
                                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nHF-fS-wmS">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
                                                                                 <subviews>
-                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sum:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXU-Qk-hO9">
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sum:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXU-Qk-hO9">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="93.5" height="40"/>
                                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
@@ -310,7 +310,7 @@
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
-                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QB8-fE-XRj">
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QB8-fE-XRj">
                                                                                         <rect key="frame" x="187" y="0.0" width="93.5" height="40"/>
                                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
@@ -339,7 +339,7 @@
                                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Lm2-nE-GGA">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
                                                                                 <subviews>
-                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Standing:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SF7-Mf-11J">
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Standing:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SF7-Mf-11J">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="93.5" height="50"/>
                                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
@@ -351,7 +351,7 @@
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
-                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Busting:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6D-eh-8x7">
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Busting:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6D-eh-8x7">
                                                                                         <rect key="frame" x="187" y="0.0" width="93.5" height="50"/>
                                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
@@ -448,36 +448,68 @@
                                                                 <rect key="frame" x="0.0" y="10" width="374" height="140"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfQ-0p-3V1" userLabel="Odds">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
                                                                         <subviews>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HD5-7e-6us">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
                                                                                 <subviews>
-                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not busting             if hit:" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jP9-WB-JKB">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="50"/>
-                                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
-                                                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
-                                                                                        <nil key="highlightedColor"/>
-                                                                                    </label>
+                                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IY0-Op-UhP">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="55"/>
+                                                                                        <subviews>
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not busting             if hit:" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jP9-WB-JKB">
+                                                                                                <rect key="frame" x="13" y="0.0" width="68" height="55"/>
+                                                                                                <constraints>
+                                                                                                    <constraint firstAttribute="width" constant="68" id="1tK-AB-DcB"/>
+                                                                                                </constraints>
+                                                                                                <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
+                                                                                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                                                                <nil key="highlightedColor"/>
+                                                                                            </label>
+                                                                                        </subviews>
+                                                                                        <constraints>
+                                                                                            <constraint firstItem="jP9-WB-JKB" firstAttribute="top" secondItem="IY0-Op-UhP" secondAttribute="top" id="BDT-Dz-A7H"/>
+                                                                                            <constraint firstAttribute="bottom" secondItem="jP9-WB-JKB" secondAttribute="bottom" id="BP9-yQ-J0d"/>
+                                                                                            <constraint firstItem="jP9-WB-JKB" firstAttribute="centerX" secondItem="IY0-Op-UhP" secondAttribute="centerX" id="lG3-0S-2lS"/>
+                                                                                        </constraints>
+                                                                                    </view>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjb-V7-pll">
-                                                                                        <rect key="frame" x="93.5" y="0.0" width="93.5" height="50"/>
+                                                                                        <rect key="frame" x="93.5" y="0.0" width="93.5" height="55"/>
                                                                                         <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="26"/>
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
-                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Busting if hit:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oc-OI-MDh">
-                                                                                        <rect key="frame" x="187" y="0.0" width="93.5" height="50"/>
-                                                                                        <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
-                                                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
-                                                                                        <nil key="highlightedColor"/>
-                                                                                    </label>
+                                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nqa-8k-1Bi">
+                                                                                        <rect key="frame" x="187" y="0.0" width="93.5" height="55"/>
+                                                                                        <subviews>
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Busting if hit:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oc-OI-MDh">
+                                                                                                <rect key="frame" x="13" y="0.0" width="68" height="55"/>
+                                                                                                <constraints>
+                                                                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="68" id="0Vd-6a-goC"/>
+                                                                                                </constraints>
+                                                                                                <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
+                                                                                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                                                                <nil key="highlightedColor"/>
+                                                                                            </label>
+                                                                                        </subviews>
+                                                                                        <constraints>
+                                                                                            <constraint firstItem="4oc-OI-MDh" firstAttribute="centerX" secondItem="nqa-8k-1Bi" secondAttribute="centerX" id="Ltm-pp-F9n"/>
+                                                                                            <constraint firstAttribute="bottom" secondItem="4oc-OI-MDh" secondAttribute="bottom" id="bWK-o5-YQp"/>
+                                                                                            <constraint firstItem="4oc-OI-MDh" firstAttribute="top" secondItem="nqa-8k-1Bi" secondAttribute="top" id="kHZ-bb-nGZ"/>
+                                                                                        </constraints>
+                                                                                    </view>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5i-zu-aRn">
-                                                                                        <rect key="frame" x="280.5" y="0.0" width="93.5" height="50"/>
+                                                                                        <rect key="frame" x="280.5" y="0.0" width="93.5" height="55"/>
                                                                                         <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="27"/>
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                 </subviews>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="Yjb-V7-pll" firstAttribute="leading" secondItem="IY0-Op-UhP" secondAttribute="trailing" id="Hua-Ok-BpM"/>
+                                                                                    <constraint firstItem="IY0-Op-UhP" firstAttribute="leading" secondItem="HD5-7e-6us" secondAttribute="leading" id="TAq-T7-NSN"/>
+                                                                                    <constraint firstItem="IY0-Op-UhP" firstAttribute="top" secondItem="HD5-7e-6us" secondAttribute="top" id="VIZ-iw-2uT"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="IY0-Op-UhP" secondAttribute="bottom" id="iBn-Ry-rO4"/>
+                                                                                </constraints>
                                                                             </stackView>
                                                                         </subviews>
                                                                         <constraints>
@@ -489,31 +521,31 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RsZ-wt-vLb" userLabel="Sum Status">
-                                                                        <rect key="frame" x="0.0" y="50" width="374" height="40"/>
+                                                                        <rect key="frame" x="0.0" y="55" width="374" height="35"/>
                                                                         <subviews>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yXH-mI-aM1">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="35"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sum:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXS-QE-1nZ">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="40"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="35"/>
                                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuK-cg-GXK">
-                                                                                        <rect key="frame" x="93.5" y="0.0" width="93.5" height="40"/>
+                                                                                        <rect key="frame" x="93.5" y="0.0" width="93.5" height="35"/>
                                                                                         <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="20"/>
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qk-aZ-60y">
-                                                                                        <rect key="frame" x="187" y="0.0" width="93.5" height="40"/>
+                                                                                        <rect key="frame" x="187" y="0.0" width="93.5" height="35"/>
                                                                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="18"/>
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSu-sa-cct">
-                                                                                        <rect key="frame" x="280.5" y="0.0" width="93.5" height="40"/>
+                                                                                        <rect key="frame" x="280.5" y="0.0" width="93.5" height="35"/>
                                                                                         <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="20"/>
                                                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                                         <nil key="highlightedColor"/>

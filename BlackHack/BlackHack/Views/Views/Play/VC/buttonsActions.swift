@@ -13,10 +13,6 @@ import FirebaseAnalytics
 
 extension PlayViewController {
     
-    
-    
-    
-    
     @IBAction func resetButtonAction(_ sender: Any) {
         game.reset()
         updateDealerAndUser()
@@ -24,9 +20,7 @@ extension PlayViewController {
     }
     
     @IBAction func menuButtonAction(_ sender: Any) {
-        
         showSideMenu()
-        
     }
     
     
