@@ -8,22 +8,7 @@
 import Foundation
 
 extension Game {
-    
-    func dealerUpdate() {
-        dealer.update()
-    }
-    
-    func userUpdate() {
-        user.update()
-    }
-    
-    func updateBoth() {
-        dealerUpdate()
-        userUpdate()
-    }
-    
-    
-    
+       
     func dealerAdd(_ card: Card) {
         dealer.add(card)
     }

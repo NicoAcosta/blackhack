@@ -21,7 +21,6 @@ extension PlayViewController {
     //  Actualizar data y view de dealer
     
     func updateDealer() {
-        game.dealerUpdate()
         updateDealerData()
         checkDealerButtonsBehaviour()
     }
@@ -31,7 +30,6 @@ extension PlayViewController {
     //  Actualizar data y view de user
     
     func updateUser() {
-        game.userUpdate()
         updateUserData()
         checkUserButtonsBehaviour()
     }
@@ -45,6 +43,7 @@ extension PlayViewController {
             strategyLabel.text  =   strategy
             strategyView.show()
         } else {
+            strategyLabel.text = "-"
             strategyView.hide()
         }
     }

@@ -12,17 +12,22 @@ extension Deck {
     //  Void    Agregar una carta por su nombre
     func add(_ card: Card) {
         cards.append(card)
+        update()
     }
 
     //  Void    Borrar todas las cartas
     func clean() {
-        cards.removeAll()
+        if !isEmpty() {
+            cards.removeAll()
+            update()
+        }
     }
     
     //  Void    Si tiene al menos una carta, borrar la última agregada
     func undo() {
         if !isEmpty() {
             cards.removeLast()
+            update()
         }
     }
 
