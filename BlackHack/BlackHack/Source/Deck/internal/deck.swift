@@ -26,4 +26,8 @@ class Deck {
         return true
     }
     
+    init() {
+        update()
+    }
+    
 }

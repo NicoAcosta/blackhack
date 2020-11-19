@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // Override point for customization after application launch.a
         
         let navigationBarAppearance = UINavigationBar.appearance()
         
@@ -28,6 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let barButtonAppearance = UIBarButtonItem.appearance()
         
         barButtonAppearance.setTitleTextAttributes([.font: UIFont(name:"GothamMedium", size: 18)!], for: .normal)
+        
+        FirebaseApp.configure()
         
         return true
     }

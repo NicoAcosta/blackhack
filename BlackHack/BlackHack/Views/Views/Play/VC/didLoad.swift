@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import FirebaseAnalytics
 
 extension PlayViewController {
     
@@ -32,6 +33,9 @@ extension PlayViewController {
         
         //  Actualizar status bar style segun interface user style
         setNeedsStatusBarAppearanceUpdate()
+        
+        //  Analytics
+        Analytics.logEvent("PlayViewController", parameters: ["a":"a"])
         
     }
     
