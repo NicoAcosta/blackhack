@@ -32,6 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         FirebaseApp.configure()
         
+        
         /*
         //  Firebase Cloud Messaging -> Notigicacione
         if #available(iOS 10.0, *) {

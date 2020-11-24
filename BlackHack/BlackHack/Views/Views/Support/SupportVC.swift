@@ -41,6 +41,10 @@ class SupportVC : UIViewController, SideMenuItemContent, Storyboardable {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        overrideUserInterfaceStyle = .light
+        setNeedsStatusBarAppearanceUpdate()
+        
         //  Delegar messageField y subjectField en el view controller
         
         messageField.delegate = self

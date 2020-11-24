@@ -28,7 +28,6 @@
 		0331B4D2255F29EB002AE2ED /* sampleTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0331B4D1255F29EB002AE2ED /* sampleTableCell.swift */; };
 		03375D212564CB5E00EAF7BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03375D202564CB5E00EAF7BD /* GoogleService-Info.plist */; };
 		03636A3725522CEF00BE07F6 /* didLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A3625522CEF00BE07F6 /* didLoad.swift */; };
-		03636A3A25522D6200BE07F6 /* light-dark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A3925522D6200BE07F6 /* light-dark.swift */; };
 		03636A3D25522DE500BE07F6 /* buttonsActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A3C25522DE500BE07F6 /* buttonsActions.swift */; };
 		03636A4025522E5300BE07F6 /* generalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A3F25522E5300BE07F6 /* generalExtensions.swift */; };
 		03636A4825522F2700BE07F6 /* getData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03636A4725522F2700BE07F6 /* getData.swift */; };
@@ -107,7 +106,6 @@
 		0331B4D1255F29EB002AE2ED /* sampleTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleTableCell.swift; sourceTree = "<group>"; };
 		03375D202564CB5E00EAF7BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		03636A3625522CEF00BE07F6 /* didLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = didLoad.swift; sourceTree = "<group>"; };
-		03636A3925522D6200BE07F6 /* light-dark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "light-dark.swift"; sourceTree = "<group>"; };
 		03636A3C25522DE500BE07F6 /* buttonsActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonsActions.swift; sourceTree = "<group>"; };
 		03636A3F25522E5300BE07F6 /* generalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generalExtensions.swift; sourceTree = "<group>"; };
 		03636A4725522F2700BE07F6 /* getData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getData.swift; sourceTree = "<group>"; };
@@ -461,7 +459,6 @@
 				03F8E0F4252D2054008F383D /* PlayViewController.swift */,
 				039605E2255F935900195B68 /* background.swift */,
 				03636A3625522CEF00BE07F6 /* didLoad.swift */,
-				03636A3925522D6200BE07F6 /* light-dark.swift */,
 				03636A3C25522DE500BE07F6 /* buttonsActions.swift */,
 				03636A4F255270C300BE07F6 /* buttonsBehaviour.swift */,
 				03636A4725522F2700BE07F6 /* getData.swift */,
@@ -665,7 +662,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03636A3A25522D6200BE07F6 /* light-dark.swift in Sources */,
 				039605C4255F626D00195B68 /* PrivacyVC.swift in Sources */,
 				039605CF255F634A00195B68 /* CoffeeVC.swift in Sources */,
 				03636A7825528A3F00BE07F6 /* dealerData.swift in Sources */,
@@ -866,6 +862,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KRJ3VT33GB;
 				INFOPLIST_FILE = BlackHack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -886,6 +883,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KRJ3VT33GB;
 				INFOPLIST_FILE = BlackHack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

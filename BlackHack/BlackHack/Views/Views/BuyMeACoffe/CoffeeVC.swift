@@ -14,10 +14,17 @@ class CoffeeVC : UIViewController, SideMenuItemContent, Storyboardable {
     
     @IBOutlet weak var buttonView: UIView!
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         buttonView.layer.cornerRadius = 5
+        
+        overrideUserInterfaceStyle = .light
+        setNeedsStatusBarAppearanceUpdate()
         
     }
     

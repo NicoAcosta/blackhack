@@ -16,8 +16,4 @@ extension PlayViewController {
         greenGradientLayer()
     }
     
-    
-    
-    
-    
 }

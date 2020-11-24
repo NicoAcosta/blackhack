@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fHZ-ih-BUE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fHZ-ih-BUE">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -38,16 +37,16 @@
                                 </items>
                             </navigationBar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BMC Logo - White" translatesAutoresizingMaskIntoConstraints="NO" id="EpV-Gb-evV">
-                                <rect key="frame" x="30" y="188" width="354" height="200"/>
+                                <rect key="frame" x="30" y="158" width="354" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="4mS-SR-WKk"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gkw-Py-Qt6" userLabel="text view">
-                                <rect key="frame" x="30" y="438" width="354" height="184"/>
+                                <rect key="frame" x="30" y="408" width="354" height="244"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QU6-Yh-GFD">
-                                        <rect key="frame" x="0.0" y="17" width="354" height="150"/>
+                                        <rect key="frame" x="0.0" y="47" width="354" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="Lcm-XY-Yw8"/>
                                         </constraints>
@@ -57,7 +56,7 @@
 Help me to continuously
 
 improve it keeping it for free!</string>
-                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="GothamLight" family="Gotham Light" pointSize="23"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -69,7 +68,7 @@ improve it keeping it for free!</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMC-oJ-yBU">
-                                <rect key="frame" x="30" y="662" width="354" height="50"/>
+                                <rect key="frame" x="30" y="692" width="354" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Cw-09-X1f">
                                         <rect key="frame" x="92" y="14.5" width="170" height="25"/>
@@ -94,8 +93,8 @@ improve it keeping it for free!</string>
                             <constraint firstItem="Gkw-Py-Qt6" firstAttribute="leading" secondItem="88w-XE-Fef" secondAttribute="leading" constant="30" id="RGp-c5-5Sd"/>
                             <constraint firstItem="wkP-o1-aK3" firstAttribute="leading" secondItem="88w-XE-Fef" secondAttribute="leading" id="Tbf-R6-9Ol"/>
                             <constraint firstItem="Gkw-Py-Qt6" firstAttribute="top" secondItem="EpV-Gb-evV" secondAttribute="bottom" constant="50" id="VIS-x6-P2S"/>
-                            <constraint firstItem="EpV-Gb-evV" firstAttribute="top" secondItem="wkP-o1-aK3" secondAttribute="bottom" constant="100" id="Zmt-nH-RVK"/>
-                            <constraint firstItem="88w-XE-Fef" firstAttribute="bottom" secondItem="eMC-oJ-yBU" secondAttribute="bottom" constant="150" id="bA8-Sn-DzX"/>
+                            <constraint firstItem="EpV-Gb-evV" firstAttribute="top" secondItem="wkP-o1-aK3" secondAttribute="bottom" constant="70" id="Zmt-nH-RVK"/>
+                            <constraint firstItem="88w-XE-Fef" firstAttribute="bottom" secondItem="eMC-oJ-yBU" secondAttribute="bottom" constant="120" id="bA8-Sn-DzX"/>
                             <constraint firstItem="EpV-Gb-evV" firstAttribute="leading" secondItem="88w-XE-Fef" secondAttribute="leading" constant="30" id="d61-CR-KSo"/>
                             <constraint firstItem="88w-XE-Fef" firstAttribute="trailing" secondItem="EpV-Gb-evV" secondAttribute="trailing" constant="30" id="eqq-Rw-Z4g"/>
                             <constraint firstItem="88w-XE-Fef" firstAttribute="trailing" secondItem="eMC-oJ-yBU" secondAttribute="trailing" constant="30" id="gFn-eF-D0I"/>
@@ -117,8 +116,5 @@ improve it keeping it for free!</string>
         <image name="BMC Logo - White" width="884" height="1279"/>
         <image name="BMC wordmark - Black" width="3252" height="600"/>
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

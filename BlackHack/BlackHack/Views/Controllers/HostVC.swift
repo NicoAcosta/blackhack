@@ -53,7 +53,7 @@ class HostVC: MenuContainerViewController {
         let coffee = CoffeeVC.storyboardViewController()
         let privacy = PrivacyVC.storyboardViewController()
         let terms = TermsVC.storyboardViewController()
-
-        return [play, support, coffee, privacy, terms]
+        let controllers = [play, support, coffee, privacy, terms]
+        return controllers
     }
 }

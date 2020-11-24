@@ -24,7 +24,6 @@ class PrivacyVC : UIViewController, SideMenuItemContent, Storyboardable {
         
         webView.load(myRequest)
         
-        
     }
     
     @IBAction func menu(_ sender: Any) {

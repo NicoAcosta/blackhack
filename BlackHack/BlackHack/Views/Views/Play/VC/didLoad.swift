@@ -31,6 +31,9 @@ extension PlayViewController {
         //  Actualizar data de dealer y user
         updateDealerAndUser()
         
+        
+        overrideUserInterfaceStyle = .light
+        
         //  Actualizar status bar style segun interface user style
         setNeedsStatusBarAppearanceUpdate()
         

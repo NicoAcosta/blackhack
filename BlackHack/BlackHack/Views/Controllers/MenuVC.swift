@@ -25,7 +25,6 @@ class MenuVC: MenuViewController, Storyboardable {
 
         // Select the initial row
         tableView.selectRow(at: IndexPath(row: 0, section: 0), animated: false, scrollPosition: UITableView.ScrollPosition.none)
-
         
     }
 
