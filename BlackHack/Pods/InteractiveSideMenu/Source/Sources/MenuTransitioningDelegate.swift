@@ -17,6 +17,7 @@
 //
 
 import Foundation
+import UIKit
 
 /**
  Delegate of menu transitioning actions.

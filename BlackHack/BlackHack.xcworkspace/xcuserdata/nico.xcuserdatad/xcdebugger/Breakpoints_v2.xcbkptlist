@@ -3,22 +3,4 @@
    uuid = "5BC8E9C2-0923-4995-B310-5C7F3F6AEAE6"
    type = "0"
    version = "2.0">
-   <Breakpoints>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "88E72D00-48DC-4A08-B577-B012EF2BEBEF"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BlackHack/Views/Aux/InteractiveSideMenu/storyboardable.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "Storyboardable"
-            landmarkType = "21">
-         </BreakpointContent>
-      </BreakpointProxy>
-   </Breakpoints>
 </Bucket>

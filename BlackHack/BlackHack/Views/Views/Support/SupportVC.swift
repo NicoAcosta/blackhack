@@ -14,6 +14,17 @@ import NotificationCenter
 
 class SupportVC : UIViewController, SideMenuItemContent, Storyboardable {
     
+    var mailRecipients : [String]? {
+        return nil
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     //  Para saber cuando se esta editando meesageField, para mover view y que no se corte
     var activeTextView : UITextView? = nil
     
@@ -219,7 +230,7 @@ extension SupportVC : MFMailComposeViewControllerDelegate {
             let mail = MFMailComposeViewController()
             
             mail.mailComposeDelegate = self
-            mail.setToRecipients(["support@blackhack.app"])
+            mail.setToRecipients(mailRecipients)
             
             let subject = subjectField.text
             let message = messageField.text
