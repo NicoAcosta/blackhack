@@ -1,0 +1,73 @@
+//
+//  support.swift
+//  MyFramework
+//
+//  Created by Nicolás Acosta on 02/12/2020.
+//
+
+import Foundation
+import UIKit
+import Fito
+
+
+class Support : MyViewController, SideMenuItemContent, Storyboardable {
+    
+    override var myBackgroundGradientLayerColors: [UIColor]? {
+        return [darkGreen, lightGreen]
+    }
+    
+    override var myUserInterfaceStyle: UIUserInterfaceStyle? {
+        return .light
+    }
+    
+    var mailRecipients : [String]? {
+        return ["support@blackhack.app"]
+        
+    }
+    
+    var sendColor : UIColor {
+        return .black
+    }
+    
+    func menu() {
+        showSideMenu()
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //  Para saber cuando se esta editando meesageField, para mover view y que no se corte
+    var activeTextView : UITextView? = nil
+    
+    //  View vacía para poder calcular el límite inferior de messageField
+    @IBOutlet weak var belowMessageFieldView: UIView!
+    
+    @IBOutlet weak var subjectField: UITextField!
+    @IBOutlet weak var messageField: UITextView!
+    @IBOutlet weak var mailButton: UIButton!
+    
+}

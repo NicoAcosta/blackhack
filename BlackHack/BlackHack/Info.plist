@@ -18,27 +18,8 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-	<key>LSApplicationCategoryType</key>
-	<string>public.app-category.casino-games</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>UIAppFonts</key>
-	<array>
-		<string>GothamBlack.ttf</string>
-		<string>GothamBlackItalic.ttf</string>
-		<string>GothamBold.ttf</string>
-		<string>GothamBoldItalic.ttf</string>
-		<string>GothamLight.ttf</string>
-		<string>GothamLightItalic.ttf</string>
-		<string>GothamMedium.ttf</string>
-		<string>GothamMediumItalic.ttf</string>
-		<string>GothamThin.ttf</string>
-		<string>GothamThinItalic.ttf</string>
-		<string>GothamUltra.ttf</string>
-		<string>GothamUltraItalic.ttf</string>
-		<string>GothamXLight.ttf</string>
-		<string>GothamXLightItalic.ttf</string>
-	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -53,7 +34,7 @@
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
-					<string>Main</string>
+					<string>Host</string>
 				</dict>
 			</array>
 		</dict>
@@ -63,7 +44,7 @@
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
+	<string>Host</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -71,7 +52,8 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -80,7 +62,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>UIViewControllerBasedStatusBarAppearance</key>
-	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>GothamLight</string>
+		<string>GothamThin</string>
+		<string>GothamBold</string>
+		<string>GothamMedium</string>
+	</array>
 </dict>
 </plist>

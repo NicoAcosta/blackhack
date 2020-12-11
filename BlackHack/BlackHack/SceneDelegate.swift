@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  BlackHack
 //
-//  Created by Nicolás Acosta on 06/10/2020.
+//  Created by Nicolás Acosta on 11/12/2020.
 //
 
 import UIKit
