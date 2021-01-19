@@ -1,6 +1,0 @@
-framework module Pods_BlackHack {
-  umbrella header "Pods-BlackHack-umbrella.h"
-
-  export *
-  module * { export * }
-}
