@@ -20,6 +20,10 @@ class Support : MyViewController, SideMenuItemContent, Storyboardable {
         return .light
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     var mailRecipients : [String]? {
         return ["support@blackhack.app"]
         

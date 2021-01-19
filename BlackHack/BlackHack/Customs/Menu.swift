@@ -11,10 +11,12 @@ import UIKit
 class Menu: MenuViewController, Storyboardable {
     
     var myAppName : String? {
-        return "AppName"
+        return "BlackHack"
     }
     
-    
+    override var myBackgroundGradientLayerColors: [UIColor]? {
+        return [darkGreen, lightGreen]
+    }
     
     
     

@@ -18,8 +18,8 @@ class Host: MenuContainerViewController {
     var myMenuItemsViewControllers : [UIViewController]? {
         return [
             PlayViewController.storyboardViewController(),
-            ViewController.storyboardViewController(),
             Support.storyboardViewController(),
+            Coffee.storyboardViewController(),
             Terms.storyboardViewController(),
             Privacy.storyboardViewController()
         ]

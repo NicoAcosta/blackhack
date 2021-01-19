@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/Fito-Swift.h</key>
 		<data>
-		o51zM8sopq8ebWFzcPvaoHLHj9w=
+		fMw++qlAsf1rqNaMGF++0360ojs=
 		</data>
 		<key>Headers/Fito.h</key>
 		<data>
@@ -74,11 +74,11 @@
 		</data>
 		<key>Modules/Fito.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		uEdWPWwr5RVK+xSah00bXMP75zU=
+		wm1c2qZRmyFDDs80iEDs7PLTw2c=
 		</data>
 		<key>Modules/Fito.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		uEdWPWwr5RVK+xSah00bXMP75zU=
+		wm1c2qZRmyFDDs80iEDs7PLTw2c=
 		</data>
 		<key>Modules/Fito.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Modules/Fito.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		B97RylENm8s27At738KMhNsY8hg=
+		aH/fzFgk34dv0Gz5J4Hm5uO70XU=
 		</data>
 		<key>Modules/Fito.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Modules/Fito.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		B97RylENm8s27At738KMhNsY8hg=
+		aH/fzFgk34dv0Gz5J4Hm5uO70XU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -205,7 +205,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0s+rmrR7znm3Qdv1H4CJKtHQgzcUHGT8NfqAN6X8ef4=
+			DDg4Ek+IGa+WOQLBCOZ240XFsuPSd0lgJ9ecnQ+QIc0=
 			</data>
 		</dict>
 		<key>Headers/Fito.h</key>
@@ -219,14 +219,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vvh4Sr+4PUcx7z75skRX88Htfg8kP37EnnAE4w5k+XA=
+			rgifOJL7j3Li92f/rpQK/WXqupX1Ex3Jud34ej+qSNs=
 			</data>
 		</dict>
 		<key>Modules/Fito.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vvh4Sr+4PUcx7z75skRX88Htfg8kP37EnnAE4w5k+XA=
+			rgifOJL7j3Li92f/rpQK/WXqupX1Ex3Jud34ej+qSNs=
 			</data>
 		</dict>
 		<key>Modules/Fito.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -240,7 +240,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/gtFiuRqD2XvKjKUkoWFxKqtReBvlauyv/lYEQi9uJA=
+			3uyBfDOuYAud/HyoneUADAOlk5mTewv+kQ9F9f0ygbc=
 			</data>
 		</dict>
 		<key>Modules/Fito.swiftmodule/arm64.swiftdoc</key>
@@ -254,7 +254,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/gtFiuRqD2XvKjKUkoWFxKqtReBvlauyv/lYEQi9uJA=
+			3uyBfDOuYAud/HyoneUADAOlk5mTewv+kQ9F9f0ygbc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -250,9 +250,8 @@ SWIFT_CLASS("_TtC4Fito18UITextFieldPadding")
 
 SWIFT_CLASS("_TtC4Fito17UITextViewPadding")
 @interface UITextViewPadding : UITextView
-- (nonnull instancetype)init;
-- (nonnull instancetype)initWithFrame:(CGRect)frame textContainer:(NSTextContainer * _Nullable)textContainer OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=7.0);
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame textContainer:(NSTextContainer * _Nullable)textContainer SWIFT_UNAVAILABLE;
 @end
 
 

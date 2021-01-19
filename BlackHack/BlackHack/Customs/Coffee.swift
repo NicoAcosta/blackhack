@@ -12,11 +12,11 @@ import Fito
 class Coffee : MyViewController, SideMenuItemContent, Storyboardable {
     
     var logoAssetName : String? {
-        return nil
+        return "BMCLogo"
     }
     
     var nameAssetName : String? {
-        return nil
+        return "BMCName"
     }
     
     func menu() {

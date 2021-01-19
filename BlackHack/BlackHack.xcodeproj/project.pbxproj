@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0324F7CF25855EA70058414D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0324F7CE25855EA70058414D /* GoogleService-Info.plist */; };
+		0324F7DD2585654B0058414D /* Fito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0324F7DB2585652D0058414D /* Fito.framework */; };
+		0324F7DE2585654B0058414D /* Fito.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0324F7DB2585652D0058414D /* Fito.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		032526452583314B000A102F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032526442583314B000A102F /* AppDelegate.swift */; };
 		032526472583314B000A102F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032526462583314B000A102F /* SceneDelegate.swift */; };
-		032526492583314B000A102F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032526482583314B000A102F /* ViewController.swift */; };
-		0325264C2583314B000A102F /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0325264A2583314B000A102F /* ViewController.storyboard */; };
 		0325264E2583314E000A102F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0325264D2583314E000A102F /* Assets.xcassets */; };
 		032526512583314E000A102F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0325264F2583314E000A102F /* LaunchScreen.storyboard */; };
 		0325267D25833172000A102F /* appDelegateEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0325265D25833171000A102F /* appDelegateEdit.swift */; };
@@ -42,8 +43,6 @@
 		032526A025833178000A102F /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0325269925833178000A102F /* Menu.swift */; };
 		032526A125833178000A102F /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0325269A25833178000A102F /* Coffee.swift */; };
 		032526A225833178000A102F /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0325269B25833178000A102F /* Host.swift */; };
-		032526A425833229000A102F /* Fito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0325265925833169000A102F /* Fito.framework */; };
-		032526A525833229000A102F /* Fito.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0325265925833169000A102F /* Fito.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		032526B725833325000A102F /* GothamUltraItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 032526A925833325000A102F /* GothamUltraItalic.ttf */; };
 		032526B825833325000A102F /* GothamXLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 032526AA25833325000A102F /* GothamXLightItalic.ttf */; };
 		032526B925833325000A102F /* GothamUltra.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 032526AB25833325000A102F /* GothamUltra.ttf */; };
@@ -107,7 +106,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				032526A525833229000A102F /* Fito.framework in Embed Frameworks */,
+				0324F7DE2585654B0058414D /* Fito.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,15 +114,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0324F7CE25855EA70058414D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../BlackHack2/BlackHack/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0324F7DB2585652D0058414D /* Fito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fito.framework; sourceTree = "<group>"; };
 		032526412583314B000A102F /* BlackHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		032526442583314B000A102F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		032526462583314B000A102F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		032526482583314B000A102F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0325264B2583314B000A102F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ViewController.storyboard; sourceTree = "<group>"; };
 		0325264D2583314E000A102F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		032526502583314E000A102F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		032526522583314E000A102F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0325265925833169000A102F /* Fito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fito.framework; sourceTree = "<group>"; };
 		0325265D25833171000A102F /* appDelegateEdit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = appDelegateEdit.swift; sourceTree = "<group>"; };
 		0325266025833172000A102F /* Host.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Host.storyboard; sourceTree = "<group>"; };
 		0325266125833172000A102F /* HostExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostExt.swift; sourceTree = "<group>"; };
@@ -216,7 +214,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				032526A425833229000A102F /* Fito.framework in Frameworks */,
+				0324F7DD2585654B0058414D /* Fito.framework in Frameworks */,
 				24C410A3197A2FD85D00CFDE /* Pods_BlackHack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,7 +225,7 @@
 		032526382583314B000A102F = {
 			isa = PBXGroup;
 			children = (
-				0325265925833169000A102F /* Fito.framework */,
+				0324F7DB2585652D0058414D /* Fito.framework */,
 				0325265C25833171000A102F /* ViewControllersFramework */,
 				032526432583314B000A102F /* BlackHack */,
 				032526422583314B000A102F /* Products */,
@@ -251,11 +249,10 @@
 				0325269425833178000A102F /* Customs */,
 				032526442583314B000A102F /* AppDelegate.swift */,
 				032526462583314B000A102F /* SceneDelegate.swift */,
-				032526482583314B000A102F /* ViewController.swift */,
-				0325264A2583314B000A102F /* ViewController.storyboard */,
 				0325264D2583314E000A102F /* Assets.xcassets */,
 				0325264F2583314E000A102F /* LaunchScreen.storyboard */,
 				032526522583314E000A102F /* Info.plist */,
+				0324F7CE25855EA70058414D /* GoogleService-Info.plist */,
 			);
 			path = BlackHack;
 			sourceTree = "<group>";
@@ -697,8 +694,8 @@
 				032526512583314E000A102F /* LaunchScreen.storyboard in Resources */,
 				032526BD25833325000A102F /* GothamMediumItalic.ttf in Resources */,
 				0325269225833172000A102F /* Coffee.storyboard in Resources */,
+				0324F7CF25855EA70058414D /* GoogleService-Info.plist in Resources */,
 				0325264E2583314E000A102F /* Assets.xcassets in Resources */,
-				0325264C2583314B000A102F /* ViewController.storyboard in Resources */,
 				0325269025833172000A102F /* Support.storyboard in Resources */,
 				032526C125833325000A102F /* GothamXLight.ttf in Resources */,
 				0325268B25833172000A102F /* Privacy.storyboard in Resources */,
@@ -772,7 +769,6 @@
 				03252743258334D2000A102F /* updateVoids.swift in Sources */,
 				03252742258334D2000A102F /* deckPublicReturns.swift in Sources */,
 				0325272F258334D2000A102F /* dataStructs.xcdatamodeld in Sources */,
-				032526492583314B000A102F /* ViewController.swift in Sources */,
 				0325272E258334D2000A102F /* struct-data.swift in Sources */,
 				03252734258334D2000A102F /* dealerOddsOfBusting.swift in Sources */,
 				0325273F258334D2000A102F /* sum.swift in Sources */,
@@ -826,14 +822,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0325264A2583314B000A102F /* ViewController.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0325264B2583314B000A102F /* Base */,
-			);
-			name = ViewController.storyboard;
-			sourceTree = "<group>";
-		};
 		0325264F2583314E000A102F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
