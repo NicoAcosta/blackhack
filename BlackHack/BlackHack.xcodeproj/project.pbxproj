@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0324F7CF25855EA70058414D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0324F7CE25855EA70058414D /* GoogleService-Info.plist */; };
 		0324F7DD2585654B0058414D /* Fito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0324F7DB2585652D0058414D /* Fito.framework */; };
 		0324F7DE2585654B0058414D /* Fito.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0324F7DB2585652D0058414D /* Fito.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		032526452583314B000A102F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032526442583314B000A102F /* AppDelegate.swift */; };
@@ -96,6 +95,7 @@
 		03252743258334D2000A102F /* updateVoids.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03252724258334D2000A102F /* updateVoids.swift */; };
 		03252744258334D2000A102F /* cardsVoids.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03252725258334D2000A102F /* cardsVoids.swift */; };
 		03252747258334F4000A102F /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03252746258334F4000A102F /* colors.swift */; };
+		03CBC19125CE3D6E00D8C1D1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03CBC19025CE3D6E00D8C1D1 /* GoogleService-Info.plist */; };
 		24C410A3197A2FD85D00CFDE /* Pods_BlackHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C1A4DEA31D30FC7824ADC0 /* Pods_BlackHack.framework */; };
 /* End PBXBuildFile section */
 
@@ -114,7 +114,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0324F7CE25855EA70058414D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../BlackHack2/BlackHack/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0324F7DB2585652D0058414D /* Fito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fito.framework; sourceTree = "<group>"; };
 		032526412583314B000A102F /* BlackHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		032526442583314B000A102F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -204,6 +203,7 @@
 		03252724258334D2000A102F /* updateVoids.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = updateVoids.swift; sourceTree = "<group>"; };
 		03252725258334D2000A102F /* cardsVoids.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cardsVoids.swift; sourceTree = "<group>"; };
 		03252746258334F4000A102F /* colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = "<group>"; };
+		03CBC19025CE3D6E00D8C1D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		52C1A4DEA31D30FC7824ADC0 /* Pods_BlackHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC1C2E7A5D25E71C7921862 /* Pods-BlackHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHack.debug.xcconfig"; path = "Target Support Files/Pods-BlackHack/Pods-BlackHack.debug.xcconfig"; sourceTree = "<group>"; };
 		FC9809F2FE8411B4A299EA5B /* Pods-BlackHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHack.release.xcconfig"; path = "Target Support Files/Pods-BlackHack/Pods-BlackHack.release.xcconfig"; sourceTree = "<group>"; };
@@ -251,8 +251,8 @@
 				032526462583314B000A102F /* SceneDelegate.swift */,
 				0325264D2583314E000A102F /* Assets.xcassets */,
 				0325264F2583314E000A102F /* LaunchScreen.storyboard */,
+				03CBC19025CE3D6E00D8C1D1 /* GoogleService-Info.plist */,
 				032526522583314E000A102F /* Info.plist */,
-				0324F7CE25855EA70058414D /* GoogleService-Info.plist */,
 			);
 			path = BlackHack;
 			sourceTree = "<group>";
@@ -694,7 +694,7 @@
 				032526512583314E000A102F /* LaunchScreen.storyboard in Resources */,
 				032526BD25833325000A102F /* GothamMediumItalic.ttf in Resources */,
 				0325269225833172000A102F /* Coffee.storyboard in Resources */,
-				0324F7CF25855EA70058414D /* GoogleService-Info.plist in Resources */,
+				03CBC19125CE3D6E00D8C1D1 /* GoogleService-Info.plist in Resources */,
 				0325264E2583314E000A102F /* Assets.xcassets in Resources */,
 				0325269025833172000A102F /* Support.storyboard in Resources */,
 				032526C125833325000A102F /* GothamXLight.ttf in Resources */,
